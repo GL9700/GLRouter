@@ -1,0 +1,16 @@
+PODS:
+  - GLRouter (0.1.0)
+
+DEPENDENCIES:
+  - GLRouter (from `../`)
+
+EXTERNAL SOURCES:
+  GLRouter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GLRouter: 0b94d498ce9d5c243045da20bd2994e51583b76a
+
+PODFILE CHECKSUM: 2a4decceb85e0b3639ea93541b195b844523adcb
+
+COCOAPODS: 1.5.3

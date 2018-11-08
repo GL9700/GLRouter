@@ -1,11 +1,5 @@
-use_frameworks!
+#use_frameworks!
 
 target 'GLRouter_Example' do
   pod 'GLRouter', :path => '../'
-
-  target 'GLRouter_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
