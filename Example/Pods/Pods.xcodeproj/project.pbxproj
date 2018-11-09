@@ -7,190 +7,232 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06C17C0D3D3F85F79574AC6C0A735E5C /* Pods-GLRouter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC014C8975F3DD6AE35BEA4D92F32C1 /* Pods-GLRouter_Example-dummy.m */; };
-		11285C31C59BADD9A24353799C4A32A0 /* GLRouter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10E2D4F60C862DCD9A9B5789E080AA82 /* GLRouter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30858FF19416FDF20BFEE5778C6A06C7 /* Pods-GLRouter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CE3C4C0C41D84ABAFFA590BB3B8191D /* Pods-GLRouter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		32D47CF05C3B485714994A4B2F36E732 /* GLRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E0BB341DBF7841DE923A729D43CB3D /* GLRouter-dummy.m */; };
-		7BEB953FA7492C61778C945EC2DB0A6C /* Pods-GLRouter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1CAB1ADBBE7F4F9D39494FC23D52D3A /* Pods-GLRouter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6360585A3AEF505F12D0756F1F7E9AF /* Pods-GLRouter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC52A1CF92194B4BC2CB4F2FACB5AB98 /* Pods-GLRouter_Tests-dummy.m */; };
-		B6AB51A6608E9AA1D34ADCB7C567CD01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		CA56EF8A219406D30028B28D /* Router.h in Headers */ = {isa = PBXBuildFile; fileRef = CA56EF87219406D30028B28D /* Router.h */; };
-		CA56EF8B219406D30028B28D /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = CA56EF88219406D30028B28D /* Router.m */; };
-		CA56EF8C219406D30028B28D /* RouterProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CA56EF89219406D30028B28D /* RouterProtocol.h */; };
-		DEDDFEE90762A7EE3DB25C6B3DB3815D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		E44997F689E3DB64F502B66F9860D97F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		0230FF21BEFBE6C7ECC9938FC48E7B9B /* NSData+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E84A6A573AF137C2FAC92F99FF0CECE /* NSData+Extension.m */; };
+		03623C05270832FE0D421C5A2098D3C6 /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 833BB529F17B48084C2739AFEF97282F /* Router.m */; };
+		03A14A20E0B1700F7870ABACD4734FEC /* GLRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0634C14C7F77310E84D4E6AF4DB818F3 /* GLRouter-dummy.m */; };
+		05EADF2D1AA05DFAE651027B95D1DE6C /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8B843DFA547BBDC379029E435B95A5 /* UITableView+Extension.m */; };
+		0AC676EA20D597C847CA309BCF9D74ED /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9EE2088C2432B95764F45E9E4F2C1E /* UIViewController+Extension.m */; };
+		0CB633C0448891FFAFF6791D4E456494 /* NSData+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = BBF7C6EB19D5B6BC0303C08F807F4C90 /* NSData+Extension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1AE2E6B2846DF4C5CCCE5FB74113BB11 /* NSString+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = C0753A8E325A157A1945D0655538BABE /* NSString+Extension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		200C5535ACC1B241B5194DE3E036BDDB /* UIResponder+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6D8A3FE01FC2FEC3E4FA03F238B95C /* UIResponder+Extension.m */; };
+		201438B999318A1F28286D8A687166CA /* NSFileManager+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 499BC27FEB4FBEC2E3E2B2AC34C899E9 /* NSFileManager+Extension.m */; };
+		21408AE273B2554B10AAD62DBF6EE3CA /* Router.h in Headers */ = {isa = PBXBuildFile; fileRef = CFF4C4307081E311C5455E8A79C9AC54 /* Router.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2276DDA54699E1A814FD7A3F5F01B06A /* UIDevice+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3C20EAC460275DB616AD08A41E89C2 /* UIDevice+Extension.m */; };
+		2ED965721ABC0D2401F881B41C8937D8 /* UIAlertController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C62F45CEDF64F44AAB3EA776F348367F /* UIAlertController+Extension.m */; };
+		3DB0FFA9FDE254B5DB14FA1549D824B3 /* Pods-GLRouter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F904AF6065EF624BA35234E6B667EFF /* Pods-GLRouter_Example-dummy.m */; };
+		3DCCE5EB19FADC411AE5D1890FCA4F33 /* RouterProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 19477108E2371B14970EDAE2D7EE9A67 /* RouterProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5160DA45FD01BF07C9D08191F67700D1 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5F90474012C3BB34328A73A640260A /* UIView+Extension.m */; };
+		55E67F7945F9F66B9FD81F8B3E37DD33 /* NSURL+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCF1F8149B19A2E7FDDF521D84797B6 /* NSURL+Extension.m */; };
+		5E2CD586A48D111C76377D32D1F36C07 /* UIAlertController+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E9CD752ADB86F24036CB312E8E420DF /* UIAlertController+Extension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		623BA820F1C5C06F615772CBE60563CF /* UITableView+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 7101CE0705365577270D0FB1951E0AE1 /* UITableView+Extension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6858D7EB97F94251A7EC7E30037FE3D7 /* UINavigationController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EB1356E3002FA742BF8D436139E74A /* UINavigationController+Extension.m */; };
+		6A8C72FBEC56B4DCBD450EEB196790FD /* WDYExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFC911C34CC56B6A6C1B1B22EECF1E0 /* WDYExtensions-dummy.m */; };
+		6B5E79EE2785B94A0E083C0B2AA2B324 /* UIApplication+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E0ACB93ACC1565C9D57BF75B004BDB /* UIApplication+Extension.m */; };
+		711629C3F79D61C123F0F1CED5475841 /* UIApplication+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FFDF65D9E2AE84EAB13DF7F0A8CC559 /* UIApplication+Extension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7646FA3D06445E19964D598421409CC8 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E1290AC8F9B04E3E8C56221EB804EDAB /* UIButton+Extension.m */; };
+		776F33FC00AEB1786601FDCF62973059 /* UIViewController+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 7193C01FBDA784827CA4074A4C611847 /* UIViewController+Extension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		80C07CC191CB1D1DC630A4840391AEA9 /* NSTimer+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9AE75AEB959497FD515DE4833BB79A /* NSTimer+Extension.m */; };
+		88C628A6CBCD9A260B3255502C40CDB5 /* NSDate+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDB6260E6D64092F248A722F1D48FB1 /* NSDate+Extension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8D5F8A1F649D414B1613DB8CD15C2326 /* UIDevice+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CA6296103DA5DFD06CE59677563E89B /* UIDevice+Extension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8DFE436450D455CB0B84D80B2B184AAC /* NSObject+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = F4384FD25927240FBDCE4194565493CB /* NSObject+Extension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8FEDFFA79A93F0696666BBA236EC0CA0 /* UIColor+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = B57BB940F4F7A879EF91A57E365CDE67 /* UIColor+Extension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9A915B2C8A2338EB2F72AEF0CC8EC3E6 /* UIResponder+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EBDFBEAB28E3775BD7BBF96BA6C3900 /* UIResponder+Extension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A0F5FCBA1C774721F1E04625901AF13D /* UIButton+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ADB197248212ACAAFD446A49A0D3A6A /* UIButton+Extension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A7E7E412792B787FAB977C9920663680 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A250FD268435340EEC194044768C8586 /* UIColor+Extension.m */; };
+		BA51017D758A78376668CA40183B648D /* UIWindow+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B9DAD5E4C8D81644AC074A51DDE9E30 /* UIWindow+Extension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BDFA20BBC9F66292287CB7C2D47DD985 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5F97F145403168C9BDE9335A542F62 /* NSDate+Extension.m */; };
+		C23F343F3D6E9DA7A8C3BB8D942CE702 /* NSURL+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = FAACBBD44E4A0F1762C215A431B7CB5E /* NSURL+Extension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C99B78A3163D991F618E0F654C97DB14 /* UIView+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 162A80D3724E75611D05A29C90BF9202 /* UIView+Extension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D7D5308A94A1C918322F148ACAA169C2 /* NSFileManager+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 425B9CC34AFF49335B8B1AC57783D2A0 /* NSFileManager+Extension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DAF279E1EAB1E898E58A871B53F0E308 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE048C8EF8003A75F276D9E6A55E509 /* UIImage+Extension.m */; };
+		DD7F6CCE30298B34BF63AAAB973B7A9E /* NSTimer+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AA6AEB29DAE8AA0F446153D8B466A7D /* NSTimer+Extension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E7E21548F7EE4F8966C931E8A55FD19A /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBB2FD96C1E9266F583A6D74D531B25 /* NSObject+Extension.m */; };
+		EC82802C238EF366AA651824BE46404F /* UIImage+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F8C791DBD5AB70C78BC68968C9E597B /* UIImage+Extension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F2468DBD12801EBCF0459CDF66F78C07 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0C4D71D61514C919C829CE313F4299 /* NSString+Extension.m */; };
+		F9B3F9B8C7EB778A049FE57DA67C27B6 /* UINavigationController+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = EB48CA7B2D807E1A5CA9C3FA448E1F91 /* UINavigationController+Extension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FE50C53F36E056D0C13E40685FD1659D /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BD740AE0E5CC873BBEB9CC4C268F0BBA /* UIWindow+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		09882C8434334ED75212C511D979414B /* PBXContainerItemProxy */ = {
+		1541A82DF928AD1CE5A4ADA2937619F5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CC4406DBC9B5D3CFE58C4B203BF7552D;
-			remoteInfo = "Pods-GLRouter_Example";
+			remoteGlobalIDString = 1EB00A33120F9DEDAD4CB6A288D2A4BB;
+			remoteInfo = WDYExtensions;
 		};
-		37F7EFCB9980F80D6DBCA71E024E3555 /* PBXContainerItemProxy */ = {
+		29466CE8D57612BC3CC97B75E572562B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AA65CD6FE4FBD5AAA7757EEC88D33390;
+			remoteGlobalIDString = F60377AFF2FA044119FE8E5A81F0B36C;
 			remoteInfo = GLRouter;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02C7DCD895DAFAEF6ABC3B4E1A068021 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		0867429C2D912E314E6566E32B65C52A /* Pods-GLRouter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GLRouter_Tests.modulemap"; sourceTree = "<group>"; };
-		0B967B1BF471AA0C2B23B1EE6BA4E692 /* Pods-GLRouter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GLRouter_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		10E2D4F60C862DCD9A9B5789E080AA82 /* GLRouter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GLRouter-umbrella.h"; sourceTree = "<group>"; };
-		1CE3C4C0C41D84ABAFFA590BB3B8191D /* Pods-GLRouter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GLRouter_Tests-umbrella.h"; sourceTree = "<group>"; };
-		1FF1BFF61FE2BA49FBB7ED9FBB724B59 /* GLRouter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GLRouter.modulemap; sourceTree = "<group>"; };
-		21CF97C53F56FAE715E9ED960E6D222E /* Pods_GLRouter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GLRouter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		22D050A0878FCB085D461782E040EAD8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		35DFE8001411B6D8EF4AB551550DDB6B /* Pods-GLRouter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GLRouter_Example.modulemap"; sourceTree = "<group>"; };
-		45E22EAF4A5279DEC423EAFF93A6B6B5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DA1A25EA8487CCCEE8417B5D28F57AD /* Pods-GLRouter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GLRouter_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4DCF14DA64F5C2FBEA2717B04DB3B317 /* GLRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GLRouter-prefix.pch"; sourceTree = "<group>"; };
-		53A4E3DBF49C405CB1F066E0259F2558 /* Pods-GLRouter_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GLRouter_Tests-resources.sh"; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		60E0BB341DBF7841DE923A729D43CB3D /* GLRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GLRouter-dummy.m"; sourceTree = "<group>"; };
-		724321A788DB140C7FF603A6EAC78DC9 /* GLRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GLRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		75C97A1CE848FFE381525F7C7F985B7C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		7E5863AD23B4D072F93180E1ECEC4428 /* Pods-GLRouter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GLRouter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8C1D83EED922F51B2476EFCBA79F3F61 /* Pods-GLRouter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GLRouter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		8C626A44DA4B209E9358A9AC84B6A868 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95744EF6B117C2FB739E93CE74B9121E /* GLRouter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GLRouter.xcconfig; sourceTree = "<group>"; };
-		9AC014C8975F3DD6AE35BEA4D92F32C1 /* Pods-GLRouter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GLRouter_Example-dummy.m"; sourceTree = "<group>"; };
-		A4C8C78EA9EE9912178B6E00EE578246 /* Pods-GLRouter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GLRouter_Example-frameworks.sh"; sourceTree = "<group>"; };
-		B57A497AD36E740218712649838B8164 /* Pods-GLRouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GLRouter_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B5980462D697C748BFADCEE64EADFCCA /* Pods-GLRouter_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GLRouter_Example-resources.sh"; sourceTree = "<group>"; };
-		BAF3D230905CDF0641671796C720EC8B /* Pods-GLRouter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GLRouter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C1CAB1ADBBE7F4F9D39494FC23D52D3A /* Pods-GLRouter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GLRouter_Example-umbrella.h"; sourceTree = "<group>"; };
-		C262ADB5098C6031E8D0A5C72FBACC77 /* Pods-GLRouter_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GLRouter_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		CA56EF87219406D30028B28D /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Router.h; path = GLRouter/Classes/Router.h; sourceTree = "<group>"; };
-		CA56EF88219406D30028B28D /* Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Router.m; path = GLRouter/Classes/Router.m; sourceTree = "<group>"; };
-		CA56EF89219406D30028B28D /* RouterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RouterProtocol.h; path = GLRouter/Classes/RouterProtocol.h; sourceTree = "<group>"; };
-		CC7BCEE5FF0BA10D420C644BA603C648 /* Pods-GLRouter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GLRouter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		DBF0E5E4FA461ACB481502EE137F62CA /* GLRouter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = GLRouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		DC52A1CF92194B4BC2CB4F2FACB5AB98 /* Pods-GLRouter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GLRouter_Tests-dummy.m"; sourceTree = "<group>"; };
-		DFB3DD8D21AE1CCEB3AB8A0F3D272F06 /* Pods-GLRouter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GLRouter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FB2EBFFF75504478CDAEFAB81CC2BA96 /* Pods_GLRouter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GLRouter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0634C14C7F77310E84D4E6AF4DB818F3 /* GLRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GLRouter-dummy.m"; sourceTree = "<group>"; };
+		0EE048C8EF8003A75F276D9E6A55E509 /* UIImage+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Extension.m"; path = "WDYExtensions/Classes/UI/UIImage+Extension.m"; sourceTree = "<group>"; };
+		162A80D3724E75611D05A29C90BF9202 /* UIView+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Extension.h"; path = "WDYExtensions/Classes/UI/UIView+Extension.h"; sourceTree = "<group>"; };
+		19477108E2371B14970EDAE2D7EE9A67 /* RouterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RouterProtocol.h; path = GLRouter/Classes/RouterProtocol.h; sourceTree = "<group>"; };
+		1B9DAD5E4C8D81644AC074A51DDE9E30 /* UIWindow+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow+Extension.h"; path = "WDYExtensions/Classes/UI/UIWindow+Extension.h"; sourceTree = "<group>"; };
+		1E84A6A573AF137C2FAC92F99FF0CECE /* NSData+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+Extension.m"; path = "WDYExtensions/Classes/NS/NSData+Extension.m"; sourceTree = "<group>"; };
+		1F350E89325FC24161654A2EDF4B7DB1 /* Pods-GLRouter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GLRouter_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		21DC5A5BC74B205E8724EC65C47CBBFC /* GLRouter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = GLRouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2CB60BA10C36F0957C590939421A0697 /* WDYExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WDYExtensions-prefix.pch"; sourceTree = "<group>"; };
+		2FCF1F8149B19A2E7FDDF521D84797B6 /* NSURL+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURL+Extension.m"; path = "WDYExtensions/Classes/NS/NSURL+Extension.m"; sourceTree = "<group>"; };
+		3C5F90474012C3BB34328A73A640260A /* UIView+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Extension.m"; path = "WDYExtensions/Classes/UI/UIView+Extension.m"; sourceTree = "<group>"; };
+		3E9CD752ADB86F24036CB312E8E420DF /* UIAlertController+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertController+Extension.h"; path = "WDYExtensions/Classes/UI/UIAlertController+Extension.h"; sourceTree = "<group>"; };
+		425B9CC34AFF49335B8B1AC57783D2A0 /* NSFileManager+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+Extension.h"; path = "WDYExtensions/Classes/NS/NSFileManager+Extension.h"; sourceTree = "<group>"; };
+		45EB1356E3002FA742BF8D436139E74A /* UINavigationController+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Extension.m"; path = "WDYExtensions/Classes/UI/UINavigationController+Extension.m"; sourceTree = "<group>"; };
+		4864B4F477470D9EFFBDA8364C9F89CC /* GLRouter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GLRouter.xcconfig; sourceTree = "<group>"; };
+		499BC27FEB4FBEC2E3E2B2AC34C899E9 /* NSFileManager+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+Extension.m"; path = "WDYExtensions/Classes/NS/NSFileManager+Extension.m"; sourceTree = "<group>"; };
+		4ADB197248212ACAAFD446A49A0D3A6A /* UIButton+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Extension.h"; path = "WDYExtensions/Classes/UI/UIButton+Extension.h"; sourceTree = "<group>"; };
+		4BDB6260E6D64092F248A722F1D48FB1 /* NSDate+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Extension.h"; path = "WDYExtensions/Classes/NS/NSDate+Extension.h"; sourceTree = "<group>"; };
+		4EBDFBEAB28E3775BD7BBF96BA6C3900 /* UIResponder+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIResponder+Extension.h"; path = "WDYExtensions/Classes/UI/UIResponder+Extension.h"; sourceTree = "<group>"; };
+		4F5F97F145403168C9BDE9335A542F62 /* NSDate+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Extension.m"; path = "WDYExtensions/Classes/NS/NSDate+Extension.m"; sourceTree = "<group>"; };
+		4F6D8A3FE01FC2FEC3E4FA03F238B95C /* UIResponder+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIResponder+Extension.m"; path = "WDYExtensions/Classes/UI/UIResponder+Extension.m"; sourceTree = "<group>"; };
+		5AA6AEB29DAE8AA0F446153D8B466A7D /* NSTimer+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTimer+Extension.h"; path = "WDYExtensions/Classes/NS/NSTimer+Extension.h"; sourceTree = "<group>"; };
+		5E8B843DFA547BBDC379029E435B95A5 /* UITableView+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+Extension.m"; path = "WDYExtensions/Classes/UI/UITableView+Extension.m"; sourceTree = "<group>"; };
+		5F8C791DBD5AB70C78BC68968C9E597B /* UIImage+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Extension.h"; path = "WDYExtensions/Classes/UI/UIImage+Extension.h"; sourceTree = "<group>"; };
+		5FFDF65D9E2AE84EAB13DF7F0A8CC559 /* UIApplication+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+Extension.h"; path = "WDYExtensions/Classes/UI/UIApplication+Extension.h"; sourceTree = "<group>"; };
+		6F904AF6065EF624BA35234E6B667EFF /* Pods-GLRouter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GLRouter_Example-dummy.m"; sourceTree = "<group>"; };
+		7101CE0705365577270D0FB1951E0AE1 /* UITableView+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+Extension.h"; path = "WDYExtensions/Classes/UI/UITableView+Extension.h"; sourceTree = "<group>"; };
+		7193C01FBDA784827CA4074A4C611847 /* UIViewController+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Extension.h"; path = "WDYExtensions/Classes/UI/UIViewController+Extension.h"; sourceTree = "<group>"; };
+		72C16800E8B0DE05ED23B3BC139E6533 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		74A8068ACA0C4331CD0FAFF725510C03 /* Pods-GLRouter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GLRouter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		76E1DC1B47D81E2F74B1B4D245C4C188 /* WDYExtensions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WDYExtensions.xcconfig; sourceTree = "<group>"; };
+		7CBB2FD96C1E9266F583A6D74D531B25 /* NSObject+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Extension.m"; path = "WDYExtensions/Classes/NS/NSObject+Extension.m"; sourceTree = "<group>"; };
+		7D83B23612DFC6A8FDB0AA734D6391E7 /* libPods-GLRouter_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GLRouter_Example.a"; path = "libPods-GLRouter_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		818721C8929676FAC6F374F5141D2F7F /* Pods-GLRouter_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GLRouter_Example-resources.sh"; sourceTree = "<group>"; };
+		833BB529F17B48084C2739AFEF97282F /* Router.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Router.m; path = GLRouter/Classes/Router.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9CA6296103DA5DFD06CE59677563E89B /* UIDevice+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+Extension.h"; path = "WDYExtensions/Classes/UI/UIDevice+Extension.h"; sourceTree = "<group>"; };
+		A250FD268435340EEC194044768C8586 /* UIColor+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Extension.m"; path = "WDYExtensions/Classes/UI/UIColor+Extension.m"; sourceTree = "<group>"; };
+		A87AD2EF270F08CF0EEA5D2342CDC9CB /* Pods-GLRouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GLRouter_Example.release.xcconfig"; sourceTree = "<group>"; };
+		AA0C4D71D61514C919C829CE313F4299 /* NSString+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Extension.m"; path = "WDYExtensions/Classes/NS/NSString+Extension.m"; sourceTree = "<group>"; };
+		B57BB940F4F7A879EF91A57E365CDE67 /* UIColor+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Extension.h"; path = "WDYExtensions/Classes/UI/UIColor+Extension.h"; sourceTree = "<group>"; };
+		B9C00A7FF0ECB15371692BE088DAEBC0 /* libGLRouter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libGLRouter.a; path = libGLRouter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBF7C6EB19D5B6BC0303C08F807F4C90 /* NSData+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+Extension.h"; path = "WDYExtensions/Classes/NS/NSData+Extension.h"; sourceTree = "<group>"; };
+		BD740AE0E5CC873BBEB9CC4C268F0BBA /* UIWindow+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+Extension.m"; path = "WDYExtensions/Classes/UI/UIWindow+Extension.m"; sourceTree = "<group>"; };
+		C0753A8E325A157A1945D0655538BABE /* NSString+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Extension.h"; path = "WDYExtensions/Classes/NS/NSString+Extension.h"; sourceTree = "<group>"; };
+		C322A382CABF640CAF359736E48D84BE /* Pods-GLRouter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GLRouter_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C62F45CEDF64F44AAB3EA776F348367F /* UIAlertController+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+Extension.m"; path = "WDYExtensions/Classes/UI/UIAlertController+Extension.m"; sourceTree = "<group>"; };
+		CBC899353340C1AD638377B580862B7C /* Pods-GLRouter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GLRouter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CCFC911C34CC56B6A6C1B1B22EECF1E0 /* WDYExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WDYExtensions-dummy.m"; sourceTree = "<group>"; };
+		CF9AE75AEB959497FD515DE4833BB79A /* NSTimer+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+Extension.m"; path = "WDYExtensions/Classes/NS/NSTimer+Extension.m"; sourceTree = "<group>"; };
+		CFF4C4307081E311C5455E8A79C9AC54 /* Router.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Router.h; path = GLRouter/Classes/Router.h; sourceTree = "<group>"; };
+		E0D228FFC7253BBB162791DB82A75674 /* GLRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GLRouter-prefix.pch"; sourceTree = "<group>"; };
+		E1290AC8F9B04E3E8C56221EB804EDAB /* UIButton+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Extension.m"; path = "WDYExtensions/Classes/UI/UIButton+Extension.m"; sourceTree = "<group>"; };
+		E3F3E7385CDDC393840E10E6D8E663F6 /* libWDYExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWDYExtensions.a; path = libWDYExtensions.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5E0ACB93ACC1565C9D57BF75B004BDB /* UIApplication+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+Extension.m"; path = "WDYExtensions/Classes/UI/UIApplication+Extension.m"; sourceTree = "<group>"; };
+		E7AB988E26CDE2F93806A7C3F51E59DF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		EB48CA7B2D807E1A5CA9C3FA448E1F91 /* UINavigationController+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Extension.h"; path = "WDYExtensions/Classes/UI/UINavigationController+Extension.h"; sourceTree = "<group>"; };
+		EE9EE2088C2432B95764F45E9E4F2C1E /* UIViewController+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Extension.m"; path = "WDYExtensions/Classes/UI/UIViewController+Extension.m"; sourceTree = "<group>"; };
+		F4384FD25927240FBDCE4194565493CB /* NSObject+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Extension.h"; path = "WDYExtensions/Classes/NS/NSObject+Extension.h"; sourceTree = "<group>"; };
+		FAACBBD44E4A0F1762C215A431B7CB5E /* NSURL+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURL+Extension.h"; path = "WDYExtensions/Classes/NS/NSURL+Extension.h"; sourceTree = "<group>"; };
+		FC3C20EAC460275DB616AD08A41E89C2 /* UIDevice+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+Extension.m"; path = "WDYExtensions/Classes/UI/UIDevice+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		44217DFFC44A48C624C7CDD7784ACEF3 /* Frameworks */ = {
+		86D3BC0DC22F206B8C79A2D6C206849D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6AB51A6608E9AA1D34ADCB7C567CD01 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		901FC9C67F125270C7427D6B0055C89B /* Frameworks */ = {
+		9A2765A04FA3EFE7836B8C6E4B68F32C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E44997F689E3DB64F502B66F9860D97F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D40124169D248808C5519F783FA4E8B7 /* Frameworks */ = {
+		BD8B1152C86CE5757B571480FF1C95D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEDDFEE90762A7EE3DB25C6B3DB3815D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		118511DD0CBF0696E3D4992B9C46E250 /* Products */ = {
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				724321A788DB140C7FF603A6EAC78DC9 /* GLRouter.framework */,
-				FB2EBFFF75504478CDAEFAB81CC2BA96 /* Pods_GLRouter_Example.framework */,
-				21CF97C53F56FAE715E9ED960E6D222E /* Pods_GLRouter_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B50AC2A919D18DAABCF3E8402F88419 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9C00A7FF0ECB15371692BE088DAEBC0 /* libGLRouter.a */,
+				7D83B23612DFC6A8FDB0AA734D6391E7 /* libPods-GLRouter_Example.a */,
+				E3F3E7385CDDC393840E10E6D8E663F6 /* libWDYExtensions.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		166C3B82CF4CED2AA033C3E0EFF6BA32 /* Targets Support Files */ = {
+		50CA81F965F6CDB548317BD7D7268A1E /* WDYExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				686C6BB41BEA6435E8847947A1DDADD4 /* Pods-GLRouter_Example */,
-				BE11599CAD967F5725ABE26D2D8645CC /* Pods-GLRouter_Tests */,
+				BBF7C6EB19D5B6BC0303C08F807F4C90 /* NSData+Extension.h */,
+				1E84A6A573AF137C2FAC92F99FF0CECE /* NSData+Extension.m */,
+				4BDB6260E6D64092F248A722F1D48FB1 /* NSDate+Extension.h */,
+				4F5F97F145403168C9BDE9335A542F62 /* NSDate+Extension.m */,
+				425B9CC34AFF49335B8B1AC57783D2A0 /* NSFileManager+Extension.h */,
+				499BC27FEB4FBEC2E3E2B2AC34C899E9 /* NSFileManager+Extension.m */,
+				F4384FD25927240FBDCE4194565493CB /* NSObject+Extension.h */,
+				7CBB2FD96C1E9266F583A6D74D531B25 /* NSObject+Extension.m */,
+				C0753A8E325A157A1945D0655538BABE /* NSString+Extension.h */,
+				AA0C4D71D61514C919C829CE313F4299 /* NSString+Extension.m */,
+				5AA6AEB29DAE8AA0F446153D8B466A7D /* NSTimer+Extension.h */,
+				CF9AE75AEB959497FD515DE4833BB79A /* NSTimer+Extension.m */,
+				FAACBBD44E4A0F1762C215A431B7CB5E /* NSURL+Extension.h */,
+				2FCF1F8149B19A2E7FDDF521D84797B6 /* NSURL+Extension.m */,
+				3E9CD752ADB86F24036CB312E8E420DF /* UIAlertController+Extension.h */,
+				C62F45CEDF64F44AAB3EA776F348367F /* UIAlertController+Extension.m */,
+				5FFDF65D9E2AE84EAB13DF7F0A8CC559 /* UIApplication+Extension.h */,
+				E5E0ACB93ACC1565C9D57BF75B004BDB /* UIApplication+Extension.m */,
+				4ADB197248212ACAAFD446A49A0D3A6A /* UIButton+Extension.h */,
+				E1290AC8F9B04E3E8C56221EB804EDAB /* UIButton+Extension.m */,
+				B57BB940F4F7A879EF91A57E365CDE67 /* UIColor+Extension.h */,
+				A250FD268435340EEC194044768C8586 /* UIColor+Extension.m */,
+				9CA6296103DA5DFD06CE59677563E89B /* UIDevice+Extension.h */,
+				FC3C20EAC460275DB616AD08A41E89C2 /* UIDevice+Extension.m */,
+				5F8C791DBD5AB70C78BC68968C9E597B /* UIImage+Extension.h */,
+				0EE048C8EF8003A75F276D9E6A55E509 /* UIImage+Extension.m */,
+				EB48CA7B2D807E1A5CA9C3FA448E1F91 /* UINavigationController+Extension.h */,
+				45EB1356E3002FA742BF8D436139E74A /* UINavigationController+Extension.m */,
+				4EBDFBEAB28E3775BD7BBF96BA6C3900 /* UIResponder+Extension.h */,
+				4F6D8A3FE01FC2FEC3E4FA03F238B95C /* UIResponder+Extension.m */,
+				7101CE0705365577270D0FB1951E0AE1 /* UITableView+Extension.h */,
+				5E8B843DFA547BBDC379029E435B95A5 /* UITableView+Extension.m */,
+				162A80D3724E75611D05A29C90BF9202 /* UIView+Extension.h */,
+				3C5F90474012C3BB34328A73A640260A /* UIView+Extension.m */,
+				7193C01FBDA784827CA4074A4C611847 /* UIViewController+Extension.h */,
+				EE9EE2088C2432B95764F45E9E4F2C1E /* UIViewController+Extension.m */,
+				1B9DAD5E4C8D81644AC074A51DDE9E30 /* UIWindow+Extension.h */,
+				BD740AE0E5CC873BBEB9CC4C268F0BBA /* UIWindow+Extension.m */,
+				C60E2E5B5409ADAEF42A50F192DB4C25 /* Support Files */,
 			);
-			name = "Targets Support Files";
+			name = WDYExtensions;
+			path = WDYExtensions;
 			sourceTree = "<group>";
 		};
-		43BE49296293ECDBFCBC19087B5B242A /* Support Files */ = {
+		780A16F800B009A7485E1154C69CE907 /* Pods-GLRouter_Example */ = {
 			isa = PBXGroup;
 			children = (
-				1FF1BFF61FE2BA49FBB7ED9FBB724B59 /* GLRouter.modulemap */,
-				95744EF6B117C2FB739E93CE74B9121E /* GLRouter.xcconfig */,
-				60E0BB341DBF7841DE923A729D43CB3D /* GLRouter-dummy.m */,
-				4DCF14DA64F5C2FBEA2717B04DB3B317 /* GLRouter-prefix.pch */,
-				10E2D4F60C862DCD9A9B5789E080AA82 /* GLRouter-umbrella.h */,
-				22D050A0878FCB085D461782E040EAD8 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/GLRouter";
-			sourceTree = "<group>";
-		};
-		530D00E86DEB0BBDB70A8F5F17B8AADB /* GLRouter */ = {
-			isa = PBXGroup;
-			children = (
-				CA56EF87219406D30028B28D /* Router.h */,
-				CA56EF88219406D30028B28D /* Router.m */,
-				CA56EF89219406D30028B28D /* RouterProtocol.h */,
-				569C066D61E5DC89F2F84AB460830D33 /* Pod */,
-				43BE49296293ECDBFCBC19087B5B242A /* Support Files */,
-			);
-			name = GLRouter;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		5427F41CDE936A7052D88C78009DE35E /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				530D00E86DEB0BBDB70A8F5F17B8AADB /* GLRouter */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		569C066D61E5DC89F2F84AB460830D33 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				DBF0E5E4FA461ACB481502EE137F62CA /* GLRouter.podspec */,
-				02C7DCD895DAFAEF6ABC3B4E1A068021 /* LICENSE */,
-				75C97A1CE848FFE381525F7C7F985B7C /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		686C6BB41BEA6435E8847947A1DDADD4 /* Pods-GLRouter_Example */ = {
-			isa = PBXGroup;
-			children = (
-				45E22EAF4A5279DEC423EAFF93A6B6B5 /* Info.plist */,
-				35DFE8001411B6D8EF4AB551550DDB6B /* Pods-GLRouter_Example.modulemap */,
-				BAF3D230905CDF0641671796C720EC8B /* Pods-GLRouter_Example-acknowledgements.markdown */,
-				8C1D83EED922F51B2476EFCBA79F3F61 /* Pods-GLRouter_Example-acknowledgements.plist */,
-				9AC014C8975F3DD6AE35BEA4D92F32C1 /* Pods-GLRouter_Example-dummy.m */,
-				A4C8C78EA9EE9912178B6E00EE578246 /* Pods-GLRouter_Example-frameworks.sh */,
-				B5980462D697C748BFADCEE64EADFCCA /* Pods-GLRouter_Example-resources.sh */,
-				C1CAB1ADBBE7F4F9D39494FC23D52D3A /* Pods-GLRouter_Example-umbrella.h */,
-				4DA1A25EA8487CCCEE8417B5D28F57AD /* Pods-GLRouter_Example.debug.xcconfig */,
-				B57A497AD36E740218712649838B8164 /* Pods-GLRouter_Example.release.xcconfig */,
+				CBC899353340C1AD638377B580862B7C /* Pods-GLRouter_Example-acknowledgements.markdown */,
+				74A8068ACA0C4331CD0FAFF725510C03 /* Pods-GLRouter_Example-acknowledgements.plist */,
+				6F904AF6065EF624BA35234E6B667EFF /* Pods-GLRouter_Example-dummy.m */,
+				C322A382CABF640CAF359736E48D84BE /* Pods-GLRouter_Example-frameworks.sh */,
+				818721C8929676FAC6F374F5141D2F7F /* Pods-GLRouter_Example-resources.sh */,
+				1F350E89325FC24161654A2EDF4B7DB1 /* Pods-GLRouter_Example.debug.xcconfig */,
+				A87AD2EF270F08CF0EEA5D2342CDC9CB /* Pods-GLRouter_Example.release.xcconfig */,
 			);
 			name = "Pods-GLRouter_Example";
 			path = "Target Support Files/Pods-GLRouter_Example";
@@ -200,79 +242,174 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				5427F41CDE936A7052D88C78009DE35E /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				118511DD0CBF0696E3D4992B9C46E250 /* Products */,
-				166C3B82CF4CED2AA033C3E0EFF6BA32 /* Targets Support Files */,
+				9E34FB36A64E1DBCF377F785FFD85EF6 /* Development Pods */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				F0C8986EE559409058711E6D806794B5 /* Pods */,
+				4B50AC2A919D18DAABCF3E8402F88419 /* Products */,
+				8FB0DD07D9F05952C1B1300F90CB1C40 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		8FB0DD07D9F05952C1B1300F90CB1C40 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+				780A16F800B009A7485E1154C69CE907 /* Pods-GLRouter_Example */,
 			);
-			name = Frameworks;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BE11599CAD967F5725ABE26D2D8645CC /* Pods-GLRouter_Tests */ = {
+		989883E617A09988581CB84B62A39034 /* GLRouter */ = {
 			isa = PBXGroup;
 			children = (
-				8C626A44DA4B209E9358A9AC84B6A868 /* Info.plist */,
-				0867429C2D912E314E6566E32B65C52A /* Pods-GLRouter_Tests.modulemap */,
-				DFB3DD8D21AE1CCEB3AB8A0F3D272F06 /* Pods-GLRouter_Tests-acknowledgements.markdown */,
-				CC7BCEE5FF0BA10D420C644BA603C648 /* Pods-GLRouter_Tests-acknowledgements.plist */,
-				DC52A1CF92194B4BC2CB4F2FACB5AB98 /* Pods-GLRouter_Tests-dummy.m */,
-				C262ADB5098C6031E8D0A5C72FBACC77 /* Pods-GLRouter_Tests-frameworks.sh */,
-				53A4E3DBF49C405CB1F066E0259F2558 /* Pods-GLRouter_Tests-resources.sh */,
-				1CE3C4C0C41D84ABAFFA590BB3B8191D /* Pods-GLRouter_Tests-umbrella.h */,
-				7E5863AD23B4D072F93180E1ECEC4428 /* Pods-GLRouter_Tests.debug.xcconfig */,
-				0B967B1BF471AA0C2B23B1EE6BA4E692 /* Pods-GLRouter_Tests.release.xcconfig */,
+				CFF4C4307081E311C5455E8A79C9AC54 /* Router.h */,
+				833BB529F17B48084C2739AFEF97282F /* Router.m */,
+				19477108E2371B14970EDAE2D7EE9A67 /* RouterProtocol.h */,
+				D7B36061CFDC97B74547AE862F1D70E7 /* Pod */,
+				A123D3191847FA2DBBCC66E0C08D7E59 /* Support Files */,
 			);
-			name = "Pods-GLRouter_Tests";
-			path = "Target Support Files/Pods-GLRouter_Tests";
+			name = GLRouter;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		9E34FB36A64E1DBCF377F785FFD85EF6 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				989883E617A09988581CB84B62A39034 /* GLRouter */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A123D3191847FA2DBBCC66E0C08D7E59 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4864B4F477470D9EFFBDA8364C9F89CC /* GLRouter.xcconfig */,
+				0634C14C7F77310E84D4E6AF4DB818F3 /* GLRouter-dummy.m */,
+				E0D228FFC7253BBB162791DB82A75674 /* GLRouter-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GLRouter";
+			sourceTree = "<group>";
+		};
+		C60E2E5B5409ADAEF42A50F192DB4C25 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				76E1DC1B47D81E2F74B1B4D245C4C188 /* WDYExtensions.xcconfig */,
+				CCFC911C34CC56B6A6C1B1B22EECF1E0 /* WDYExtensions-dummy.m */,
+				2CB60BA10C36F0957C590939421A0697 /* WDYExtensions-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WDYExtensions";
+			sourceTree = "<group>";
+		};
+		D7B36061CFDC97B74547AE862F1D70E7 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				21DC5A5BC74B205E8724EC65C47CBBFC /* GLRouter.podspec */,
+				72C16800E8B0DE05ED23B3BC139E6533 /* LICENSE */,
+				E7AB988E26CDE2F93806A7C3F51E59DF /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		F0C8986EE559409058711E6D806794B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50CA81F965F6CDB548317BD7D7268A1E /* WDYExtensions */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		60553710AC372BCA17848250A9FCA3E4 /* Headers */ = {
+		3485C6FE221EC2333B6A4506404EBACD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11285C31C59BADD9A24353799C4A32A0 /* GLRouter-umbrella.h in Headers */,
-				CA56EF8A219406D30028B28D /* Router.h in Headers */,
-				CA56EF8C219406D30028B28D /* RouterProtocol.h in Headers */,
+				21408AE273B2554B10AAD62DBF6EE3CA /* Router.h in Headers */,
+				3DCCE5EB19FADC411AE5D1890FCA4F33 /* RouterProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81F0AF716B6B75459F153E7DAC9B0035 /* Headers */ = {
+		FE1DF855EE44EF95D1456C051A99A8E0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30858FF19416FDF20BFEE5778C6A06C7 /* Pods-GLRouter_Tests-umbrella.h in Headers */,
+				0CB633C0448891FFAFF6791D4E456494 /* NSData+Extension.h in Headers */,
+				88C628A6CBCD9A260B3255502C40CDB5 /* NSDate+Extension.h in Headers */,
+				D7D5308A94A1C918322F148ACAA169C2 /* NSFileManager+Extension.h in Headers */,
+				8DFE436450D455CB0B84D80B2B184AAC /* NSObject+Extension.h in Headers */,
+				1AE2E6B2846DF4C5CCCE5FB74113BB11 /* NSString+Extension.h in Headers */,
+				DD7F6CCE30298B34BF63AAAB973B7A9E /* NSTimer+Extension.h in Headers */,
+				C23F343F3D6E9DA7A8C3BB8D942CE702 /* NSURL+Extension.h in Headers */,
+				5E2CD586A48D111C76377D32D1F36C07 /* UIAlertController+Extension.h in Headers */,
+				711629C3F79D61C123F0F1CED5475841 /* UIApplication+Extension.h in Headers */,
+				A0F5FCBA1C774721F1E04625901AF13D /* UIButton+Extension.h in Headers */,
+				8FEDFFA79A93F0696666BBA236EC0CA0 /* UIColor+Extension.h in Headers */,
+				8D5F8A1F649D414B1613DB8CD15C2326 /* UIDevice+Extension.h in Headers */,
+				EC82802C238EF366AA651824BE46404F /* UIImage+Extension.h in Headers */,
+				F9B3F9B8C7EB778A049FE57DA67C27B6 /* UINavigationController+Extension.h in Headers */,
+				9A915B2C8A2338EB2F72AEF0CC8EC3E6 /* UIResponder+Extension.h in Headers */,
+				623BA820F1C5C06F615772CBE60563CF /* UITableView+Extension.h in Headers */,
+				C99B78A3163D991F618E0F654C97DB14 /* UIView+Extension.h in Headers */,
+				776F33FC00AEB1786601FDCF62973059 /* UIViewController+Extension.h in Headers */,
+				BA51017D758A78376668CA40183B648D /* UIWindow+Extension.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A36BE4BF91C9DDE76051E3EC95AEE6B /* Headers */ = {
+		FE52DA112153690641B2E57696957596 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BEB953FA7492C61778C945EC2DB0A6C /* Pods-GLRouter_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AA65CD6FE4FBD5AAA7757EEC88D33390 /* GLRouter */ = {
+		1EB00A33120F9DEDAD4CB6A288D2A4BB /* WDYExtensions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEBAB23D99958D1678F15CCEE26D0014 /* Build configuration list for PBXNativeTarget "GLRouter" */;
+			buildConfigurationList = F5AB876ACFA2D5B4CDED1A2707F75AA3 /* Build configuration list for PBXNativeTarget "WDYExtensions" */;
 			buildPhases = (
-				60553710AC372BCA17848250A9FCA3E4 /* Headers */,
-				18738BF878FF57DA8CDD378AA98083C0 /* Sources */,
-				44217DFFC44A48C624C7CDD7784ACEF3 /* Frameworks */,
-				0B74A5D0BA683B4748BA851D585955F1 /* Resources */,
+				FE1DF855EE44EF95D1456C051A99A8E0 /* Headers */,
+				240F6793D67E9B327F133D53425C6F85 /* Sources */,
+				BD8B1152C86CE5757B571480FF1C95D3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WDYExtensions;
+			productName = WDYExtensions;
+			productReference = E3F3E7385CDDC393840E10E6D8E663F6 /* libWDYExtensions.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A5352E5F41E387CC824CB2FE4315FBD5 /* Pods-GLRouter_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5977D10A66392A13F80E83DF83D382F /* Build configuration list for PBXNativeTarget "Pods-GLRouter_Example" */;
+			buildPhases = (
+				FE52DA112153690641B2E57696957596 /* Headers */,
+				462EA880533841F1B324CEED1BD11004 /* Sources */,
+				86D3BC0DC22F206B8C79A2D6C206849D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5AD079BFE148CD570A4A9171A339DAE /* PBXTargetDependency */,
+				548D0EF7E9F2CE95B58E63F24C77DAD6 /* PBXTargetDependency */,
+			);
+			name = "Pods-GLRouter_Example";
+			productName = "Pods-GLRouter_Example";
+			productReference = 7D83B23612DFC6A8FDB0AA734D6391E7 /* libPods-GLRouter_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F60377AFF2FA044119FE8E5A81F0B36C /* GLRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2E76E0EC0005F14E682C24BD9C99A64 /* Build configuration list for PBXNativeTarget "GLRouter" */;
+			buildPhases = (
+				3485C6FE221EC2333B6A4506404EBACD /* Headers */,
+				2A23BDC44C3815AD449335AB1C6301F7 /* Sources */,
+				9A2765A04FA3EFE7836B8C6E4B68F32C /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -280,46 +417,8 @@
 			);
 			name = GLRouter;
 			productName = GLRouter;
-			productReference = 724321A788DB140C7FF603A6EAC78DC9 /* GLRouter.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CC4406DBC9B5D3CFE58C4B203BF7552D /* Pods-GLRouter_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4D708DF242905A875240DD5CDCFDE2CF /* Build configuration list for PBXNativeTarget "Pods-GLRouter_Example" */;
-			buildPhases = (
-				8A36BE4BF91C9DDE76051E3EC95AEE6B /* Headers */,
-				F572D0363681321F85E2A65D61CF3686 /* Sources */,
-				901FC9C67F125270C7427D6B0055C89B /* Frameworks */,
-				AF7A7F300EA2C0AC2D034721B06E23BB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A0EF5AB98DA374AC62B38EC40092AA95 /* PBXTargetDependency */,
-			);
-			name = "Pods-GLRouter_Example";
-			productName = "Pods-GLRouter_Example";
-			productReference = FB2EBFFF75504478CDAEFAB81CC2BA96 /* Pods_GLRouter_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D9388C4E199C2228E43E29E77D0A460A /* Pods-GLRouter_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CCAB28B776D92E713AA775BABDC566A7 /* Build configuration list for PBXNativeTarget "Pods-GLRouter_Tests" */;
-			buildPhases = (
-				81F0AF716B6B75459F153E7DAC9B0035 /* Headers */,
-				9BC1A75BD5241EBDD5ACE47222F4EE76 /* Sources */,
-				D40124169D248808C5519F783FA4E8B7 /* Frameworks */,
-				78332E1436CE47166DFBB96DA8E95676 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3A5BA3A1A6984A94E334B8E4CA867D26 /* PBXTargetDependency */,
-			);
-			name = "Pods-GLRouter_Tests";
-			productName = "Pods-GLRouter_Tests";
-			productReference = 21CF97C53F56FAE715E9ED960E6D222E /* Pods_GLRouter_Tests.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = B9C00A7FF0ECB15371692BE088DAEBC0 /* libGLRouter.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -338,86 +437,197 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 118511DD0CBF0696E3D4992B9C46E250 /* Products */;
+			productRefGroup = 4B50AC2A919D18DAABCF3E8402F88419 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA65CD6FE4FBD5AAA7757EEC88D33390 /* GLRouter */,
-				CC4406DBC9B5D3CFE58C4B203BF7552D /* Pods-GLRouter_Example */,
-				D9388C4E199C2228E43E29E77D0A460A /* Pods-GLRouter_Tests */,
+				F60377AFF2FA044119FE8E5A81F0B36C /* GLRouter */,
+				A5352E5F41E387CC824CB2FE4315FBD5 /* Pods-GLRouter_Example */,
+				1EB00A33120F9DEDAD4CB6A288D2A4BB /* WDYExtensions */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		0B74A5D0BA683B4748BA851D585955F1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78332E1436CE47166DFBB96DA8E95676 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AF7A7F300EA2C0AC2D034721B06E23BB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		18738BF878FF57DA8CDD378AA98083C0 /* Sources */ = {
+		240F6793D67E9B327F133D53425C6F85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32D47CF05C3B485714994A4B2F36E732 /* GLRouter-dummy.m in Sources */,
-				CA56EF8B219406D30028B28D /* Router.m in Sources */,
+				0230FF21BEFBE6C7ECC9938FC48E7B9B /* NSData+Extension.m in Sources */,
+				BDFA20BBC9F66292287CB7C2D47DD985 /* NSDate+Extension.m in Sources */,
+				201438B999318A1F28286D8A687166CA /* NSFileManager+Extension.m in Sources */,
+				E7E21548F7EE4F8966C931E8A55FD19A /* NSObject+Extension.m in Sources */,
+				F2468DBD12801EBCF0459CDF66F78C07 /* NSString+Extension.m in Sources */,
+				80C07CC191CB1D1DC630A4840391AEA9 /* NSTimer+Extension.m in Sources */,
+				55E67F7945F9F66B9FD81F8B3E37DD33 /* NSURL+Extension.m in Sources */,
+				2ED965721ABC0D2401F881B41C8937D8 /* UIAlertController+Extension.m in Sources */,
+				6B5E79EE2785B94A0E083C0B2AA2B324 /* UIApplication+Extension.m in Sources */,
+				7646FA3D06445E19964D598421409CC8 /* UIButton+Extension.m in Sources */,
+				A7E7E412792B787FAB977C9920663680 /* UIColor+Extension.m in Sources */,
+				2276DDA54699E1A814FD7A3F5F01B06A /* UIDevice+Extension.m in Sources */,
+				DAF279E1EAB1E898E58A871B53F0E308 /* UIImage+Extension.m in Sources */,
+				6858D7EB97F94251A7EC7E30037FE3D7 /* UINavigationController+Extension.m in Sources */,
+				200C5535ACC1B241B5194DE3E036BDDB /* UIResponder+Extension.m in Sources */,
+				05EADF2D1AA05DFAE651027B95D1DE6C /* UITableView+Extension.m in Sources */,
+				5160DA45FD01BF07C9D08191F67700D1 /* UIView+Extension.m in Sources */,
+				0AC676EA20D597C847CA309BCF9D74ED /* UIViewController+Extension.m in Sources */,
+				FE50C53F36E056D0C13E40685FD1659D /* UIWindow+Extension.m in Sources */,
+				6A8C72FBEC56B4DCBD450EEB196790FD /* WDYExtensions-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BC1A75BD5241EBDD5ACE47222F4EE76 /* Sources */ = {
+		2A23BDC44C3815AD449335AB1C6301F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6360585A3AEF505F12D0756F1F7E9AF /* Pods-GLRouter_Tests-dummy.m in Sources */,
+				03A14A20E0B1700F7870ABACD4734FEC /* GLRouter-dummy.m in Sources */,
+				03623C05270832FE0D421C5A2098D3C6 /* Router.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F572D0363681321F85E2A65D61CF3686 /* Sources */ = {
+		462EA880533841F1B324CEED1BD11004 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06C17C0D3D3F85F79574AC6C0A735E5C /* Pods-GLRouter_Example-dummy.m in Sources */,
+				3DB0FFA9FDE254B5DB14FA1549D824B3 /* Pods-GLRouter_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3A5BA3A1A6984A94E334B8E4CA867D26 /* PBXTargetDependency */ = {
+		548D0EF7E9F2CE95B58E63F24C77DAD6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-GLRouter_Example";
-			target = CC4406DBC9B5D3CFE58C4B203BF7552D /* Pods-GLRouter_Example */;
-			targetProxy = 09882C8434334ED75212C511D979414B /* PBXContainerItemProxy */;
+			name = WDYExtensions;
+			target = 1EB00A33120F9DEDAD4CB6A288D2A4BB /* WDYExtensions */;
+			targetProxy = 1541A82DF928AD1CE5A4ADA2937619F5 /* PBXContainerItemProxy */;
 		};
-		A0EF5AB98DA374AC62B38EC40092AA95 /* PBXTargetDependency */ = {
+		F5AD079BFE148CD570A4A9171A339DAE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GLRouter;
-			target = AA65CD6FE4FBD5AAA7757EEC88D33390 /* GLRouter */;
-			targetProxy = 37F7EFCB9980F80D6DBCA71E024E3555 /* PBXContainerItemProxy */;
+			target = F60377AFF2FA044119FE8E5A81F0B36C /* GLRouter */;
+			targetProxy = 29466CE8D57612BC3CC97B75E572562B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		56A05ADD3BABDA1B56D1F979845809B1 /* Release */ = {
+		06542119CB4700E63A219496B5E92FE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4864B4F477470D9EFFBDA8364C9F89CC /* GLRouter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/GLRouter/GLRouter-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = GLRouter;
+				PRODUCT_NAME = GLRouter;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21551F313746F61308B01E3103551E12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76E1DC1B47D81E2F74B1B4D245C4C188 /* WDYExtensions.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/WDYExtensions/WDYExtensions-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = WDYExtensions;
+				PRODUCT_NAME = WDYExtensions;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		221FDFE28EDE4CD379430AF5DB1F42E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76E1DC1B47D81E2F74B1B4D245C4C188 /* WDYExtensions.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/WDYExtensions/WDYExtensions-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = WDYExtensions;
+				PRODUCT_NAME = WDYExtensions;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		434CFF040BBF15A0BE5BA82952AFA5CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4864B4F477470D9EFFBDA8364C9F89CC /* GLRouter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/GLRouter/GLRouter-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = GLRouter;
+				PRODUCT_NAME = GLRouter;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A1C65986117CC22817392975BCBA6F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A87AD2EF270F08CF0EEA5D2342CDC9CB /* Pods-GLRouter_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96434B6C8FF320C976A10DAD7174A4BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -467,7 +677,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -476,169 +686,7 @@
 			};
 			name = Release;
 		};
-		6E5BAC0BC654E1B0B36ED912A682D23E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95744EF6B117C2FB739E93CE74B9121E /* GLRouter.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GLRouter/GLRouter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GLRouter/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GLRouter/GLRouter.modulemap";
-				PRODUCT_MODULE_NAME = GLRouter;
-				PRODUCT_NAME = GLRouter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		71EF2894B372FC36E02BFDBA41D99747 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B57A497AD36E740218712649838B8164 /* Pods-GLRouter_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GLRouter_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GLRouter_Example/Pods-GLRouter_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7DA5AD1A28B862E554AA7BC460BC9ED6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95744EF6B117C2FB739E93CE74B9121E /* GLRouter.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GLRouter/GLRouter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GLRouter/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GLRouter/GLRouter.modulemap";
-				PRODUCT_MODULE_NAME = GLRouter;
-				PRODUCT_NAME = GLRouter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8A29B707F5997C1A17C6587AAE73FABF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E5863AD23B4D072F93180E1ECEC4428 /* Pods-GLRouter_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GLRouter_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GLRouter_Tests/Pods-GLRouter_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BD628BDE4FA42C8037FB1E070349DA1B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B967B1BF471AA0C2B23B1EE6BA4E692 /* Pods-GLRouter_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GLRouter_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GLRouter_Tests/Pods-GLRouter_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BEFDB93BF207328A04F1220475D02C3B /* Debug */ = {
+		D11C82AF2204B41B80412B8DC9C1D652 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -691,7 +739,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -702,36 +750,24 @@
 			};
 			name = Debug;
 		};
-		E40DFF687EA0D8943A8EDB4391B801C5 /* Debug */ = {
+		D15455926CB95E69D217467B0EBC4DA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DA1A25EA8487CCCEE8417B5D28F57AD /* Pods-GLRouter_Example.debug.xcconfig */;
+			baseConfigurationReference = 1F350E89325FC24161654A2EDF4B7DB1 /* Pods-GLRouter_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GLRouter_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GLRouter_Example/Pods-GLRouter_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -741,35 +777,35 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BEFDB93BF207328A04F1220475D02C3B /* Debug */,
-				56A05ADD3BABDA1B56D1F979845809B1 /* Release */,
+				D11C82AF2204B41B80412B8DC9C1D652 /* Debug */,
+				96434B6C8FF320C976A10DAD7174A4BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4D708DF242905A875240DD5CDCFDE2CF /* Build configuration list for PBXNativeTarget "Pods-GLRouter_Example" */ = {
+		B2E76E0EC0005F14E682C24BD9C99A64 /* Build configuration list for PBXNativeTarget "GLRouter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E40DFF687EA0D8943A8EDB4391B801C5 /* Debug */,
-				71EF2894B372FC36E02BFDBA41D99747 /* Release */,
+				06542119CB4700E63A219496B5E92FE2 /* Debug */,
+				434CFF040BBF15A0BE5BA82952AFA5CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CCAB28B776D92E713AA775BABDC566A7 /* Build configuration list for PBXNativeTarget "Pods-GLRouter_Tests" */ = {
+		B5977D10A66392A13F80E83DF83D382F /* Build configuration list for PBXNativeTarget "Pods-GLRouter_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8A29B707F5997C1A17C6587AAE73FABF /* Debug */,
-				BD628BDE4FA42C8037FB1E070349DA1B /* Release */,
+				D15455926CB95E69D217467B0EBC4DA6 /* Debug */,
+				5A1C65986117CC22817392975BCBA6F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEBAB23D99958D1678F15CCEE26D0014 /* Build configuration list for PBXNativeTarget "GLRouter" */ = {
+		F5AB876ACFA2D5B4CDED1A2707F75AA3 /* Build configuration list for PBXNativeTarget "WDYExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7DA5AD1A28B862E554AA7BC460BC9ED6 /* Debug */,
-				6E5BAC0BC654E1B0B36ED912A682D23E /* Release */,
+				221FDFE28EDE4CD379430AF5DB1F42E8 /* Debug */,
+				21551F313746F61308B01E3103551E12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

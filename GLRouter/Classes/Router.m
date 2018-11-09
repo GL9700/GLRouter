@@ -11,40 +11,50 @@
 #import <UIKit/UIKit.h>
 #import <objc/message.h>
 
-#define kRouter [Router manager]
-
 @interface Router()
-@property (nonatomic , strong) NSMutableDictionary *routerList;
 @property (nonatomic , strong) NSString *scheme;
 @end
 
+static Router *instance;
 @implementation Router
-+ (instancetype)manager {
-    static Router *instance;
+
++ (instancetype)RouterWithScheme:(NSString *)scheme {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [[Router alloc]init];
+        instance.scheme = scheme;
     });
     return instance;
 }
 
-+ (void)openURL:(NSString *)url form:(UIResponder *)from before:(void(^)(id targetController))handle {
++ (void)openURL:(NSString *)url form:(UIResponder *)from before:(void(^)(id targetController))handle after:(void(^)(id ret))after {
+    NSAssert(instance, @"need [+ RouterWithScheme:] before invoke this method");
     
-    NSURLComponents *comp = [NSURLComponents componentsWithString:url];
-    if(comp==nil) return;
-    NSString *type = comp.host;
-    NSString *className = [comp.path substringFromIndex:1];
-    if(className==nil) return;
+    NSString *scheme, *host, *path;
     NSMutableDictionary *variables = [NSMutableDictionary dictionary];
-    for (NSURLQueryItem *queryItem in comp.queryItems) {
-        [variables setObject:queryItem.value forKey:queryItem.name];
+    NSScanner *scan = [NSScanner scannerWithString:url];
+    [scan scanUpToString:@"://" intoString:&scheme];
+    [scan scanString:@"://" intoString:nil];
+    [scan scanUpToString:@"/" intoString:&host];
+    [scan scanString:@"/" intoString:nil];
+    [scan scanUpToString:@"?" intoString:&path];
+    [scan scanString:@"?" intoString:nil];
+    while (!scan.isAtEnd) {
+        NSString *key, *value;
+        [scan scanUpToString:@"=" intoString:&key];
+        [scan scanString:@"=" intoString:nil];
+        [scan scanUpToString:@"&" intoString:&value];
+        [scan scanString:@"&" intoString:nil];
+        variables[key] = value;
     }
+    host = [host lowercaseString];
     
-    if([[type lowercaseString] isEqualToString:@"push"] || [[type lowercaseString] isEqualToString:@"present"]) {
-        if(className==nil || ![NSClassFromString(className) conformsToProtocol:@protocol(RouterProtocol)]) return;
-        UIViewController *target = [[NSClassFromString(className) alloc]initWithRouterWithParams:variables];
+    if([host isEqualToString:@"push"] || [host isEqualToString:@"present"])
+    {
+        if(path==nil || ![NSClassFromString(path) conformsToProtocol:@protocol(RouterProtocol)]) return;
+        UIViewController *target = [[NSClassFromString(path) alloc]initWithRouterWithParams:variables];
         if(handle) handle(target);
-            if([[type lowercaseString] isEqualToString:@"push"]) {
+            if([host isEqualToString:@"push"]) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 UIResponder *nav;
                 if(from) {
@@ -57,7 +67,9 @@
                     while (rootvc.navigationController==nil) {
                         if([rootvc isKindOfClass:[UITabBarController class]]) {
                             rootvc = ((UITabBarController *)rootvc).selectedViewController;
-                        }else{
+                        }else if([rootvc isKindOfClass:[UINavigationController class]]){
+                            rootvc = ((UINavigationController *)rootvc).topViewController;
+                        }else {
                             break;
                         }
                     }
@@ -81,22 +93,76 @@
             });
         }
         
-    } else if([[type lowercaseString] isEqualToString:@"invoke"]) {
-        Class targetClass = NSClassFromString(className);
+    }
+    else if([host isEqualToString:@"invoke"])
+    {
+        Class targetClass = NSClassFromString(path);
         NSString *method = variables[@"method"];
         if(!method) return;
         [variables removeObjectForKey:@"method"];
         NSMethodSignature *methodsignature = [targetClass methodSignatureForSelector:NSSelectorFromString(method)];
         if(!methodsignature) return;
+        const char *rt = methodsignature.methodReturnType;
+        NSUInteger rl = methodsignature.methodReturnLength;
         NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:methodsignature];
         __block int i=2;
         [variables enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-            [invocation setArgument:&obj atIndex:i++];
+            const char *at = [methodsignature getArgumentTypeAtIndex:i];
+            if(!strcmp(at, @encode(uint))){
+                uint temp = [obj unsignedIntValue];
+               [invocation setArgument:&temp atIndex:i++];
+            }else if(!strcmp(at, @encode(int))){
+                int temp = [obj intValue];
+                [invocation setArgument:&temp atIndex:i++];
+            }else if(!strcmp(at, @encode(float))){
+                float temp = [obj floatValue];
+                [invocation setArgument:&temp atIndex:i++];
+            }else if(!strcmp(at, @encode(double))){
+                double temp = [obj doubleValue];
+                [invocation setArgument:&temp atIndex:i++];
+            }else if(!strcmp(at, @encode(NSUInteger))){
+                NSUInteger temp = [obj unsignedIntegerValue];
+                [invocation setArgument:&temp atIndex:i++];
+            }else if(!strcmp(at, @encode(NSInteger))){
+                NSInteger temp = [obj integerValue];
+                [invocation setArgument:&temp atIndex:i++];
+            }else if(!strcmp(at, @encode(BOOL))){
+                BOOL temp = [obj boolValue];
+                [invocation setArgument:&temp atIndex:i++];
+            }else if(!strcmp(at, @encode(char))){
+                char temp = [obj charValue];
+                [invocation setArgument:&temp atIndex:i++];
+            }else{
+                [invocation setArgument:&obj atIndex:i++];
+            }
         }];
         invocation.target = targetClass;
         invocation.selector = NSSelectorFromString(method);
         [invocation invoke];
         
+        id ret;
+        if (!strcmp(rt, @encode(void))){
+            ret = nil;
+        }else if (!strcmp(rt, @encode(id))){
+            [invocation getReturnValue:&ret];
+        }else{
+            void *temp = (void *)malloc(rl);
+            [invocation getReturnValue:temp];
+            if (!strcmp(rt, @encode(BOOL))) {
+                ret = [NSNumber numberWithBool:*((BOOL *)temp)];
+            }else if(!strcmp(rt, @encode(NSInteger))){
+                ret = [NSNumber numberWithInteger:*((NSInteger *)temp)];
+            }else if(!strcmp(rt, @encode(int))){
+                ret = [NSNumber numberWithInteger:*((int *)temp)];
+            }else if(!strcmp(rt, @encode(float))){
+                ret = [NSNumber numberWithInteger:*((float *)temp)];
+            }else if(!strcmp(rt, @encode(double))){
+                ret = [NSNumber numberWithInteger:*((double *)temp)];
+            }
+        }
+        if(after){
+            after(ret);
+        }
     }
 }
 @end

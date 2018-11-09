@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#define kRouter [Router manager]
 
 typedef enum : NSUInteger {
     push,
@@ -27,6 +28,8 @@ typedef enum : NSUInteger {
  * [Router openURL:@"router://invoke/ViewController?methodName=sayMessage&msg=ThisContentMessage"];
  *
  */
-+ (void)openURL:(NSString *)url form:(UIResponder *)from before:(void(^)(id targetController))handle;
+
++ (instancetype)RouterWithScheme:(NSString *)scheme;
++ (void)openURL:(NSString *)url form:(UIResponder *)from before:(void(^)(id targetController))handle after:(void(^)(id ret))after;
 
 @end
