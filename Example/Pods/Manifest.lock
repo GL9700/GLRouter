@@ -1,23 +1,30 @@
 PODS:
-  - GLRouter (0.0.1)
+  - GLRouter (0.1.0)
+  - SDWebImage (5.8.0):
+    - SDWebImage/Core (= 5.8.0)
+  - SDWebImage/Core (5.8.0)
   - WDYExtensions (0.0.1)
 
 DEPENDENCIES:
   - GLRouter (from `../`)
+  - SDWebImage
   - WDYExtensions
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - WDYExtensions
+  trunk:
+    - SDWebImage
 
 EXTERNAL SOURCES:
   GLRouter:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GLRouter: 10bcad2d7ce5c18bea54d838909f3d761a0b4036
+  GLRouter: 78c76b83500a200c6f5efa753f6f536d648115a0
+  SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
   WDYExtensions: fa7ea4669d532413c2a866be0d336ded3dbf2aff
 
-PODFILE CHECKSUM: 8693d2dc9693615d4fe1e9a8667e2d7525ef34c8
+PODFILE CHECKSUM: 6328ec18dd5954c6653ec36f661a1c402f7df6f2
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.9.3

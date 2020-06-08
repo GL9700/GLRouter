@@ -8,13 +8,12 @@
 
 #import "GLAppDelegate.h"
 #import "GLTabBarController.h"
-#import <Router.h>
 
 @implementation GLAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [Router RouterWithScheme:@"GLRT"];
+    [Router RouterWithScheme:kRouterScheme];
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
     

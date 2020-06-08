@@ -3,4 +3,5 @@
 target 'GLRouter_Example' do
   pod 'GLRouter', :path => '../'
   pod 'WDYExtensions'
+  pod 'SDWebImage'
 end

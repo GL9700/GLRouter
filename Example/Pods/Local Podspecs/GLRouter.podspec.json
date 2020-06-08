@@ -1,6 +1,6 @@
 {
   "name": "GLRouter",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "summary": "A short description of GLRouter.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/GL9700/GLRouter",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/GL9700/GLRouter.git",
-    "tag": "0.0.1"
+    "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"

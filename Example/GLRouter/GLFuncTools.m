@@ -1,15 +1,18 @@
 //
-//  GLTimeShow.m
+//  GLFuncTools.m
 //  GLRouter_Example
 //
 //  Created by liguoliang on 2018/11/8.
 //  Copyright © 2018 liandyii@msn.com. All rights reserved.
 //
 
-#import "GLTimeShow.h"
+#import "GLFuncTools.h"
 #import <UIAlertController+Extension.h>
 
-@implementation GLTimeShow
+@implementation GLFuncTools
++ (NSDate *)whatistheTime {
+    return [NSDate date];
+}
 + (void)toastTime {
     [UIAlertController showToastWithMessage:[NSString stringWithFormat:@"%@" , [NSDate date]]];
 }

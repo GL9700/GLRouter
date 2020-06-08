@@ -1,5 +1,5 @@
 //
-//  GLTimeShow.h
+//  GLFuncTools.h
 //  GLRouter_Example
 //
 //  Created by liguoliang on 2018/11/8.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GLTimeShow : NSObject
+@interface GLFuncTools : NSObject
 
 @end
 

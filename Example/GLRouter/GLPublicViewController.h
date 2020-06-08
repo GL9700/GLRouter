@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <RouterProtocol.h>
+
 typedef void(^BLKHandle)(void);
 
 @interface GLPublicViewController : UIViewController <RouterProtocol>
