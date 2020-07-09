@@ -37,7 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0148444B87EEBC5A114FB4A8 /* GLRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLRouter.podspec; path = ../GLRouter.podspec; sourceTree = "<group>"; };
+		0148444B87EEBC5A114FB4A8 /* GLRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLRouter.podspec; path = ../GLRouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		216B0D4D24B70D1E0085BF55 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		48D37AB5F2DD8F677FFE2AB1 /* Pods-GLRouter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLRouter_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GLRouter_Tests/Pods-GLRouter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5FC0EFFAE5B8C26917FD686F /* Pods_GLRouter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GLRouter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* GLRouter_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLRouter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +150,7 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				216B0D4D24B70D1E0085BF55 /* PrefixHeader.pch */,
 			);
 			name = "Example for GLRouter";
 			path = GLRouter;
@@ -249,12 +251,19 @@
 				CLASSPREFIX = GL;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "liandyii@msn.com";
+				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 5P63THT9X2;
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "GLRouter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -434,13 +443,16 @@
 			baseConfigurationReference = A6E7849AED26A00B4C3AE8DC /* Pods-GLRouter_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5P63THT9X2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GLRouter/GLRouter-Prefix.pch";
+				GCC_PREFIX_HEADER = GLRouter/PrefixHeader.pch;
 				INFOPLIST_FILE = "GLRouter/GLRouter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = wildcard.xiaolongshangxue;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -450,13 +462,16 @@
 			baseConfigurationReference = DF46B80F5383CC58BCFDFE8E /* Pods-GLRouter_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5P63THT9X2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GLRouter/GLRouter-Prefix.pch";
+				GCC_PREFIX_HEADER = GLRouter/PrefixHeader.pch;
 				INFOPLIST_FILE = "GLRouter/GLRouter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = wildcard.xiaolongshangxue;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

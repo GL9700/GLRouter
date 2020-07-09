@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>RLogin</key>
+	<dict>
+		<key>target</key>
+		<string>[ ViewController ]</string>
+		<key>type</key>
+		<string>[ push , present , invoke ]</string>
+		<key>selector</key>
+		<string>[ Method SEL ]</string>
+		<key>params</key>
+		<array>
+			<string>first</string>
+            <string>second</string>
+		</array>
+	</dict>
+</dict>
+</plist>

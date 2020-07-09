@@ -8,7 +8,6 @@
 
 #import "GLAppDelegate.h"
 #import "GLTabBarController.h"
-#import <Router.h>
 
 @implementation GLAppDelegate
 

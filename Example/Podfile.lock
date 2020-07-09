@@ -1,5 +1,5 @@
 PODS:
-  - GLRouter (0.0.1)
+  - GLRouter (0.1.0)
   - WDYExtensions (0.0.1)
 
 DEPENDENCIES:
@@ -7,7 +7,7 @@ DEPENDENCIES:
   - WDYExtensions
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - WDYExtensions
 
 EXTERNAL SOURCES:
@@ -15,9 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GLRouter: 10bcad2d7ce5c18bea54d838909f3d761a0b4036
+  GLRouter: 78c76b83500a200c6f5efa753f6f536d648115a0
   WDYExtensions: fa7ea4669d532413c2a866be0d336ded3dbf2aff
 
 PODFILE CHECKSUM: 8693d2dc9693615d4fe1e9a8667e2d7525ef34c8
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.9.3
