@@ -1,1 +1,1 @@
-../../../WDYExtensions/WDYExtensions/Classes/NS/NSString+Extension.h
+../../../WDYExtensions/WDYExtensions/Classes/NSString+Extension.h

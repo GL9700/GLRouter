@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2183F4B0248E498A00F08F2E /* GLXIBPublicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2183F4AA248E498900F08F2E /* GLXIBPublicViewController.m */; };
+		2183F4B1248E498A00F08F2E /* GLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2183F4AB248E498900F08F2E /* GLWebViewController.m */; };
+		2183F4B2248E498A00F08F2E /* GLFuncTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2183F4AE248E498900F08F2E /* GLFuncTools.m */; };
+		2183F4B3248E498A00F08F2E /* GLXIBPublicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2183F4AF248E498900F08F2E /* GLXIBPublicViewController.xib */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -31,15 +35,20 @@
 		CAAE68E221942E3800399F25 /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CAAE68DE21942E3700399F25 /* a.jpg */; };
 		CAAE68E321942E3800399F25 /* c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CAAE68DF21942E3800399F25 /* c.jpg */; };
 		CAAE68E421942E3800399F25 /* b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CAAE68E021942E3800399F25 /* b.jpg */; };
-		CAAE68EA219436FC00399F25 /* GLTimeShow.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAE68E9219436FC00399F25 /* GLTimeShow.m */; };
 		CAAE68F221943C0300399F25 /* GLFourViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAAE68F121943C0300399F25 /* GLFourViewController.xib */; };
 		D15C337E60332D8ACBD27D10 /* libPods-GLRouter_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A54D89049229950DB841A1BC /* libPods-GLRouter_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0148444B87EEBC5A114FB4A8 /* GLRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLRouter.podspec; path = ../GLRouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		216B0D4D24B70D1E0085BF55 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		48D37AB5F2DD8F677FFE2AB1 /* Pods-GLRouter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLRouter_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GLRouter_Tests/Pods-GLRouter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		0148444B87EEBC5A114FB4A8 /* GLRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLRouter.podspec; path = ../GLRouter.podspec; sourceTree = "<group>"; };
+		2183F4A8248E498900F08F2E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2183F4A9248E498900F08F2E /* GLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLWebViewController.h; sourceTree = "<group>"; };
+		2183F4AA248E498900F08F2E /* GLXIBPublicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLXIBPublicViewController.m; sourceTree = "<group>"; };
+		2183F4AB248E498900F08F2E /* GLWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLWebViewController.m; sourceTree = "<group>"; };
+		2183F4AC248E498900F08F2E /* GLXIBPublicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLXIBPublicViewController.h; sourceTree = "<group>"; };
+		2183F4AD248E498900F08F2E /* GLFuncTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFuncTools.h; sourceTree = "<group>"; };
+		2183F4AE248E498900F08F2E /* GLFuncTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLFuncTools.m; sourceTree = "<group>"; };
+		2183F4AF248E498900F08F2E /* GLXIBPublicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLXIBPublicViewController.xib; sourceTree = "<group>"; };
 		5FC0EFFAE5B8C26917FD686F /* Pods_GLRouter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GLRouter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* GLRouter_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLRouter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,11 +62,11 @@
 		6003F59D195388D20070C39A /* GLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLAppDelegate.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6C674935D161617B2AF21A7B /* Pods-GLRouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLRouter_Example.release.xcconfig"; path = "Target Support Files/Pods-GLRouter_Example/Pods-GLRouter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7D444F97FD65244FB48CE390 /* Pods-GLRouter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLRouter_Example.debug.xcconfig"; path = "Target Support Files/Pods-GLRouter_Example/Pods-GLRouter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A54D89049229950DB841A1BC /* libPods-GLRouter_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GLRouter_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6E7849AED26A00B4C3AE8DC /* Pods-GLRouter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLRouter_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GLRouter_Example/Pods-GLRouter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A7146C823843CA4F9B9A906E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		B667EBFAA8BFBAF6386F350B /* Pods-GLRouter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLRouter_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GLRouter_Tests/Pods-GLRouter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C2A3381832DED72F6FFA0FC6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CA56EF8D21940C1D0028B28D /* GLTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLTabBarController.h; sourceTree = "<group>"; };
 		CA56EF8E21940C1D0028B28D /* GLTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLTabBarController.m; sourceTree = "<group>"; };
@@ -81,10 +90,7 @@
 		CAAE68DE21942E3700399F25 /* a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a.jpg; sourceTree = "<group>"; };
 		CAAE68DF21942E3800399F25 /* c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c.jpg; sourceTree = "<group>"; };
 		CAAE68E021942E3800399F25 /* b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b.jpg; sourceTree = "<group>"; };
-		CAAE68E8219436FC00399F25 /* GLTimeShow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLTimeShow.h; sourceTree = "<group>"; };
-		CAAE68E9219436FC00399F25 /* GLTimeShow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLTimeShow.m; sourceTree = "<group>"; };
 		CAAE68F121943C0300399F25 /* GLFourViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GLFourViewController.xib; sourceTree = "<group>"; };
-		DF46B80F5383CC58BCFDFE8E /* Pods-GLRouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLRouter_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GLRouter_Example/Pods-GLRouter_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,14 +108,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		355607F78D56A0BBE67987ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D444F97FD65244FB48CE390 /* Pods-GLRouter_Example.debug.xcconfig */,
+				6C674935D161617B2AF21A7B /* Pods-GLRouter_Example.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
-				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for GLRouter */,
 				6003F58C195388D20070C39A /* Frameworks */,
+				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F58B195388D20070C39A /* Products */,
-				87E60CD5EBECCF03DD3B9B5B /* Pods */,
+				355607F78D56A0BBE67987ED /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,20 +152,25 @@
 		6003F593195388D20070C39A /* Example for GLRouter */ = {
 			isa = PBXGroup;
 			children = (
-				CA56EFA5219410730028B28D /* items */,
 				6003F59C195388D20070C39A /* GLAppDelegate.h */,
 				6003F59D195388D20070C39A /* GLAppDelegate.m */,
-				CA56EF8D21940C1D0028B28D /* GLTabBarController.h */,
-				CA56EF8E21940C1D0028B28D /* GLTabBarController.m */,
+				2183F4AD248E498900F08F2E /* GLFuncTools.h */,
+				2183F4AE248E498900F08F2E /* GLFuncTools.m */,
 				CAAE68D12194230800399F25 /* GLPublicViewController.h */,
 				CAAE68D22194230800399F25 /* GLPublicViewController.m */,
-				CAAE68E8219436FC00399F25 /* GLTimeShow.h */,
-				CAAE68E9219436FC00399F25 /* GLTimeShow.m */,
-				CA56EF9C21940C8C0028B28D /* ViewControllers */,
-				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				CA56EF8D21940C1D0028B28D /* GLTabBarController.h */,
+				CA56EF8E21940C1D0028B28D /* GLTabBarController.m */,
+				2183F4A9248E498900F08F2E /* GLWebViewController.h */,
+				2183F4AB248E498900F08F2E /* GLWebViewController.m */,
+				2183F4AC248E498900F08F2E /* GLXIBPublicViewController.h */,
+				2183F4AA248E498900F08F2E /* GLXIBPublicViewController.m */,
+				2183F4AF248E498900F08F2E /* GLXIBPublicViewController.xib */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				CA56EFA5219410730028B28D /* items */,
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				2183F4A8248E498900F08F2E /* PrefixHeader.pch */,
 				6003F594195388D20070C39A /* Supporting Files */,
-				216B0D4D24B70D1E0085BF55 /* PrefixHeader.pch */,
+				CA56EF9C21940C8C0028B28D /* ViewControllers */,
 			);
 			name = "Example for GLRouter";
 			path = GLRouter;
@@ -175,17 +195,6 @@
 				C2A3381832DED72F6FFA0FC6 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
-		87E60CD5EBECCF03DD3B9B5B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A6E7849AED26A00B4C3AE8DC /* Pods-GLRouter_Example.debug.xcconfig */,
-				DF46B80F5383CC58BCFDFE8E /* Pods-GLRouter_Example.release.xcconfig */,
-				48D37AB5F2DD8F677FFE2AB1 /* Pods-GLRouter_Tests.debug.xcconfig */,
-				B667EBFAA8BFBAF6386F350B /* Pods-GLRouter_Tests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		CA56EF9C21940C8C0028B28D /* ViewControllers */ = {
@@ -283,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAAE68E121942E3800399F25 /* d.jpg in Resources */,
+				2183F4B3248E498A00F08F2E /* GLXIBPublicViewController.xib in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				CAAE68D52194261E00399F25 /* GLFirstViewController.xib in Resources */,
@@ -333,12 +343,14 @@
 			files = (
 				CA56EF9B21940C7D0028B28D /* GLFourViewController.m in Sources */,
 				CA56EF9521940C560028B28D /* GLSecondViewController.m in Sources */,
-				CAAE68EA219436FC00399F25 /* GLTimeShow.m in Sources */,
+				2183F4B1248E498A00F08F2E /* GLWebViewController.m in Sources */,
+				2183F4B2248E498A00F08F2E /* GLFuncTools.m in Sources */,
 				CA56EF9221940C430028B28D /* GLFirstViewController.m in Sources */,
 				6003F59E195388D20070C39A /* GLAppDelegate.m in Sources */,
 				CAAE68D32194230800399F25 /* GLPublicViewController.m in Sources */,
 				CA56EF9821940C6B0028B28D /* GLThirdViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				2183F4B0248E498A00F08F2E /* GLXIBPublicViewController.m in Sources */,
 				CA56EF8F21940C1D0028B28D /* GLTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,7 +452,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6E7849AED26A00B4C3AE8DC /* Pods-GLRouter_Example.debug.xcconfig */;
+			baseConfigurationReference = 7D444F97FD65244FB48CE390 /* Pods-GLRouter_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -448,18 +460,19 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = GLRouter/PrefixHeader.pch;
 				INFOPLIST_FILE = "GLRouter/GLRouter-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = wildcard.xiaolongshangxue;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF46B80F5383CC58BCFDFE8E /* Pods-GLRouter_Example.release.xcconfig */;
+			baseConfigurationReference = 6C674935D161617B2AF21A7B /* Pods-GLRouter_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -467,11 +480,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = GLRouter/PrefixHeader.pch;
 				INFOPLIST_FILE = "GLRouter/GLRouter-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = wildcard.xiaolongshangxue;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

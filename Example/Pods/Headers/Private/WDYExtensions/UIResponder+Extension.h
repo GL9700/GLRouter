@@ -1,1 +1,1 @@
-../../../WDYExtensions/WDYExtensions/Classes/UI/UIResponder+Extension.h
+../../../WDYExtensions/WDYExtensions/Classes/UIResponder+Extension.h

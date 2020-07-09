@@ -7,8 +7,8 @@
 //
 
 #import "GLFirstViewController.h"
-#import <Router.h>
 #import <NSObject+Extension.h>
+#import <UIAlertController+Extension.h>
 
 @interface GLFirstViewController ()
 {
@@ -35,37 +35,75 @@
 }
 
 - (IBAction)onPush:(UIButton *)sender {
-    [Router openURL:@"GLRT://push/GLPublicViewController?content=this Is Push&message=back" form:nil before:^(id targetController) {
+    NSLog(@"willPush----%@", self);
+    [RouterCore openURL:@"GLRT://push/GLPublicViewController?content=this Is Push&message=back" form:self before:^(id targetController) {
+        NSLog(@"before----%@", targetController);
         [targetController setValue:[UIImage imageNamed:@"a.jpg"] forKey:@"icon"];
         @weak(targetController);
         [targetController setValue:^{
             @strong(targetController);
             [((UIViewController *)targetController).navigationController popViewControllerAnimated:YES];
         } forKey:@"handle"];
+        return YES;
+    } after:^(id ret) {
+        NSLog(@"after----%@", ret);
+    }];
+}
+
+- (IBAction)onPushXIB:(UIButton *)sender {
+//    NSString *url = @"GLRT://push/GLXIBPublicViewController?tipInfo=你好，你需要登录&imgURL=https://www.baidu.com/img/flexible/logo/pc/result@2.png";
+    
+    NSString *url = @"GLRT://push/GLXIBPublicViewController?tipInfo=你好，你需要登录&imgURL=https://oimagec6.ydstatic.com/image?id=-7352554208008629997&product=adpublish&w=520&h=347";
+    [RouterCore openURL:url form:self before:^BOOL(id targetController) {
+        @weak(targetController)
+        [targetController setValue:^{
+            @strong(targetController)
+            [((UIViewController *)targetController).navigationController popViewControllerAnimated:YES];
+        } forKey:@"onHandleClose"];
+        [targetController setValue:^(NSString *username, NSString *password){
+            [UIAlertController showToastWithMessage:[NSString stringWithFormat:@"register\nname:%@, password:%@", username, password]];
+        } forKey:@"onHandleRegister"];
+        [targetController setValue:^(NSString *username, NSString *password){
+            [UIAlertController showToastWithMessage:[NSString stringWithFormat:@"logint\nname:%@, password:%@", username, password]];
+        } forKey:@"onHandleLogin"];
+        return YES;
     } after:nil];
 }
 
+
 - (IBAction)onPresent:(UIButton *)sender {
-    [Router openURL:@"GLRT://present/GLPublicViewController?content=Present这是一个图片&message=消失" form:self before:^(id targetController) {
-        [targetController setValue:[UIImage imageNamed:@"b.jpg"] forKey:@"icon"];
-        [targetController setValue:^{
+    [RouterCore openURL:@"GLRT://present/GLPublicViewController?content=Present这是一个图片&message=消失" form:self before:^(id targetController) {
+        UIViewController *tc = (UIViewController *)targetController;
+        [tc setValue:[UIImage imageNamed:@"b.jpg"] forKey:@"icon"];
+        [tc setValue:^{
             [self dismissViewControllerAnimated:YES completion:nil];
         } forKey:@"handle"];
+        tc.modalPresentationStyle = UIModalPresentationOverFullScreen;
+        return YES;
     } after:nil];
 }
 
 - (IBAction)onInvoke:(UIButton *)sender {
-    [Router openURL:@"GLRT://invoke/GLTimeShow?method=toastTime" form:nil before:nil after:nil];
+//    [Router openURL:@"GLRT://invoke/GLFuncTools?method=toastTime" form:nil before:nil after:nil];
+    
+    [RouterCore openURL:@"GLRT://invoke/GLFuncTools?method=whatistheTime" form:nil before:nil after:^(id ret) {
+        NSLog(@"ret:%@", ret);
+        [UIAlertController showToastWithMessage:[NSString stringWithFormat:@"%@" , ret]];
+    }];
 }
 
 - (IBAction)onInvokeMessage:(UIButton *)sender {
-    [Router openURL:@"GLRT://invoke/GLTimeShow?method=toastMessage:&msg=从前有座山⛰️，山里有个庙，庙里有个👨‍🦲" form:nil before:nil after:nil];
+    [RouterCore openURL:@"GLRT://invoke/GLFuncTools?method=toastMessage:&msg=从前有座⛰️，山里有个🏠，🏠里有个👨‍🦲" form:nil before:nil after:nil];
 }
 
 - (IBAction)onInvokeCount:(UIButton *)sender {
-    [Router openURL:@"GLRT://invoke/GLTimeShow?method=toastCountA:B:C:&a=3&b=5&c=7" form:nil before:nil after:^(id ret) {
+    [RouterCore openURL:@"GLRT://invoke/GLFuncTools?method=toastCountA:B:C:&a=3&b=5&c=7" form:nil before:nil after:^(id ret) {
         aswer.text = [NSString stringWithFormat:@"%@" , ret];
     }];
+}
+
+- (IBAction)onPushWeb:(UIButton *)sender {
+    [RouterCore openURL:@"GLRT://push/GLWebViewController?url=http://www.jianshu.com" form:self before:nil after:nil];
 }
 
 @end

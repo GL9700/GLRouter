@@ -19,6 +19,7 @@
 
 - (instancetype)initWithRouterWithParams:(NSDictionary *)params {
     if((self = [super init])){
+        NSLog(@"%s",  __func__);
         self.content = params[@"content"];
         self.message = params[@"message"];
     }
@@ -26,6 +27,7 @@
 }
 
 - (void)viewDidLoad {
+    NSLog(@"%s",  __func__);
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.edgesForExtendedLayout = UIRectEdgeNone;
@@ -38,6 +40,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    NSLog(@"%s",  __func__);
     [super viewWillAppear:animated];
     [btn setTitle:self.message forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];

@@ -1,13 +1,58 @@
 PODS:
-  - GLRouter (0.1.0)
-  - WDYExtensions (0.0.1)
+  - GLRouter (1.0.0)
+  - SDWebImage (5.8.0):
+    - SDWebImage/Core (= 5.8.0)
+  - SDWebImage/Core (5.8.0)
+  - WDYExtensions (1.2.0):
+    - WDYExtensions/NSData (= 1.2.0)
+    - WDYExtensions/NSDate (= 1.2.0)
+    - WDYExtensions/NSFileManager (= 1.2.0)
+    - WDYExtensions/NSObject (= 1.2.0)
+    - WDYExtensions/NSString (= 1.2.0)
+    - WDYExtensions/NSTimer (= 1.2.0)
+    - WDYExtensions/NSURL (= 1.2.0)
+    - WDYExtensions/UIAlertController (= 1.2.0)
+    - WDYExtensions/UIApplication (= 1.2.0)
+    - WDYExtensions/UIButton (= 1.2.0)
+    - WDYExtensions/UIColor (= 1.2.0)
+    - WDYExtensions/UIDevice (= 1.2.0)
+    - WDYExtensions/UIImage (= 1.2.0)
+    - WDYExtensions/UINavigationController (= 1.2.0)
+    - WDYExtensions/UIResponder (= 1.2.0)
+    - WDYExtensions/UIView (= 1.2.0)
+    - WDYExtensions/UIViewController (= 1.2.0)
+  - WDYExtensions/NSData (1.2.0)
+  - WDYExtensions/NSDate (1.2.0)
+  - WDYExtensions/NSFileManager (1.2.0)
+  - WDYExtensions/NSObject (1.2.0)
+  - WDYExtensions/NSString (1.2.0)
+  - WDYExtensions/NSTimer (1.2.0)
+  - WDYExtensions/NSURL (1.2.0)
+  - WDYExtensions/UIAlertController (1.2.0)
+  - WDYExtensions/UIApplication (1.2.0):
+    - WDYExtensions/UIAlertController
+  - WDYExtensions/UIButton (1.2.0)
+  - WDYExtensions/UIColor (1.2.0)
+  - WDYExtensions/UIDevice (1.2.0)
+  - WDYExtensions/UIImage (1.2.0)
+  - WDYExtensions/UINavigationController (1.2.0):
+    - WDYExtensions/UIButton
+    - WDYExtensions/UIImage
+    - WDYExtensions/UIView
+  - WDYExtensions/UIResponder (1.2.0)
+  - WDYExtensions/UIView (1.2.0)
+  - WDYExtensions/UIViewController (1.2.0):
+    - WDYExtensions/UIAlertController
+    - WDYExtensions/UIView
 
 DEPENDENCIES:
   - GLRouter (from `../`)
+  - SDWebImage
   - WDYExtensions
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
+    - SDWebImage
     - WDYExtensions
 
 EXTERNAL SOURCES:
@@ -15,9 +60,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GLRouter: 78c76b83500a200c6f5efa753f6f536d648115a0
-  WDYExtensions: fa7ea4669d532413c2a866be0d336ded3dbf2aff
+  GLRouter: ecaf3b9e97bcee23e711d5b2ef1834cdd7e2cf58
+  SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
+  WDYExtensions: b911d66d9b1a7e809f5181eba58c75e57429594a
 
-PODFILE CHECKSUM: 8693d2dc9693615d4fe1e9a8667e2d7525ef34c8
+PODFILE CHECKSUM: 6328ec18dd5954c6653ec36f661a1c402f7df6f2
 
 COCOAPODS: 1.9.3

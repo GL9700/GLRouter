@@ -1,1 +1,1 @@
-../../../WDYExtensions/WDYExtensions/Classes/UI/UIColor+Extension.h
+../../../WDYExtensions/WDYExtensions/Classes/UIColor+Extension.h

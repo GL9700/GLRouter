@@ -1,1 +1,1 @@
-../../../WDYExtensions/WDYExtensions/Classes/UI/UIImage+Extension.h
+../../../WDYExtensions/WDYExtensions/Classes/UIImage+Extension.h

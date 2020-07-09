@@ -1,1 +1,1 @@
-../../../WDYExtensions/WDYExtensions/Classes/UI/UIDevice+Extension.h
+../../../WDYExtensions/WDYExtensions/Classes/UIDevice+Extension.h
