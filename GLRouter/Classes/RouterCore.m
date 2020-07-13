@@ -183,6 +183,8 @@ static BOOL rsenable;
                     }
                     tgt = (UIViewController *)tgt.nextResponder;
                 }
+            }else{
+                tgt = [UIApplication sharedApplication].keyWindow.rootViewController;
             }
             break;
         default:

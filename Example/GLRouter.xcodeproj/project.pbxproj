@@ -40,7 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0148444B87EEBC5A114FB4A8 /* GLRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLRouter.podspec; path = ../GLRouter.podspec; sourceTree = "<group>"; };
+		0148444B87EEBC5A114FB4A8 /* GLRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLRouter.podspec; path = ../GLRouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2183F4A8248E498900F08F2E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		2183F4A9248E498900F08F2E /* GLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLWebViewController.h; sourceTree = "<group>"; };
 		2183F4AA248E498900F08F2E /* GLXIBPublicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLXIBPublicViewController.m; sourceTree = "<group>"; };
