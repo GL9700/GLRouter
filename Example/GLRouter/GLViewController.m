@@ -23,6 +23,7 @@
 
 @implementation GLViewController
 #pragma mark- >> Build UI
+
 - (UILabel *)label {
     if(!_label){
         _label = [[UILabel alloc]init];
@@ -95,7 +96,9 @@
 
 }
 
+
 #pragma mark- >> About Router
+/** router init */
 - (void)setupRouter {
 //    [GLRouterManager setVerifyScheme:@"lgl"];   // URL 跳转scheme限制(仅URL模式)
 //    [GLRouterManager managerWithRegisterFile:@"route"]; // 路由表(仅Key模式)

@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GLRouterFileManager : GLRBase
 
 + (instancetype)sharedManager;
-- (void)loadRouterFileName:(NSString *)fileName;
+- (void)loadRouterFileName:(NSString *)fileName withBundle:(NSBundle *)bundle;
 - (GLRCoreEntry *)routerKey:(NSString *)key;
 @end
 

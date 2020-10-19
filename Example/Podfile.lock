@@ -1,9 +1,9 @@
 PODS:
   - GLExtensions (0.2.1)
-  - GLRouter (1.0.1)
-  - SDWebImage (5.8.0):
-    - SDWebImage/Core (= 5.8.0)
-  - SDWebImage/Core (5.8.0)
+  - GLRouter (2.0.0)
+  - SDWebImage (5.9.3):
+    - SDWebImage/Core (= 5.9.3)
+  - SDWebImage/Core (5.9.3)
 
 DEPENDENCIES:
   - GLExtensions
@@ -21,9 +21,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   GLExtensions: 8bc5e276fccf96841957e7c67b16e67d29f88903
-  GLRouter: c6b9975d922dddaea9892925d9751f70cb9b2515
-  SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
+  GLRouter: 7caed6e61d07c0e04862fd1f5611188754ac1e3d
+  SDWebImage: a31ee8e90a97303529e03fb0c333eae0eacb88e9
 
-PODFILE CHECKSUM: 9c21335c53e9579bf3278cf276f1ecda6dd1f593
+PODFILE CHECKSUM: dc6f9c5839583ef9b3ab4bef5c98606466a527dd
 
 COCOAPODS: 1.9.3

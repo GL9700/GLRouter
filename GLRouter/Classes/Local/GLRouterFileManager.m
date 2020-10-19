@@ -21,10 +21,13 @@
     return instance;
 }
 
-- (void)loadRouterFileName:(NSString *)fileName {
+- (void)loadRouterFileName:(NSString *)fileName withBundle:(nonnull NSBundle *)bundle {
+    if(bundle == nil){
+        bundle = [NSBundle mainBundle];
+    }
     NSString *name = fileName.lastPathComponent.stringByDeletingPathExtension;
     NSString *ext = fileName.lastPathComponent.pathExtension;
-    NSString *path = [[NSBundle mainBundle] pathForResource:name ofType: ext.length==0 ? @"plist" : ext ];
+    NSString *path = [bundle pathForResource:name ofType: ext.length==0 ? @"plist" : ext ];
     [self.rlist addEntriesFromDictionary:[NSDictionary dictionaryWithContentsOfFile:path]];
     if(self.rlist.allKeys.count==0 && self.failureHandle){
         self.failureHandle(kRRPListError, path);

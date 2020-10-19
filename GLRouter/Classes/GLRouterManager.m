@@ -57,14 +57,14 @@
 @end
 
 @implementation GLRouterManager(FileExt)
-+ (instancetype)managerWithRegisterFile:(NSString *)name {
++ (instancetype)managerWithRegisterFile:(NSString *)name withFromBundle:(NSBundle *)bundle {
     GLRouterManager *manager = [self manager];
-    [manager registerRouter:name];
+    [manager registerRouter:name withBundle:bundle];
     return manager;
 }
 
-- (void)registerRouter:(NSString *)routerFile {
-    [[GLRouterFileManager sharedManager] loadRouterFileName:routerFile];
+- (void)registerRouter:(NSString *)routerFile withBundle:(NSBundle *)bundle {
+    [[GLRouterFileManager sharedManager] loadRouterFileName:routerFile withBundle:bundle];
 }
 
 + (void)ToRouterKey:(NSString *)key from:(UIViewController *)from conditionHandle:(BOOL(^)(id tgt))conHandle returnHandle:(void(^)(id ret))retHandle {

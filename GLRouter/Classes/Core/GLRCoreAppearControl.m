@@ -52,7 +52,8 @@
               container:(UIViewController *)container
             inCondition:(BOOL(^)(UIViewController *target))handle {
     if([cls conformsToProtocol:@protocol(GLRouterProtocol)]){
-        UIViewController *vc = [cls new];
+//        UIViewController *vc = [cls new];
+        UIViewController *vc = [[cls alloc] initWithNibName:nil bundle:[NSBundle bundleForClass:cls]];
         [vc performSelector:@selector(setupRouterParams:) withObject:params];
         if(handle && handle(vc) == NO) {
             return;

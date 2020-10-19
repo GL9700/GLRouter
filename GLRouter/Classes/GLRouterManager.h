@@ -17,6 +17,6 @@
 @end
 
 @interface GLRouterManager(FileExt)
-+ (instancetype)managerWithRegisterFile:(NSString *)name;
++ (instancetype)managerWithRegisterFile:(NSString *)name withFromBundle:(NSBundle *)bundle;
 + (void)ToRouterKey:(NSString *)key from:(UIViewController *)from conditionHandle:(BOOL(^)(id tgt))conHandle returnHandle:(void(^)(id ret))retHandle;
 @end
