@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GLRouter'
-  s.version          = '1.0.1'
-  s.summary          = '一个URL路由'
+  s.version          = '2.0.0'
+  s.summary          = '一个极其简便灵活的iOS路由'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'GLRouter/Classes/**/*'
-  
+
   # s.resource_bundles = {
   #   'GLRouter' => ['GLRouter/Assets/*.png']
   # }
