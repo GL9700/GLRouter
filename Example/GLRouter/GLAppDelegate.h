@@ -2,8 +2,8 @@
 //  GLAppDelegate.h
 //  GLRouter
 //
-//  Created by liandyii@msn.com on 11/08/2018.
-//  Copyright (c) 2018 liandyii@msn.com. All rights reserved.
+//  Created by 36617161@qq.com on 10/10/2020.
+//  Copyright (c) 2020 36617161@qq.com. All rights reserved.
 //
 
 @import UIKit;

@@ -7,48 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2183F4B0248E498A00F08F2E /* GLXIBPublicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2183F4AA248E498900F08F2E /* GLXIBPublicViewController.m */; };
-		2183F4B1248E498A00F08F2E /* GLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2183F4AB248E498900F08F2E /* GLWebViewController.m */; };
-		2183F4B2248E498A00F08F2E /* GLFuncTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2183F4AE248E498900F08F2E /* GLFuncTools.m */; };
-		2183F4B3248E498A00F08F2E /* GLXIBPublicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2183F4AF248E498900F08F2E /* GLXIBPublicViewController.xib */; };
+		217ACCCD253D69C800B9AF14 /* RedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217ACCB5253D69C800B9AF14 /* RedViewController.m */; };
+		217ACCCE253D69C800B9AF14 /* BlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217ACCB6253D69C800B9AF14 /* BlueViewController.m */; };
+		217ACCCF253D69C800B9AF14 /* GLTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 217ACCB8253D69C800B9AF14 /* GLTools.m */; };
+		217ACCD0253D69C800B9AF14 /* aboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217ACCB9253D69C800B9AF14 /* aboutViewController.m */; };
+		217ACCD1253D69C800B9AF14 /* GreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217ACCBA253D69C800B9AF14 /* GreenViewController.m */; };
+		217ACCD3253D69C800B9AF14 /* GLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217ACCC0253D69C800B9AF14 /* GLViewController.m */; };
+		217ACCD4253D69C800B9AF14 /* GLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217ACCC3253D69C800B9AF14 /* GLWebViewController.m */; };
+		217ACCD5253D69C800B9AF14 /* item2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 217ACCC5253D69C800B9AF14 /* item2@2x.png */; };
+		217ACCD6253D69C800B9AF14 /* item4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 217ACCC6253D69C800B9AF14 /* item4@2x.png */; };
+		217ACCD7253D69C800B9AF14 /* item3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 217ACCC7253D69C800B9AF14 /* item3@2x.png */; };
+		217ACCD8253D69C800B9AF14 /* item1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 217ACCC8253D69C800B9AF14 /* item1@2x.png */; };
+		217ACCD9253D69C800B9AF14 /* b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 217ACCC9253D69C800B9AF14 /* b.jpg */; };
+		217ACCDA253D69C800B9AF14 /* c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 217ACCCA253D69C800B9AF14 /* c.jpg */; };
+		217ACCDB253D69C800B9AF14 /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 217ACCCB253D69C800B9AF14 /* a.jpg */; };
+		217ACCDC253D69C800B9AF14 /* d.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 217ACCCC253D69C800B9AF14 /* d.jpg */; };
+		217ACCE0253D6A1400B9AF14 /* GLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 217ACCDF253D6A1400B9AF14 /* GLAppDelegate.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* GLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* GLAppDelegate.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
+		6D020318559AF9B93E2521D3 /* Pods_GLRouter_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 296A19D72B8A2186DA943A06 /* Pods_GLRouter_Example.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		CA56EF8F21940C1D0028B28D /* GLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA56EF8E21940C1D0028B28D /* GLTabBarController.m */; };
-		CA56EF9221940C430028B28D /* GLFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA56EF9121940C430028B28D /* GLFirstViewController.m */; };
-		CA56EF9521940C560028B28D /* GLSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA56EF9421940C560028B28D /* GLSecondViewController.m */; };
-		CA56EF9821940C6B0028B28D /* GLThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA56EF9721940C6B0028B28D /* GLThirdViewController.m */; };
-		CA56EF9B21940C7D0028B28D /* GLFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA56EF9A21940C7D0028B28D /* GLFourViewController.m */; };
-		CA56EFA1219410540028B28D /* item3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA56EF9D219410540028B28D /* item3@2x.png */; };
-		CA56EFA2219410540028B28D /* item4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA56EF9E219410540028B28D /* item4@2x.png */; };
-		CA56EFA3219410540028B28D /* item2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA56EF9F219410540028B28D /* item2@2x.png */; };
-		CA56EFA4219410540028B28D /* item1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA56EFA0219410540028B28D /* item1@2x.png */; };
-		CAAE68D32194230800399F25 /* GLPublicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAE68D22194230800399F25 /* GLPublicViewController.m */; };
-		CAAE68D52194261E00399F25 /* GLFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAAE68D42194261E00399F25 /* GLFirstViewController.xib */; };
-		CAAE68D721942B2F00399F25 /* GLSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAAE68D621942B2F00399F25 /* GLSecondViewController.xib */; };
-		CAAE68E121942E3800399F25 /* d.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CAAE68DD21942E3700399F25 /* d.jpg */; };
-		CAAE68E221942E3800399F25 /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CAAE68DE21942E3700399F25 /* a.jpg */; };
-		CAAE68E321942E3800399F25 /* c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CAAE68DF21942E3800399F25 /* c.jpg */; };
-		CAAE68E421942E3800399F25 /* b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CAAE68E021942E3800399F25 /* b.jpg */; };
-		CAAE68F221943C0300399F25 /* GLFourViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAAE68F121943C0300399F25 /* GLFourViewController.xib */; };
-		D15C337E60332D8ACBD27D10 /* libPods-GLRouter_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A54D89049229950DB841A1BC /* libPods-GLRouter_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0148444B87EEBC5A114FB4A8 /* GLRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLRouter.podspec; path = ../GLRouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		2183F4A8248E498900F08F2E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		2183F4A9248E498900F08F2E /* GLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLWebViewController.h; sourceTree = "<group>"; };
-		2183F4AA248E498900F08F2E /* GLXIBPublicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLXIBPublicViewController.m; sourceTree = "<group>"; };
-		2183F4AB248E498900F08F2E /* GLWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLWebViewController.m; sourceTree = "<group>"; };
-		2183F4AC248E498900F08F2E /* GLXIBPublicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLXIBPublicViewController.h; sourceTree = "<group>"; };
-		2183F4AD248E498900F08F2E /* GLFuncTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFuncTools.h; sourceTree = "<group>"; };
-		2183F4AE248E498900F08F2E /* GLFuncTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLFuncTools.m; sourceTree = "<group>"; };
-		2183F4AF248E498900F08F2E /* GLXIBPublicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLXIBPublicViewController.xib; sourceTree = "<group>"; };
+		217ACCB5253D69C800B9AF14 /* RedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedViewController.m; sourceTree = "<group>"; };
+		217ACCB6253D69C800B9AF14 /* BlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueViewController.m; sourceTree = "<group>"; };
+		217ACCB7253D69C800B9AF14 /* GLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLViewController.h; sourceTree = "<group>"; };
+		217ACCB8253D69C800B9AF14 /* GLTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTools.m; sourceTree = "<group>"; };
+		217ACCB9253D69C800B9AF14 /* aboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aboutViewController.m; sourceTree = "<group>"; };
+		217ACCBA253D69C800B9AF14 /* GreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreenViewController.m; sourceTree = "<group>"; };
+		217ACCBB253D69C800B9AF14 /* GLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLWebViewController.h; sourceTree = "<group>"; };
+		217ACCBD253D69C800B9AF14 /* GreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreenViewController.h; sourceTree = "<group>"; };
+		217ACCBE253D69C800B9AF14 /* GLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTools.h; sourceTree = "<group>"; };
+		217ACCBF253D69C800B9AF14 /* aboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aboutViewController.h; sourceTree = "<group>"; };
+		217ACCC0253D69C800B9AF14 /* GLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLViewController.m; sourceTree = "<group>"; };
+		217ACCC1253D69C800B9AF14 /* BlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueViewController.h; sourceTree = "<group>"; };
+		217ACCC2253D69C800B9AF14 /* RedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedViewController.h; sourceTree = "<group>"; };
+		217ACCC3253D69C800B9AF14 /* GLWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLWebViewController.m; sourceTree = "<group>"; };
+		217ACCC5253D69C800B9AF14 /* item2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item2@2x.png"; sourceTree = "<group>"; };
+		217ACCC6253D69C800B9AF14 /* item4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item4@2x.png"; sourceTree = "<group>"; };
+		217ACCC7253D69C800B9AF14 /* item3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item3@2x.png"; sourceTree = "<group>"; };
+		217ACCC8253D69C800B9AF14 /* item1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item1@2x.png"; sourceTree = "<group>"; };
+		217ACCC9253D69C800B9AF14 /* b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b.jpg; sourceTree = "<group>"; };
+		217ACCCA253D69C800B9AF14 /* c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c.jpg; sourceTree = "<group>"; };
+		217ACCCB253D69C800B9AF14 /* a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a.jpg; sourceTree = "<group>"; };
+		217ACCCC253D69C800B9AF14 /* d.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d.jpg; sourceTree = "<group>"; };
+		217ACCDE253D6A1400B9AF14 /* GLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLAppDelegate.h; sourceTree = "<group>"; };
+		217ACCDF253D6A1400B9AF14 /* GLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLAppDelegate.m; sourceTree = "<group>"; };
+		296A19D72B8A2186DA943A06 /* Pods_GLRouter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GLRouter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC0EFFAE5B8C26917FD686F /* Pods_GLRouter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GLRouter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* GLRouter_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLRouter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,18 +69,13 @@
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6003F59B195388D20070C39A /* GLRouter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLRouter-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* GLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* GLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLAppDelegate.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6C674935D161617B2AF21A7B /* Pods-GLRouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLRouter_Example.release.xcconfig"; path = "Target Support Files/Pods-GLRouter_Example/Pods-GLRouter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D444F97FD65244FB48CE390 /* Pods-GLRouter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLRouter_Example.debug.xcconfig"; path = "Target Support Files/Pods-GLRouter_Example/Pods-GLRouter_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A54D89049229950DB841A1BC /* libPods-GLRouter_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GLRouter_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7146C823843CA4F9B9A906E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C2A3381832DED72F6FFA0FC6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		CA56EF8D21940C1D0028B28D /* GLTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLTabBarController.h; sourceTree = "<group>"; };
-		CA56EF8E21940C1D0028B28D /* GLTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLTabBarController.m; sourceTree = "<group>"; };
 		CA56EF9021940C430028B28D /* GLFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLFirstViewController.h; sourceTree = "<group>"; };
 		CA56EF9121940C430028B28D /* GLFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLFirstViewController.m; sourceTree = "<group>"; };
 		CA56EF9321940C560028B28D /* GLSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLSecondViewController.h; sourceTree = "<group>"; };
@@ -78,18 +84,8 @@
 		CA56EF9721940C6B0028B28D /* GLThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLThirdViewController.m; sourceTree = "<group>"; };
 		CA56EF9921940C7D0028B28D /* GLFourViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLFourViewController.h; sourceTree = "<group>"; };
 		CA56EF9A21940C7D0028B28D /* GLFourViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLFourViewController.m; sourceTree = "<group>"; };
-		CA56EF9D219410540028B28D /* item3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item3@2x.png"; sourceTree = "<group>"; };
-		CA56EF9E219410540028B28D /* item4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item4@2x.png"; sourceTree = "<group>"; };
-		CA56EF9F219410540028B28D /* item2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item2@2x.png"; sourceTree = "<group>"; };
-		CA56EFA0219410540028B28D /* item1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item1@2x.png"; sourceTree = "<group>"; };
-		CAAE68D12194230800399F25 /* GLPublicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLPublicViewController.h; sourceTree = "<group>"; };
-		CAAE68D22194230800399F25 /* GLPublicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLPublicViewController.m; sourceTree = "<group>"; };
 		CAAE68D42194261E00399F25 /* GLFirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GLFirstViewController.xib; sourceTree = "<group>"; };
 		CAAE68D621942B2F00399F25 /* GLSecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GLSecondViewController.xib; sourceTree = "<group>"; };
-		CAAE68DD21942E3700399F25 /* d.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d.jpg; sourceTree = "<group>"; };
-		CAAE68DE21942E3700399F25 /* a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a.jpg; sourceTree = "<group>"; };
-		CAAE68DF21942E3800399F25 /* c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c.jpg; sourceTree = "<group>"; };
-		CAAE68E021942E3800399F25 /* b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b.jpg; sourceTree = "<group>"; };
 		CAAE68F121943C0300399F25 /* GLFourViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GLFourViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,13 +97,49 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				D15C337E60332D8ACBD27D10 /* libPods-GLRouter_Example.a in Frameworks */,
+				6D020318559AF9B93E2521D3 /* Pods_GLRouter_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		217ACCB4253D69C800B9AF14 /* appClasses */ = {
+			isa = PBXGroup;
+			children = (
+				217ACCBF253D69C800B9AF14 /* aboutViewController.h */,
+				217ACCB9253D69C800B9AF14 /* aboutViewController.m */,
+				217ACCC1253D69C800B9AF14 /* BlueViewController.h */,
+				217ACCB6253D69C800B9AF14 /* BlueViewController.m */,
+				217ACCBE253D69C800B9AF14 /* GLTools.h */,
+				217ACCB8253D69C800B9AF14 /* GLTools.m */,
+				217ACCB7253D69C800B9AF14 /* GLViewController.h */,
+				217ACCC0253D69C800B9AF14 /* GLViewController.m */,
+				217ACCBB253D69C800B9AF14 /* GLWebViewController.h */,
+				217ACCC3253D69C800B9AF14 /* GLWebViewController.m */,
+				217ACCBD253D69C800B9AF14 /* GreenViewController.h */,
+				217ACCBA253D69C800B9AF14 /* GreenViewController.m */,
+				217ACCC2253D69C800B9AF14 /* RedViewController.h */,
+				217ACCB5253D69C800B9AF14 /* RedViewController.m */,
+			);
+			path = appClasses;
+			sourceTree = "<group>";
+		};
+		217ACCC4253D69C800B9AF14 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				217ACCC5253D69C800B9AF14 /* item2@2x.png */,
+				217ACCC6253D69C800B9AF14 /* item4@2x.png */,
+				217ACCC7253D69C800B9AF14 /* item3@2x.png */,
+				217ACCC8253D69C800B9AF14 /* item1@2x.png */,
+				217ACCC9253D69C800B9AF14 /* b.jpg */,
+				217ACCCA253D69C800B9AF14 /* c.jpg */,
+				217ACCCB253D69C800B9AF14 /* a.jpg */,
+				217ACCCC253D69C800B9AF14 /* d.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		355607F78D56A0BBE67987ED /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,7 +176,7 @@
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				5FC0EFFAE5B8C26917FD686F /* Pods_GLRouter_Tests.framework */,
-				A54D89049229950DB841A1BC /* libPods-GLRouter_Example.a */,
+				296A19D72B8A2186DA943A06 /* Pods_GLRouter_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,23 +184,12 @@
 		6003F593195388D20070C39A /* Example for GLRouter */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* GLAppDelegate.h */,
-				6003F59D195388D20070C39A /* GLAppDelegate.m */,
-				2183F4AD248E498900F08F2E /* GLFuncTools.h */,
-				2183F4AE248E498900F08F2E /* GLFuncTools.m */,
-				CAAE68D12194230800399F25 /* GLPublicViewController.h */,
-				CAAE68D22194230800399F25 /* GLPublicViewController.m */,
-				CA56EF8D21940C1D0028B28D /* GLTabBarController.h */,
-				CA56EF8E21940C1D0028B28D /* GLTabBarController.m */,
-				2183F4A9248E498900F08F2E /* GLWebViewController.h */,
-				2183F4AB248E498900F08F2E /* GLWebViewController.m */,
-				2183F4AC248E498900F08F2E /* GLXIBPublicViewController.h */,
-				2183F4AA248E498900F08F2E /* GLXIBPublicViewController.m */,
-				2183F4AF248E498900F08F2E /* GLXIBPublicViewController.xib */,
+				217ACCDE253D6A1400B9AF14 /* GLAppDelegate.h */,
+				217ACCDF253D6A1400B9AF14 /* GLAppDelegate.m */,
+				6003F59B195388D20070C39A /* GLRouter-Prefix.pch */,
+				217ACCB4253D69C800B9AF14 /* appClasses */,
+				217ACCC4253D69C800B9AF14 /* Resources */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
-				CA56EFA5219410730028B28D /* items */,
-				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
-				2183F4A8248E498900F08F2E /* PrefixHeader.pch */,
 				6003F594195388D20070C39A /* Supporting Files */,
 				CA56EF9C21940C8C0028B28D /* ViewControllers */,
 			);
@@ -179,10 +200,10 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F595195388D20070C39A /* GLRouter-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
-				6003F59B195388D20070C39A /* GLRouter-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -215,21 +236,6 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
-		CA56EFA5219410730028B28D /* items */ = {
-			isa = PBXGroup;
-			children = (
-				CAAE68DE21942E3700399F25 /* a.jpg */,
-				CAAE68E021942E3800399F25 /* b.jpg */,
-				CAAE68DF21942E3800399F25 /* c.jpg */,
-				CAAE68DD21942E3700399F25 /* d.jpg */,
-				CA56EFA0219410540028B28D /* item1@2x.png */,
-				CA56EF9F219410540028B28D /* item2@2x.png */,
-				CA56EF9D219410540028B28D /* item3@2x.png */,
-				CA56EF9E219410540028B28D /* item4@2x.png */,
-			);
-			name = items;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -241,6 +247,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
+				123B4AB0E1BADA5C4303019E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -291,21 +298,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAAE68E121942E3800399F25 /* d.jpg in Resources */,
-				2183F4B3248E498A00F08F2E /* GLXIBPublicViewController.xib in Resources */,
+				217ACCDC253D69C800B9AF14 /* d.jpg in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				CAAE68D52194261E00399F25 /* GLFirstViewController.xib in Resources */,
-				CA56EFA2219410540028B28D /* item4@2x.png in Resources */,
-				CA56EFA1219410540028B28D /* item3@2x.png in Resources */,
-				CAAE68E421942E3800399F25 /* b.jpg in Resources */,
-				CAAE68D721942B2F00399F25 /* GLSecondViewController.xib in Resources */,
-				CA56EFA4219410540028B28D /* item1@2x.png in Resources */,
-				CAAE68E221942E3800399F25 /* a.jpg in Resources */,
+				217ACCDB253D69C800B9AF14 /* a.jpg in Resources */,
+				217ACCD5253D69C800B9AF14 /* item2@2x.png in Resources */,
+				217ACCD7253D69C800B9AF14 /* item3@2x.png in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
-				CAAE68E321942E3800399F25 /* c.jpg in Resources */,
-				CA56EFA3219410540028B28D /* item2@2x.png in Resources */,
-				CAAE68F221943C0300399F25 /* GLFourViewController.xib in Resources */,
+				217ACCD9253D69C800B9AF14 /* b.jpg in Resources */,
+				217ACCD6253D69C800B9AF14 /* item4@2x.png in Resources */,
+				217ACCD8253D69C800B9AF14 /* item1@2x.png in Resources */,
+				217ACCDA253D69C800B9AF14 /* c.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +337,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		123B4AB0E1BADA5C4303019E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GLRouter_Example/Pods-GLRouter_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GLExtensions/GLExtensions.framework",
+				"${BUILT_PRODUCTS_DIR}/GLRouter/GLRouter.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GLExtensions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GLRouter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GLRouter_Example/Pods-GLRouter_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -341,17 +366,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA56EF9B21940C7D0028B28D /* GLFourViewController.m in Sources */,
-				CA56EF9521940C560028B28D /* GLSecondViewController.m in Sources */,
-				2183F4B1248E498A00F08F2E /* GLWebViewController.m in Sources */,
-				2183F4B2248E498A00F08F2E /* GLFuncTools.m in Sources */,
-				CA56EF9221940C430028B28D /* GLFirstViewController.m in Sources */,
-				6003F59E195388D20070C39A /* GLAppDelegate.m in Sources */,
-				CAAE68D32194230800399F25 /* GLPublicViewController.m in Sources */,
-				CA56EF9821940C6B0028B28D /* GLThirdViewController.m in Sources */,
+				217ACCCF253D69C800B9AF14 /* GLTools.m in Sources */,
+				217ACCE0253D6A1400B9AF14 /* GLAppDelegate.m in Sources */,
+				217ACCD1253D69C800B9AF14 /* GreenViewController.m in Sources */,
+				217ACCD0253D69C800B9AF14 /* aboutViewController.m in Sources */,
+				217ACCD3253D69C800B9AF14 /* GLViewController.m in Sources */,
+				217ACCD4253D69C800B9AF14 /* GLWebViewController.m in Sources */,
+				217ACCCE253D69C800B9AF14 /* BlueViewController.m in Sources */,
+				217ACCCD253D69C800B9AF14 /* RedViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				2183F4B0248E498A00F08F2E /* GLXIBPublicViewController.m in Sources */,
-				CA56EF8F21940C1D0028B28D /* GLTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +481,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5P63THT9X2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GLRouter/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "GLRouter/GLRouter-Prefix.pch";
 				INFOPLIST_FILE = "GLRouter/GLRouter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
@@ -478,7 +501,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5P63THT9X2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GLRouter/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "GLRouter/GLRouter-Prefix.pch";
 				INFOPLIST_FILE = "GLRouter/GLRouter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;

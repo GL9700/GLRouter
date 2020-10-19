@@ -1,7 +1,7 @@
-#use_frameworks!
 
+use_frameworks!
 target 'GLRouter_Example' do
   pod 'GLRouter', :path => '../'
-  pod 'WDYExtensions'
+  pod 'GLExtensions'
   pod 'SDWebImage'
 end

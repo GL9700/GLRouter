@@ -1,0 +1,6 @@
+framework module GLExtensions {
+  umbrella header "GLExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}
