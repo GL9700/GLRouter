@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <GLRouterProtocol.h>
+#import <GLRouter/GLRouterProtocol.h>
 
 @interface UIViewController (RExt)<GLRouterProtocol>
 
