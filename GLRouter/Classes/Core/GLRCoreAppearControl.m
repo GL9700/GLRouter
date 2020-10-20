@@ -5,7 +5,7 @@
 //  Created by liguoliang on 2020/10/10.
 //
 
-#import "GLRCoreAppearControl.h"
+#import <GLRouter/GLRCoreAppearControl.h>
 #import <GLRouter/GLRouterProtocol.h>
 
 @implementation GLRCoreAppearControl

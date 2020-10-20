@@ -5,7 +5,7 @@
 //  Created by liguoliang on 2020/10/16.
 //
 
-#import "GLRBase.h"
+#import <GLRouter/GLRBase.h>
 
 @implementation GLRBase
 

@@ -5,7 +5,7 @@
 //  Created by liguoliang on 2020/10/13.
 //
 
-#import "GLRouterFileManager.h"
+#import <GLRouter/GLRouterFileManager.h>
 
 @interface GLRouterFileManager()
 @property (nonatomic) NSMutableDictionary<NSString *, NSDictionary *> *rlist;

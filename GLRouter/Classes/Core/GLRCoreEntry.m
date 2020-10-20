@@ -5,7 +5,7 @@
 //  Created by liguoliang on 2020/10/13.
 //
 
-#import "GLRCoreEntry.h"
+#import <GLRouter/GLRCoreEntry.h>
 #import <GLRouter/GLRCoreAppearControl.h>
 #import <GLRouter/GLRCoreInvokeControl.h>
 
