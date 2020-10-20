@@ -52,7 +52,6 @@
               container:(UIViewController *)container
             inCondition:(BOOL(^)(UIViewController *target))handle {
     if([cls conformsToProtocol:@protocol(GLRouterProtocol)]){
-//        UIViewController *vc = [cls new];
         UIViewController *vc = [[cls alloc] initWithNibName:nil bundle:[NSBundle bundleForClass:cls]];
         [vc performSelector:@selector(setupRouterParams:) withObject:params];
         if(handle && handle(vc) == NO) {
@@ -65,7 +64,9 @@
             }
             NSLog(@"-- 未能找到可用的Navigation -- [push %@] --", cls);
         }else{
-            [nav pushViewController:vc animated:YES];
+            dispatch_async(dispatch_main(), ^{
+                [nav pushViewController:vc animated:YES];
+            });
         }
     }else{
         if(self.failureHandle) {
@@ -84,10 +85,10 @@
         if(handle && handle(vc) == NO) {
             return;
         }
-        if(container==nil){
-            container = [UIApplication sharedApplication].keyWindow.rootViewController;
-        }
-        [container presentViewController:vc animated:YES completion:nil];
+        dispatch_async(dispatch_main(), ^{
+            container = container==nil?[UIApplication sharedApplication].keyWindow.rootViewController : container;
+            [container presentViewController:vc animated:YES completion:nil];
+        });
     }else{
         if(self.failureHandle) {
             self.failureHandle(kRProtocolError, nil);
