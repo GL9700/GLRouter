@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <GLRBase.h>
+#import <GLRouter/GLRBase.h>
 
 typedef enum : NSUInteger {
     RouterEntryPush,

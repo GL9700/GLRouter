@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <GLRBase.h>
+#import <GLRouter/GLRBase.h>
 
 @interface GLRCoreInvokeControl : GLRBase
 /// 通过参数调用指定的类方法，必须是类方法

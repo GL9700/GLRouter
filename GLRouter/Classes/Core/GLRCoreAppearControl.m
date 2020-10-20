@@ -6,7 +6,7 @@
 //
 
 #import "GLRCoreAppearControl.h"
-#import <GLRouterProtocol.h>
+#import <GLRouter/GLRouterProtocol.h>
 
 @implementation GLRCoreAppearControl
 

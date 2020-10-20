@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <GLRBase.h>
+#import <GLRouter/GLRBase.h>
 
 @interface GLRCoreAppearControl : GLRBase
 /// push页面

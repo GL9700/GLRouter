@@ -6,8 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <GLRCoreEntry.h>
-#import <GLRBase.h>
+#import <GLRouter/GLRCoreEntry.h>
+#import <GLRouter/GLRBase.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GLRouterFileManager : GLRBase

@@ -6,8 +6,8 @@
 //
 
 #import "GLRCoreEntry.h"
-#import <GLRCoreAppearControl.h>
-#import <GLRCoreInvokeControl.h>
+#import <GLRouter/GLRCoreAppearControl.h>
+#import <GLRouter/GLRCoreInvokeControl.h>
 
 
 
