@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		212B9E76253E90BC0065F91D /* RouterList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 212B9E75253E90BC0065F91D /* RouterList.plist */; };
+		212B9E7A253E92AC0065F91D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212B9E79253E92AC0065F91D /* WebViewController.m */; };
 		217ACCCD253D69C800B9AF14 /* RedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217ACCB5253D69C800B9AF14 /* RedViewController.m */; };
 		217ACCCE253D69C800B9AF14 /* BlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217ACCB6253D69C800B9AF14 /* BlueViewController.m */; };
 		217ACCCF253D69C800B9AF14 /* GLTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 217ACCB8253D69C800B9AF14 /* GLTools.m */; };
@@ -23,6 +25,7 @@
 		217ACCDB253D69C800B9AF14 /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 217ACCCB253D69C800B9AF14 /* a.jpg */; };
 		217ACCDC253D69C800B9AF14 /* d.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 217ACCCC253D69C800B9AF14 /* d.jpg */; };
 		217ACCE0253D6A1400B9AF14 /* GLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 217ACCDF253D6A1400B9AF14 /* GLAppDelegate.m */; };
+		21A94B56253EA25400EAF0E2 /* BlueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A94B55253EA25400EAF0E2 /* BlueViewController.xib */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -35,6 +38,9 @@
 
 /* Begin PBXFileReference section */
 		0148444B87EEBC5A114FB4A8 /* GLRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLRouter.podspec; path = ../GLRouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		212B9E75253E90BC0065F91D /* RouterList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RouterList.plist; sourceTree = "<group>"; };
+		212B9E78253E92AC0065F91D /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		212B9E79253E92AC0065F91D /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		217ACCB5253D69C800B9AF14 /* RedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedViewController.m; sourceTree = "<group>"; };
 		217ACCB6253D69C800B9AF14 /* BlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueViewController.m; sourceTree = "<group>"; };
 		217ACCB7253D69C800B9AF14 /* GLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLViewController.h; sourceTree = "<group>"; };
@@ -59,6 +65,7 @@
 		217ACCCC253D69C800B9AF14 /* d.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d.jpg; sourceTree = "<group>"; };
 		217ACCDE253D6A1400B9AF14 /* GLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLAppDelegate.h; sourceTree = "<group>"; };
 		217ACCDF253D6A1400B9AF14 /* GLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLAppDelegate.m; sourceTree = "<group>"; };
+		21A94B55253EA25400EAF0E2 /* BlueViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlueViewController.xib; sourceTree = "<group>"; };
 		296A19D72B8A2186DA943A06 /* Pods_GLRouter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GLRouter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC0EFFAE5B8C26917FD686F /* Pods_GLRouter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GLRouter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* GLRouter_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLRouter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,17 +83,6 @@
 		7D444F97FD65244FB48CE390 /* Pods-GLRouter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLRouter_Example.debug.xcconfig"; path = "Target Support Files/Pods-GLRouter_Example/Pods-GLRouter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A7146C823843CA4F9B9A906E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C2A3381832DED72F6FFA0FC6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		CA56EF9021940C430028B28D /* GLFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLFirstViewController.h; sourceTree = "<group>"; };
-		CA56EF9121940C430028B28D /* GLFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLFirstViewController.m; sourceTree = "<group>"; };
-		CA56EF9321940C560028B28D /* GLSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLSecondViewController.h; sourceTree = "<group>"; };
-		CA56EF9421940C560028B28D /* GLSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLSecondViewController.m; sourceTree = "<group>"; };
-		CA56EF9621940C6B0028B28D /* GLThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLThirdViewController.h; sourceTree = "<group>"; };
-		CA56EF9721940C6B0028B28D /* GLThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLThirdViewController.m; sourceTree = "<group>"; };
-		CA56EF9921940C7D0028B28D /* GLFourViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLFourViewController.h; sourceTree = "<group>"; };
-		CA56EF9A21940C7D0028B28D /* GLFourViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLFourViewController.m; sourceTree = "<group>"; };
-		CAAE68D42194261E00399F25 /* GLFirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GLFirstViewController.xib; sourceTree = "<group>"; };
-		CAAE68D621942B2F00399F25 /* GLSecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GLSecondViewController.xib; sourceTree = "<group>"; };
-		CAAE68F121943C0300399F25 /* GLFourViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GLFourViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +107,7 @@
 				217ACCB9253D69C800B9AF14 /* aboutViewController.m */,
 				217ACCC1253D69C800B9AF14 /* BlueViewController.h */,
 				217ACCB6253D69C800B9AF14 /* BlueViewController.m */,
+				21A94B55253EA25400EAF0E2 /* BlueViewController.xib */,
 				217ACCBE253D69C800B9AF14 /* GLTools.h */,
 				217ACCB8253D69C800B9AF14 /* GLTools.m */,
 				217ACCBB253D69C800B9AF14 /* GLWebViewController.h */,
@@ -119,6 +116,8 @@
 				217ACCBA253D69C800B9AF14 /* GreenViewController.m */,
 				217ACCC2253D69C800B9AF14 /* RedViewController.h */,
 				217ACCB5253D69C800B9AF14 /* RedViewController.m */,
+				212B9E78253E92AC0065F91D /* WebViewController.h */,
+				212B9E79253E92AC0065F91D /* WebViewController.m */,
 			);
 			path = appClasses;
 			sourceTree = "<group>";
@@ -191,7 +190,7 @@
 				217ACCC4253D69C800B9AF14 /* Resources */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
-				CA56EF9C21940C8C0028B28D /* ViewControllers */,
+				212B9E75253E90BC0065F91D /* RouterList.plist */,
 			);
 			name = "Example for GLRouter";
 			path = GLRouter;
@@ -216,24 +215,6 @@
 				C2A3381832DED72F6FFA0FC6 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
-		CA56EF9C21940C8C0028B28D /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				CA56EF9021940C430028B28D /* GLFirstViewController.h */,
-				CA56EF9121940C430028B28D /* GLFirstViewController.m */,
-				CAAE68D42194261E00399F25 /* GLFirstViewController.xib */,
-				CA56EF9321940C560028B28D /* GLSecondViewController.h */,
-				CA56EF9421940C560028B28D /* GLSecondViewController.m */,
-				CAAE68D621942B2F00399F25 /* GLSecondViewController.xib */,
-				CA56EF9621940C6B0028B28D /* GLThirdViewController.h */,
-				CA56EF9721940C6B0028B28D /* GLThirdViewController.m */,
-				CA56EF9921940C7D0028B28D /* GLFourViewController.h */,
-				CA56EF9A21940C7D0028B28D /* GLFourViewController.m */,
-				CAAE68F121943C0300399F25 /* GLFourViewController.xib */,
-			);
-			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,10 +286,12 @@
 				217ACCD5253D69C800B9AF14 /* item2@2x.png in Resources */,
 				217ACCD7253D69C800B9AF14 /* item3@2x.png in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				212B9E76253E90BC0065F91D /* RouterList.plist in Resources */,
 				217ACCD9253D69C800B9AF14 /* b.jpg in Resources */,
 				217ACCD6253D69C800B9AF14 /* item4@2x.png in Resources */,
 				217ACCD8253D69C800B9AF14 /* item1@2x.png in Resources */,
 				217ACCDA253D69C800B9AF14 /* c.jpg in Resources */,
+				21A94B56253EA25400EAF0E2 /* BlueViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				217ACCCF253D69C800B9AF14 /* GLTools.m in Sources */,
+				212B9E7A253E92AC0065F91D /* WebViewController.m in Sources */,
 				217ACCE0253D6A1400B9AF14 /* GLAppDelegate.m in Sources */,
 				217ACCD1253D69C800B9AF14 /* GreenViewController.m in Sources */,
 				217ACCD0253D69C800B9AF14 /* aboutViewController.m in Sources */,

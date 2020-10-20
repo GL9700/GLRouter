@@ -8,6 +8,6 @@
 #import <Foundation/Foundation.h>
 
 @protocol GLRouterProtocol <NSObject>
-- (void)setupRouterParams:(NSDictionary *)params;
+- (void)routerParams:(NSDictionary *)params;
 @end
 

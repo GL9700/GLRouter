@@ -17,7 +17,7 @@
 
 @implementation aboutViewController
 
-- (void)setupRouterParams:(NSDictionary *)params {
+- (void)routerParams:(NSDictionary *)params {
     self.label.text = params[@"text"];
     self.imgURL = [NSURL URLWithString:params[@"image"]];
 }

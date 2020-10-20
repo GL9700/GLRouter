@@ -8,5 +8,5 @@
 #import "UIViewController+RExt.h"
 
 @implementation UIViewController (RExt)
-- (void)setupRouterParams:(NSDictionary *)params {}
+- (void)routerParams:(NSDictionary *)params {}
 @end

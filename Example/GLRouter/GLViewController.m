@@ -101,7 +101,7 @@
 /** router init */
 - (void)setupRouter {
 //    [GLRouterManager setVerifyScheme:@"lgl"];   // URL 跳转scheme限制(仅URL模式)
-//    [GLRouterManager managerWithRegisterFile:@"route"]; // 路由表(仅Key模式)
+    [GLRouterManager managerWithRegisterFile:@"RouterList" withFromBundle:[NSBundle bundleForClass:self.class]]; // 路由表(仅Key模式)
 //    /* 拦截路由过程中发生的错误 */
 //    [GLRouterManager failure:^(NSError *error, NSString *detail) {
 //        NSLog(@"%@ - %@", error, detail);
@@ -111,7 +111,7 @@
     rto_dsp_clv(@"lgl://push/aboutViewController?text=Hello Router&image=https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png", nil, self);
 }
 - (void)onClickPresentForURL {
-    rto_dsp(@"lgl://present/aboutViewController?text=Hello GLRouter&v1=1&v2=2", nil);
+    rto_dsp(@"lgl://present/BlueViewController?text=Hello GLRouter&v1=1&v2=2", nil);
 }
 - (void)onClickInvokeForURL {
     rto_ivk(@"lgl://invoke/GLTools/sayHello:to:message:?v1=李雷&v2=韩梅梅&v3=Hi,Jerry I'm in GLRouter", ^(id ret) {
@@ -120,7 +120,12 @@
 }
 
 - (void)onClickPushForKey {
-    rto_dsp(@"toLogin", nil);
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        rto_dsp(@"toWeb", ^BOOL(id tgt) {
+            [tgt setValue:@"http://www.baidu.com" forKey:@"url"];
+            return YES;
+        });
+    });
 }
 - (void)onClickPresentForKey {
     rto_dsp(@"presentAbout", nil);

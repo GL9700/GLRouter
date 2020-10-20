@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>toWeb</key>
+	<dict>
+		<key>target</key>
+		<string>WebViewController</string>
+		<key>mode</key>
+		<string>push</string>
+	</dict>
+	<key>presentAbout</key>
+	<dict>
+		<key>target</key>
+		<string>aboutViewController</string>
+		<key>mode</key>
+		<string>present</string>
+	</dict>
+	<key>sayHello</key>
+	<dict>
+		<key>target</key>
+		<string></string>
+		<key>method</key>
+		<string></string>
+		<key>mode</key>
+		<string>invoke</string>
+	</dict>
+</dict>
+</plist>
