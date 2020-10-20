@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GLRouter'
-  s.version          = '2.0.2'
+  s.version          = '2.0.3'
   s.summary          = '一个极其简便灵活的iOS路由'
 
 # This description is used to generate tags and improve search results.
