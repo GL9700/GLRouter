@@ -36,7 +36,7 @@ pod 'GLRouter'
 
 ## Author
 
-36617161@qq.com
+LiGuoliang 36617161@qq.com
 
 ## License
 
