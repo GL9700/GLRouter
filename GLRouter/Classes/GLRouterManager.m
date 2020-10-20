@@ -5,9 +5,9 @@
 //  Created by liguoliang on 2020/10/10.
 //
 
-#import "GLRouterManager.h"
-#import <GLRouterURLParser.h>
-#import <GLRouterFileManager.h>
+#import <GLRouter/GLRouterManager.h>
+#import <GLRouter/GLRouterURLParser.h>
+#import <GLRouter/GLRouterFileManager.h>
 
 @interface GLRouterManager()
 @property (nonatomic) void(^failureHandle)(NSError *error, NSString *detail);

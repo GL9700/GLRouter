@@ -5,7 +5,7 @@
 //  Created by liguoliang on 2020/10/10.
 //
 
-#import "GLRCoreInvokeControl.h"
+#import <GLRouter/GLRCoreInvokeControl.h>
 #import <objc/message.h>
 
 @implementation GLRCoreInvokeControl
