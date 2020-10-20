@@ -50,9 +50,10 @@
 - (UIViewController *)viewControllerForClass:(Class)cls {
     NSBundle *bundle = [NSBundle bundleForClass:cls];
     UIViewController *vc;
-    if([bundle pathForResource:NSStringFromClass(cls) ofType:@"nib"]){
+    if ([bundle pathForResource:NSStringFromClass(cls) ofType:@"nib"]) {
         vc = [[cls alloc] initWithNibName:nil bundle:[NSBundle bundleForClass:cls]];
-    }else {
+    }
+    else {
         vc = [cls new];
     }
     return vc;
@@ -72,7 +73,7 @@
             UINavigationController *nav = [self matchNavigationFromViewController:container];
             if (nav == nil) {
                 if (self.failureHandle) {
-                    self.failureHandle(kRTargetNavigationError, nil);
+                    self.failureHandle(kRouterErrorWith(@"Can not Find Navigation to match Router push target", RouterErrorNotFoundNavigation), nil);
                 }
                 NSLog(@"-- 未能找到可用的Navigation -- [push %@] --", cls);
             }
@@ -82,7 +83,7 @@
         }
         else {
             if (self.failureHandle) {
-                self.failureHandle(kRProtocolError, nil);
+                self.failureHandle(kRouterErrorWith(@"Target Class Not Use [GLRouter Protocol]", RouterErrorTargetNotUseProtocol), nil);
             }
         }
     });
@@ -104,7 +105,7 @@
         }
         else {
             if (self.failureHandle) {
-                self.failureHandle(kRProtocolError, nil);
+                self.failureHandle(kRouterErrorWith(@"Target Class Not Use [GLRouter Protocol]", RouterErrorTargetNotUseProtocol), nil);
             }
         }
     });

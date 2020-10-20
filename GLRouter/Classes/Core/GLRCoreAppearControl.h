@@ -17,7 +17,7 @@
 - (void)pushTargetClass:(Class)cls
              withParams:(NSDictionary *)params
               container:(UIViewController *)container
-            inCondition:(BOOL(^)(UIViewController *target))handle;
+            inCondition:(BOOL (^)(UIViewController *target))handle;
 
 /// present页面
 /// @param cls 页面名称
@@ -27,6 +27,6 @@
 - (void)presentTargetClass:(Class)cls
                 withParams:(NSDictionary *)params
                  container:(UIViewController *)container
-               inCondition:(BOOL(^)(UIViewController *target))handle;
+               inCondition:(BOOL (^)(UIViewController *target))handle;
 
 @end

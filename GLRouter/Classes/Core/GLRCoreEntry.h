@@ -20,7 +20,7 @@ typedef enum : NSUInteger {
 @property (nonatomic) NSString *invokeMethodName;
 @property (nonatomic) UIViewController *container;
 @property (nonatomic) NSDictionary *params;
-@property (nonatomic) BOOL (^handleCondition)(id target);
-@property (nonatomic) void (^handleReturn)(id ret);
+@property (nonatomic) BOOL (^ handleCondition)(id target);
+@property (nonatomic) void (^ handleReturn)(id ret);
 - (void)enter;
 @end

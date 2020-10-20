@@ -9,8 +9,8 @@
 #import <GLRouter/GLRouterURLParser.h>
 #import <GLRouter/GLRouterFileManager.h>
 
-@interface GLRouterManager()
-@property (nonatomic) void(^failureHandle)(NSError *error, NSString *detail);
+@interface GLRouterManager ()
+@property (nonatomic) void (^ failureHandle)(NSError *error, NSString *detail);
 @end
 
 @implementation GLRouterManager
@@ -19,16 +19,17 @@
     static GLRouterManager *instance;
     dispatch_once(&onceToken, ^{
         instance = [GLRouterManager new];
-        if([GLRouterURLParser sharedParser].scheme==nil){
+        if ([GLRouterURLParser sharedParser].scheme == nil) {
             [GLRouterURLParser sharedParser].scheme = [self getScheme];
         }
     });
     return instance;
 }
+
 + (NSString *)getScheme {
     NSArray *urlTypes = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleURLTypes"];
     for (NSDictionary *obj in urlTypes) {
-        if([obj[@"CFBundleURLName"] isEqualToString:@"GLRouter"]) {
+        if ([obj[@"CFBundleURLName"] isEqualToString:@"GLRouter"]) {
             return ((NSArray *)obj[@"CFBundleURLSchemes"]).firstObject;
         }
     }
@@ -39,13 +40,14 @@
     [GLRouterURLParser sharedParser].scheme = scheme;
 }
 
-+ (void)failure:(void(^)(NSError *error, NSString *detail))handle {
++ (void)failure:(void (^)(NSError *error, NSString *detail))handle {
     [GLRouterManager manager].failureHandle = handle;
 }
+
 @end
 
-@implementation GLRouterManager(URLExt)
-+ (void)ToRouterURL:(NSString *)url from:(UIViewController *)from conditionHandle:(BOOL(^)(id tgt))conHandle returnHandle:(void(^)(id ret))retHandle {
+@implementation GLRouterManager (URLExt)
++ (void)ToRouterURL:(NSString *)url from:(UIViewController *)from conditionHandle:(BOOL (^)(id tgt))conHandle returnHandle:(void (^)(id ret))retHandle {
     GLRouterURLParser *parser = [GLRouterURLParser sharedParser];
     parser.failureHandle = [GLRouterManager manager].failureHandle;
     GLRCoreEntry *entry = [parser parseURL:url];
@@ -54,9 +56,10 @@
     entry.handleReturn = retHandle;
     [entry enter];
 }
+
 @end
 
-@implementation GLRouterManager(FileExt)
+@implementation GLRouterManager (FileExt)
 + (instancetype)managerWithRegisterFile:(NSString *)name withFromBundle:(NSBundle *)bundle {
     GLRouterManager *manager = [self manager];
     [manager registerRouter:name withBundle:bundle];
@@ -67,7 +70,7 @@
     [[GLRouterFileManager sharedManager] loadRouterFileName:routerFile withBundle:bundle];
 }
 
-+ (void)ToRouterKey:(NSString *)key from:(UIViewController *)from conditionHandle:(BOOL(^)(id tgt))conHandle returnHandle:(void(^)(id ret))retHandle {
++ (void)ToRouterKey:(NSString *)key from:(UIViewController *)from conditionHandle:(BOOL (^)(id tgt))conHandle returnHandle:(void (^)(id ret))retHandle {
     GLRCoreEntry *entry = [[GLRouterFileManager sharedManager] routerKey:key];
     entry.failureHandle = [GLRouterManager manager].failureHandle;
     entry.container = from;
@@ -75,4 +78,5 @@
     entry.handleReturn = retHandle;
     [entry enter];
 }
+
 @end

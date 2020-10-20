@@ -12,7 +12,7 @@
     * 极简方案
         可直接在需要使用路由的地方调用`rto_dsp()`,`rto_ivk()`,`rto_dsp_clv()`然后传入对应参数即可
         传入的内容可参考`#调用`
- 
+
 #### 详细使用
     * 普通URL方案
         在所有路由方法前,率先定义用于过滤和验证`scheme`的关键字;
@@ -28,11 +28,11 @@
     * rto_ivk(str, handle)
         - str : 符合路由规范的URL 或 已存在路由表中的Key, 可参考`#路由URL规范`
         - handle : 调用方法结束后的block包含返回值
- 
+
     * rto_dsp(str, (BOOL)handle)
         - str : 符合路由规范的URL 或 已存在路由表中的Key, 可参考`#路由URL规范`
         - handle ->BOOL : 调用方法前,可再一次确定是否继续执行当前操作;返回`YES`或`不定义`则为继续
- 
+
     * rto_dsp_clv(str, (BOOL)handle)
         - str : 符合路由规范的URL 或 已存在路由表中的Key, 可参考`#路由URL规范`
         - handle ->BOOL : 调用方法前,可再一次确定是否继续执行当前操作;返回`YES`或`不定义`则为继续
@@ -77,31 +77,35 @@
             |   |- ....
  */
 
-
 #import <GLRouter/GLRouterManager.h>
 #import <GLRouter/GLRouterProtocol.h>
 #import <GLRouter/UIViewController+RExt.h>
 
-static void __rto(NSString *str , BOOL(^ch)(id tgt) , void(^rh)(id ret), UIViewController *from) {
+static void __rto(NSString *str, BOOL (^ch)(id tgt), void (^rh)(id ret), UIViewController *from)
+{
     NSURL *u = [NSURL URLWithString:[str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-    if(u && u.scheme) {
+    if (u && u.scheme) {
         [GLRouterManager ToRouterURL:str from:from conditionHandle:ch returnHandle:rh];
-    }else{
+    }
+    else {
         [GLRouterManager ToRouterKey:str from:from conditionHandle:ch returnHandle:rh];
     }
 }
 
 /** 通过路由进行页面的 [push | present] 跳转; handle:跳转前的条件判断 */
-static void rto_dsp(NSString *str, BOOL(^handle)(id tgt)) {
+static void rto_dsp(NSString *str, BOOL (^handle)(id tgt))
+{
     __rto(str, handle, NULL, NULL);
 }
 
 /** 通过路由进行页面的 [push | present] 跳转; handle:跳转前的条件判断; from:容器层级*/
-static void rto_dsp_clv(NSString *str, BOOL(^handle)(id tgt), UIViewController *from) {
+static void rto_dsp_clv(NSString *str, BOOL (^handle)(id tgt), UIViewController *from)
+{
     __rto(str, handle, NULL, from);
 }
 
 /** 通过路由进行方法的调用 [invoke]; handle:方法返回值 */
-static void rto_ivk(NSString *str, void(^handle)(id ret)) {
+static void rto_ivk(NSString *str, void (^handle)(id ret))
+{
     __rto(str, NULL, handle, NULL);
 }

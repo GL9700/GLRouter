@@ -21,47 +21,48 @@
         [invoke setSelector:select];
         // params:
         NSArray *argments = [self argmentsFrom:params];
-        for (int i = 0; i < methodSign.numberOfArguments-2; i++) {
+        for (int i = 0; i < methodSign.numberOfArguments - 2; i++) {
             if (i < argments.count) {
                 if ([argments[i] isMemberOfClass:[NSNull class]]) {
                     continue;
                 }
                 id obj = argments[i];
-                const char *at = [methodSign getArgumentTypeAtIndex:i+2];
-                if ( !strcmp(at, "s") || !strcmp(at, "l")  || !strcmp(at, "q") || !strcmp(at, "i")) {
+                const char *at = [methodSign getArgumentTypeAtIndex:i + 2];
+                if (!strcmp(at, "s") || !strcmp(at, "l")  || !strcmp(at, "q") || !strcmp(at, "i")) {
                     long long temp = [obj longLongValue];
-                    [invoke setArgument:&temp atIndex:i+2];
+                    [invoke setArgument:&temp atIndex:i + 2];
                 }
-                else if (!strcmp(at, "f")){
+                else if (!strcmp(at, "f")) {
                     float temp = [obj floatValue];
-                    [invoke setArgument:&temp atIndex:i+2];
+                    [invoke setArgument:&temp atIndex:i + 2];
                 }
                 else if (!strcmp(at, "d")) {
                     double temp = [obj doubleValue];
-                    [invoke setArgument:&temp atIndex:i+2];
+                    [invoke setArgument:&temp atIndex:i + 2];
                 }
                 else if (!strcmp(at, "c")) {
                     char c = [obj characterAtIndex:0];
-                    [invoke setArgument:&c atIndex:i+2];
+                    [invoke setArgument:&c atIndex:i + 2];
                 }
-                else if(!strcmp(at, "B")) {
+                else if (!strcmp(at, "B")) {
                     BOOL b = [obj boolValue];
-                    [invoke setArgument:&b atIndex:i+2];
+                    [invoke setArgument:&b atIndex:i + 2];
                 }
-                else if(!strcmp(at, "@")){
-                    [invoke setArgument:&obj atIndex:i+2];
-                }else{
+                else if (!strcmp(at, "@")) {
+                    [invoke setArgument:&obj atIndex:i + 2];
+                }
+                else {
                     NSAssert(0, @"-- Error:encode Failed：%@ | %s --", obj, at);
                 }
             }
         }
 //        [invoke retainArguments];
         [invoke invoke];
-        
+
         // return value
         const char *rt = methodSign.methodReturnType;
         __autoreleasing id ret;
-        if(strcmp(rt, "v")){
+        if (strcmp(rt, "v")) {
             if (!strcmp(rt, "@")) {
                 [invoke getReturnValue:&ret];
             }
@@ -98,12 +99,13 @@
                 free(temp);
             }
         }
-        if(handle) {
+        if (handle) {
             handle(ret);
         }
-    }else{
-        if(self.failureHandle) {
-            self.failureHandle(kRTargetError, [NSString stringWithFormat:@"+%@ in %@", NSStringFromSelector(select), NSStringFromClass(self.class)]);
+    }
+    else {
+        if (self.failureHandle) {
+            self.failureHandle(kRouterErrorWith(@"Target Not Found", RouterErrorNotFoundTarget), [NSString stringWithFormat:@"+%@ in %@", NSStringFromSelector(select), NSStringFromClass(self.class)]);
         }
     }
 }

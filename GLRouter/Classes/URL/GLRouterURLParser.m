@@ -35,6 +35,7 @@
     NSArray *paths = [urlc.path componentsSeparatedByString:@"/"];
     if ([self verifyWithScheme:urlc.scheme]) {
         GLRCoreEntry *entry = [GLRCoreEntry new];
+        entry.failureHandle = self.failureHandle;
         entry.className = paths[0];
         entry.container = nil;
         entry.params = [self paramsFromQuerys:urlc.queryItems];
@@ -44,12 +45,12 @@
         else if ([[urlc.host lowercaseString] isEqualToString:@"present"]) {
             entry.entryMode = RouterEntryPresent;
         }
-        else if([[urlc.host lowercaseString] isEqualToString:@"key"]) {
+        else if ([[urlc.host lowercaseString] isEqualToString:@"key"]) {
             return [[GLRouterFileManager sharedManager] routerKey:entry.className];
         }
         else if ([[urlc.host lowercaseString] isEqualToString:@"invoke"]) {
             if (paths.count <= 1 && self.failureHandle) {
-                self.failureHandle(kRURLError, url);
+                self.failureHandle(kRouterErrorWith(@"URL not conform to [GLRouter URL Rule]", RouterErrorUnabilableURL), url);
                 return nil;
             }
             entry.entryMode = RouterEntryInvoke;
@@ -57,7 +58,7 @@
         }
         else {
             if (self.failureHandle) {
-                self.failureHandle(kRURLError, url);
+                self.failureHandle(kRouterErrorWith(@"URL not conform to [GLRouter URL Rule]", RouterErrorUnabilableURL), url);
             }
             return nil;
         }
@@ -84,7 +85,7 @@
         return YES;
     }
     if (self.failureHandle) {
-        self.failureHandle(kRSchemeError, scheme);
+        self.failureHandle(kRouterErrorWith(@"Invalid Scheme", RouterErrorInvalidScheme), scheme);
     }
     return NO;
 }

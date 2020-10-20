@@ -10,4 +10,3 @@
 @protocol GLRouterProtocol <NSObject>
 - (void)routerParams:(NSDictionary *)params;
 @end
-

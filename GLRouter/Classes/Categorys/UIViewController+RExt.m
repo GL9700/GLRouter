@@ -8,5 +8,7 @@
 #import <GLRouter/UIViewController+RExt.h>
 
 @implementation UIViewController (RExt)
-- (void)routerParams:(NSDictionary *)params {}
+- (void)routerParams:(NSDictionary *)params {
+}
+
 @end

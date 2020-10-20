@@ -8,5 +8,5 @@
 #import <Foundation/Foundation.h>
 #import <GLRouter/GLRouterErrorList.h>
 @interface GLRBase : NSObject
-@property (nonatomic) void(^failureHandle)(NSError *error, NSString *detail);
+@property (nonatomic) void (^ failureHandle)(NSError *error, NSString *detail);
 @end
