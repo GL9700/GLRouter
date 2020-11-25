@@ -72,19 +72,14 @@
             }
             UINavigationController *nav = [self matchNavigationFromViewController:container];
             if (nav == nil) {
-                if (self.failureHandle) {
-                    self.failureHandle(kRouterErrorWith(@"Can not Find Navigation to match Router push target", RouterErrorNotFoundNavigation), nil);
-                }
-                NSLog(@"-- 未能找到可用的Navigation -- [push %@] --", cls);
+                self.failureHandle == nil ? NSLog(@"## [GLRouter] ## Has Error !! More info at [GLRouterManager failure:]") : self.failureHandle(kRouterErrorWith(RouterErrorNotFoundNavigation, @"Navigation NotFound"), nil);
             }
             else {
                 [nav pushViewController:vc animated:YES];
             }
         }
         else {
-            if (self.failureHandle) {
-                self.failureHandle(kRouterErrorWith(@"Target Class Not Use [GLRouter Protocol]", RouterErrorTargetNotUseProtocol), nil);
-            }
+            self.failureHandle == nil ? NSLog(@"## [GLRouter] ## Has Error !! More info at [GLRouterManager failure:]") : self.failureHandle(kRouterErrorWith(RouterErrorTargetNotUseProtocol, @"[GLRouter Protocol] NotFound"), @"Target Class Not Use [GLRouter Protocol]");
         }
     });
 }
@@ -104,9 +99,7 @@
             [container presentViewController:vc animated:YES completion:nil];
         }
         else {
-            if (self.failureHandle) {
-                self.failureHandle(kRouterErrorWith(@"Target Class Not Use [GLRouter Protocol]", RouterErrorTargetNotUseProtocol), nil);
-            }
+            self.failureHandle == nil ? NSLog(@"## [GLRouter] ## Has Error !! More info at [GLRouterManager failure:]") : self.failureHandle(kRouterErrorWith(RouterErrorTargetNotUseProtocol, @"[GLRouter Protocol] NotFound"), @"Target Class Not Use [GLRouter Protocol]");
         }
     });
 }

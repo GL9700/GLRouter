@@ -17,9 +17,7 @@
 @implementation GLRCoreEntry
 - (void)enter {
     if (NSClassFromString(self.className) == nil) {
-        if (self.failureHandle) {
-            self.failureHandle(kRouterErrorWith(@"Target Not Found", RouterErrorNotFoundTarget), self.className);
-        }
+        self.failureHandle == nil ? NSLog(@"## [GLRouter] ## Has Error !! More info at [GLRouterManager failure:]") : self.failureHandle(kRouterErrorWith(RouterErrorNotFoundTarget, @"Target Class Not Found"), self.className);
     }
     else {
         switch (self.entryMode) {

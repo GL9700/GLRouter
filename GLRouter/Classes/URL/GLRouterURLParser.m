@@ -49,17 +49,17 @@
             return [[GLRouterFileManager sharedManager] routerKey:entry.className];
         }
         else if ([[urlc.host lowercaseString] isEqualToString:@"invoke"]) {
-            if (paths.count <= 1 && self.failureHandle) {
-                self.failureHandle(kRouterErrorWith(@"URL not conform to [GLRouter URL Rule]", RouterErrorUnabilableURL), url);
+            if (paths.count <= 1) {
+                self.failureHandle == nil ? : self.failureHandle(kRouterErrorWith(RouterErrorUnabilableURL, @"URL not conform to [GLRouter URL Rule]"), url);
+
                 return nil;
             }
             entry.entryMode = RouterEntryInvoke;
             entry.invokeMethodName = paths[1];
         }
         else {
-            if (self.failureHandle) {
-                self.failureHandle(kRouterErrorWith(@"URL not conform to [GLRouter URL Rule]", RouterErrorUnabilableURL), url);
-            }
+            self.failureHandle == nil ? : self.failureHandle(kRouterErrorWith(RouterErrorUnabilableURL, @"URL not conform to [GLRouter URL Rule]"), url);
+
             return nil;
         }
         entry.handleCondition = nil;
@@ -84,9 +84,8 @@
     if ([scheme isEqualToString:self.scheme] || self.scheme == nil) {
         return YES;
     }
-    if (self.failureHandle) {
-        self.failureHandle(kRouterErrorWith(@"Invalid Scheme", RouterErrorInvalidScheme), scheme);
-    }
+    self.failureHandle == nil ? NSLog(@"## [GLRouter] ## Has Error !! More info at [GLRouterManager failure:]") : self.failureHandle(kRouterErrorWith(RouterErrorInvalidScheme, @"Invalid Scheme"), scheme);
+
     return NO;
 }
 

@@ -100,12 +100,12 @@
 #pragma mark- >> About Router
 /** router init */
 - (void)setupRouter {
-    [GLRouterManager setVerifyScheme:@"lgl"];   // URL 跳转scheme限制(仅URL模式)
+    [GLRouterManager setVerifyScheme:@"lgl1"];   // URL 跳转scheme限制(仅URL模式)
     [GLRouterManager managerWithRegisterFile:@"RouterList" withFromBundle:[NSBundle bundleForClass:self.class]]; // 路由表(仅Key模式)
 //    /* 拦截路由过程中发生的错误 */
-    [GLRouterManager failure: ^(NSError *error, NSString *detail) {
-        NSLog(@"%@ - %@", error, detail);
-    }];
+//    [GLRouterManager failure: ^(NSError *error, NSString *detail) {
+//        NSLog(@"%@ - %@", error, detail);
+//    }];
 }
 
 - (void)onClickPushForURL {
@@ -117,7 +117,7 @@
 }
 
 - (void)onClickInvokeForURL {
-    rto_ivk(@"lgl://invoke/GLTools/sayHello:to:message:?v1=李雷&v2=韩梅梅&v3=Hi,Jerry I'm in GLRouter", ^(id ret) {
+    rto_ivk(@"lgl://invoke/GLTools/sayHello:to:message?v1=李雷&v2=韩梅梅&v3=Hi,Jerry I'm in GLRouter", ^(id ret) {
         showToastMsg(ret);
     });
 }

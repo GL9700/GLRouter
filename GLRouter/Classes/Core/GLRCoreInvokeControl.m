@@ -9,13 +9,16 @@
 #import <objc/message.h>
 
 @implementation GLRCoreInvokeControl
+
 - (void)invokeMethodFromSelector:(SEL)select
                          inClass:(Class)cls
                       withParams:(NSDictionary *)params
                              ret:(void (^)(id ret))handle {
     NSMethodSignature *methodSign = [cls methodSignatureForSelector:select];
-    NSAssert(methodSign, @"-- [%@]-Method Signature为空 --", self.class);
-    if (methodSign) {
+    if (methodSign == nil) {
+        self.failureHandle == nil ? NSLog(@"## [GLRouter] ## Has Error !! More info at [GLRouterManager failure:]") : self.failureHandle(kRouterErrorWith(RouterErrorMethodNotFound, @"Method NotFound"), [NSString stringWithFormat:@"+[%@ %@]", NSStringFromClass(cls), NSStringFromSelector(select)]);
+    }
+    else {
         NSInvocation *invoke = [NSInvocation invocationWithMethodSignature:methodSign];
         [invoke setTarget:cls];
         [invoke setSelector:select];
@@ -56,7 +59,7 @@
                 }
             }
         }
-//        [invoke retainArguments];
+        //        [invoke retainArguments];
         [invoke invoke];
 
         // return value
@@ -103,11 +106,6 @@
             handle(ret);
         }
     }
-    else {
-        if (self.failureHandle) {
-            self.failureHandle(kRouterErrorWith(@"Target Not Found", RouterErrorNotFoundTarget), [NSString stringWithFormat:@"+%@ in %@", NSStringFromSelector(select), NSStringFromClass(self.class)]);
-        }
-    }
 }
 
 // 先对params的key排序,然后截取里面数字，没有某个参数位置->空，多出的抛弃
@@ -149,6 +147,18 @@
         r += [str characterAtIndex:j];
     }
     return r;
+}
+
+/// 返回Class中的所有方法
+/// @param cls 指定的Class
+- (NSArray *)outputMethodListInClass:(Class)cls {
+    NSMutableArray *methodNames = [@[] mutableCopy];
+    uint count = 0;
+    Method *ms = class_copyMethodList(cls, &count);
+    for (int i = 0; i < count; i++) {
+        [methodNames addObject:NSStringFromSelector(method_getName(ms[i]))];
+    }
+    return [methodNames copy];
 }
 
 @end

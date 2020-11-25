@@ -29,8 +29,8 @@
     NSString *ext = fileName.lastPathComponent.pathExtension;
     NSString *path = [bundle pathForResource:name ofType:ext.length == 0 ? @"plist" : ext ];
     [self.rlist addEntriesFromDictionary:[NSDictionary dictionaryWithContentsOfFile:path]];
-    if (self.rlist.allKeys.count == 0 && self.failureHandle) {
-        self.failureHandle(kRouterErrorWith(@"R-Plist Unavailable", RouterErrorUnabilableLocalPlist), path);
+    if (self.rlist.allKeys.count == 0) {
+        self.failureHandle == nil ? NSLog(@"## [GLRouter] ## Has Error !! More info at [GLRouterManager failure:]") : self.failureHandle(kRouterErrorWith(RouterErrorUnabilableLocalPlist, @"R-Plist Unavailable"), path);
     }
 }
 
