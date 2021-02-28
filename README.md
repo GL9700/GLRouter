@@ -92,7 +92,9 @@ pod 'GLRouter'
     ```
     必须：iOS开发时配置一个与app相关联的域名
     ```
-
+## History
+* 2.1.0
+    * 增加了便捷初始化方案: rto_init_tab( scheme, routingTableName, routingTableBundle )
 
 
 ## Author

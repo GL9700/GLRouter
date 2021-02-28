@@ -92,6 +92,16 @@ static void __rto(NSString *str, BOOL (^ch)(id tgt), void (^rh)(id ret), UIViewC
     }
 }
 
+/** 便捷初始化器(可不使用，只是便于配置)，Scheme Match (Scheme匹配)， bundle (mainbundle || other bundle)， Local Router Table FileName (本地路由表文件名)*/
+static void rto_init_tab(NSString *schemeMatch, NSBundle *bundle, NSString *LRT_FileName) {
+    if(schemeMatch) {
+        [GLRouterManager setVerifyScheme:schemeMatch];
+    }
+    if(bundle!=nil && LRT_FileName!=nil) {
+        [GLRouterManager managerWithRegisterFile:LRT_FileName withFromBundle:bundle];
+    }
+}
+
 /** 通过路由进行页面的 [push | present] 跳转; handle:跳转前的条件判断 */
 static void rto_dsp(NSString *str, BOOL (^handle)(id tgt))
 {
