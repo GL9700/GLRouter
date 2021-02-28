@@ -1,4 +1,4 @@
-![logo](https://github.com/GL9700/gl9700.github.io/blob/master/GLSLogo_800.png?raw=true)
+![logo](https://gl9700.gitee.io/assets/images/logo800.png)
 # GLRouter
 
 [![CI Status](https://img.shields.io/travis/liandyii@msn.com/GLRouter.svg?style=flat)](https://travis-ci.org/liandyii@msn.com/GLRouter)
@@ -6,7 +6,81 @@
 [![License](https://img.shields.io/cocoapods/l/GLRouter.svg?style=flat)](https://cocoapods.org/pods/GLRouter)
 [![Platform](https://img.shields.io/cocoapods/p/GLRouter.svg?style=flat)](https://cocoapods.org/pods/GLRouter)
 
-### 题外 
+## 快速开始
+### 基本概念
+1. Router支持，三种路由方式
+    * `push` 页面跳转
+    * `present` 页面弹出
+    * `invoke` 方法调用
+2. 目标如果需要被展示(`push`,`present`)，则需要实现<GLRouterProtocol>中的相应内容。
+3. 目标如果需要被调用(`invoke`)，则调用的目标方法必须是`类方法`。
+
+### 使用(页面跳转)
+1. 在跳转目标`TargetViewController`中引入接口`<GLRouterProtocol>`，并实现相应的指定方法
+2. 使用如下代码
+    ```objc
+    /*
+    * C函数，无需类名，直接调用
+    * rto_dsp(NSString *str, BOOL (^handle)(id tgt))
+    */
+
+    // 从当前页面跳转至TargetViewController
+    rto_dsp(@"SCHEME://push/TargetViewController", nil);
+
+    // 在当前页面弹出TargetViewController
+    rto_dsp(@"SCHEME://present/TargetViewController", nil);
+    ```
+### 使用(方法调用)
+1. 确认在目标Class存在该函数，例如
+    ```objc
+    // <Tools.h>
+    @interface Tools : NSObject
+    @end
+
+    // <Tools.m>
+    @implementation Tools
+    - (BOOL)sendMessage:(NSString *)msg from:(NSString *)from to:(NSString *)to {
+        BOOL success = (msg!=nil && from!=nil && to!=nil);
+        if(success){
+            NSLog(@"%@ 给 %@ 发送了消息: %@", from, to, msg);
+        }else{
+            NSLog(@"发送失败");
+        }
+        return success;
+    }
+    @end
+    ```
+2. 使用如下代码进行调用
+    ```objc
+    /*
+    * C函数，无需类名，直接调用
+    * rto_ivk(NSString *str, void (^handle)(id ret))
+    */
+
+    // 无返回值
+    rto_ivk(@"SCHEME://invoke/Tools/sendMessage:from:to:?p1=Hello World&p2=Tom&p3=Jerry", nil); // output “Tom 给 Jerry 发送了消息: Hello World”
+
+    // 有返回值
+    rto_ivk(@"SCHEME://invoke/Tools/sendMessage:from:to:?p1=Hello World&p2=Tom&p3=Jerry", ^(id ret){
+        // ret 为返回值
+        BOOL result = [ret BoolValue];
+    }); // output “Tom 给 Jerry 发送了消息: Hello World”
+
+    ```
+
+## RouterURL的构成
+<img src="https://gl9700.gitee.io/assets/images/router_url_info.jpg" width="600px">
+
+## 安装
+
+GLRouter is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+```ruby
+pod 'GLRouter'
+```
+
+## 题外 
+
 目前市面上外部跳转入进app的方案，方式大致分为两种：
 * schema (iOS all)
     ```
@@ -20,20 +94,6 @@
     ```
 
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
-## Installation
-
-GLRouter is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'GLRouter'
-```
 
 ## Author
 
