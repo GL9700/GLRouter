@@ -1,0 +1,11 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+use_frameworks!
+
+target 'ObjCDemo' do
+	pod 'GLRouter', :path=>'../'
+end
+
+target 'SwiftDemo' do
+  pod 'GLRouter', :path=>'../'
+end

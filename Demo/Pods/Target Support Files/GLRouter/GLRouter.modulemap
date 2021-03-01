@@ -1,0 +1,6 @@
+framework module GLRouter {
+  umbrella header "GLRouter-umbrella.h"
+
+  export *
+  module * { export * }
+}

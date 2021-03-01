@@ -16,19 +16,27 @@
 
 @implementation GLRCoreEntry
 - (void)enter {
-    if (NSClassFromString(self.className) == nil) {
+    Class classRef = NSClassFromString(self.className);
+    if  (classRef == nil) {
+        // 可能是由于Swift的原因
+        NSString *work = [NSBundle mainBundle].infoDictionary[@"CFBundleName"];
+        NSString *swiftClassName = [NSString stringWithFormat:@"%@.%@", work, self.className];
+        self.className = swiftClassName;
+        classRef = NSClassFromString(self.className);
+    }
+    if (classRef == nil) {
         self.failureHandle == nil ? NSLog(@"## [GLRouter] ## Has Error !! More info at [GLRouterManager failure:]") : self.failureHandle(kRouterErrorWith(RouterErrorNotFoundTarget, @"Target Class Not Found"), self.className);
     }
     else {
         switch (self.entryMode) {
             case RouterEntryPush:
-                [self.appearControl pushTargetClass:NSClassFromString(self.className)
+                [self.appearControl pushTargetClass:classRef
                                          withParams:self.params
                                           container:self.container
                                         inCondition:self.handleCondition];
                 break;
             case RouterEntryPresent:
-                [self.appearControl presentTargetClass:NSClassFromString(self.className)
+                [self.appearControl presentTargetClass:classRef
                                             withParams:self.params
                                              container:self.container
                                            inCondition:self.handleCondition];
@@ -36,7 +44,7 @@
             case RouterEntryInvoke:
                 [self.invokeControl
                  invokeMethodFromSelector:NSSelectorFromString(self.invokeMethodName)
-                                  inClass:NSClassFromString(self.className)
+                                  inClass:classRef
                                withParams:self.params
                                       ret:self.handleReturn];
                 break;

@@ -1,0 +1,908 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A69BDE5C124E624C2D0352CA4B1DB05 /* GLRCoreAppearControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E46C52C0B9A345FF09BA515C1387FB /* GLRCoreAppearControl.m */; };
+		0BCF18592535334B81E20A03A4FCE52E /* UIViewController+RExt.m in Sources */ = {isa = PBXBuildFile; fileRef = AA490CDED89F1C51FD3BB65AA3F5BA8C /* UIViewController+RExt.m */; };
+		134832C530C582A197F074DCD1C15C7C /* GLRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D07DDC906E0910CBB03EE8209F5CC6 /* GLRouter-dummy.m */; };
+		1D467344614E8E4A58D2161DEF81215C /* GLRCoreEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = D8797A0F17479CC8EDE5F499084A8D76 /* GLRCoreEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2405B710ABFC22CF4D2E2EEB8B78F555 /* GLRouterURLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE79116437E062F78F21C8F9CCBAF2A /* GLRouterURLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D912C5B5E9F1205C22DA1176037C4A3 /* GLRouterErrorList.h in Headers */ = {isa = PBXBuildFile; fileRef = FCB7191A755D1C3CDB852E70FBAC8B79 /* GLRouterErrorList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		570281985F0BE86211A0202F10D00BAE /* GLRouterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE18FBDE3DA6F58A546CCCF3057727D8 /* GLRouterManager.m */; };
+		5C1282F679110EFD4F9D88EC2C722774 /* UIViewController+RExt.h in Headers */ = {isa = PBXBuildFile; fileRef = FF14284D8DEE7930E60084E3F9AC1BF0 /* UIViewController+RExt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		695FFB10094FD924091053F77BA5BB75 /* GLRCoreEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = E60A3104FC1E081D678E10A5CFEAB604 /* GLRCoreEntry.m */; };
+		785598ADD0BE6E462F28A76FCC691F12 /* GLRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = DF98CE7E4EAAB1780F42DD4E4EFD2FE3 /* GLRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7881A6829E376DBEF18B1DACE645BE4A /* GLRBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0A8341811EFE0D03B71E1E1903A4D4 /* GLRBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E05869CC0A0F348F1FD435D1D7B7635 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		831168EE118380AE75C515B86F1502F6 /* GLRouterProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 724404AB8AE05781E4F1BD2D376F85B6 /* GLRouterProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9806D2ABAC130AF6D9A9A834A8317F6E /* GLRBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9794AEAC88A41EFFD14A7362ECB212 /* GLRBase.m */; };
+		9FC77C8235DBD780200C4613711E6E29 /* Pods-ObjCDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB4F4CDEE357B8C90E54BE5FE340A93 /* Pods-ObjCDemo-dummy.m */; };
+		AEE2033F1EBE5AD94B8AFCC225D2C485 /* GLRouterURLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A46060B038F612A0B0A1F6A9150F43C /* GLRouterURLParser.m */; };
+		B772BB3B7D79397970A9A26C6DCDD796 /* GLRCoreInvokeControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 86ECBE0F29BF2296514FF6E75161D1CE /* GLRCoreInvokeControl.m */; };
+		B85FD886099315AB078B2215BA597F43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C81F690C0A50D5A18C117A28D42F405F /* Pods-SwiftDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2826A198B02DD89A6B365E2EC72A0225 /* Pods-SwiftDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8B3615276345446B66713497064669C /* GLRouter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B07A1B89AB9841DEC88555404C1A1E7 /* GLRouter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9D04F1E5ADF36AE0EB1C59386B6DA9E /* GLRouterFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CBD5D4717019B9B4C5D09D95A4710E3 /* GLRouterFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE5794B127B390B53E84348F707D9165 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D2A5DB140CB7F0E290874698381CC7A0 /* Pods-ObjCDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7FEEACD8D5096E63D34597E0C34D41 /* Pods-ObjCDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA52BED9CF18E12DCEA2BB40A7055F7E /* Pods-SwiftDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC5D3376094770E8E3FFA4FCBAE40B /* Pods-SwiftDemo-dummy.m */; };
+		EA94B3C1623F196C99FC7539F25F67D1 /* GLRCoreAppearControl.h in Headers */ = {isa = PBXBuildFile; fileRef = A5DA80931B514A672734592CEE83DED2 /* GLRCoreAppearControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1F47797B589F9D25E9151D0F314216E /* GLRCoreInvokeControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 334DB4208230C7932927E086D2E2112E /* GLRCoreInvokeControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F76C695E1ABE1653451230AAB237FAE1 /* GLRouterFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB1B83E3196F8C1B320E835BA4B5349 /* GLRouterFileManager.m */; };
+		FD05FD5B98F39E680E97F8F212EE37F8 /* GLRouterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 022EDDF645217122DABAB51216345FFC /* GLRouterManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21551EC084C944DB8B20F38E597DC1C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F63805BF6EB396A2C9498C7B8181D348;
+			remoteInfo = GLRouter;
+		};
+		7CB76A66D93891C191A9F748CDCA9A2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F63805BF6EB396A2C9498C7B8181D348;
+			remoteInfo = GLRouter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		022EDDF645217122DABAB51216345FFC /* GLRouterManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GLRouterManager.h; path = GLRouter/Classes/GLRouterManager.h; sourceTree = "<group>"; };
+		073D125C6FCCC08C0E469997BD26ACF4 /* Pods_SwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftDemo.framework; path = "Pods-SwiftDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B07A1B89AB9841DEC88555404C1A1E7 /* GLRouter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GLRouter-umbrella.h"; sourceTree = "<group>"; };
+		187F82D3A4954E7C42F006BF3FD008D5 /* Pods-ObjCDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ObjCDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1A46060B038F612A0B0A1F6A9150F43C /* GLRouterURLParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GLRouterURLParser.m; sourceTree = "<group>"; };
+		1B19773F846BB6976DC9612367108D8C /* Pods-SwiftDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftDemo.modulemap"; sourceTree = "<group>"; };
+		27D285C72FD3BC7D4745945253C1B8E9 /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
+		2826A198B02DD89A6B365E2EC72A0225 /* Pods-SwiftDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftDemo-umbrella.h"; sourceTree = "<group>"; };
+		2C0A8341811EFE0D03B71E1E1903A4D4 /* GLRBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GLRBase.h; sourceTree = "<group>"; };
+		2DAC5D3376094770E8E3FFA4FCBAE40B /* Pods-SwiftDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftDemo-dummy.m"; sourceTree = "<group>"; };
+		334DB4208230C7932927E086D2E2112E /* GLRCoreInvokeControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GLRCoreInvokeControl.h; sourceTree = "<group>"; };
+		34D5C9DA48D58C4246E8C2002A61959C /* GLRouter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GLRouter.modulemap; sourceTree = "<group>"; };
+		37F5D3A244BD5F3BB60D32432088B8E3 /* Pods-ObjCDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ObjCDemo-frameworks.sh"; sourceTree = "<group>"; };
+		3C648746CA3D104F7BEB05940876EF11 /* Pods-SwiftDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3CBD5D4717019B9B4C5D09D95A4710E3 /* GLRouterFileManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GLRouterFileManager.h; sourceTree = "<group>"; };
+		4182F930F4C8320DC5EDAA457B10A754 /* Pods-SwiftDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftDemo-Info.plist"; sourceTree = "<group>"; };
+		4399BA19F28F040EEC3D0F773ADF4CBE /* GLRouter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GLRouter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4BB4F4CDEE357B8C90E54BE5FE340A93 /* Pods-ObjCDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ObjCDemo-dummy.m"; sourceTree = "<group>"; };
+		65A6929FF0D192044038051B60E90F6D /* Pods-ObjCDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjCDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		6F62044975205B59D49394F16D95D74D /* GLRouter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GLRouter-Info.plist"; sourceTree = "<group>"; };
+		724404AB8AE05781E4F1BD2D376F85B6 /* GLRouterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GLRouterProtocol.h; path = GLRouter/Classes/GLRouterProtocol.h; sourceTree = "<group>"; };
+		72D07DDC906E0910CBB03EE8209F5CC6 /* GLRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GLRouter-dummy.m"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		82E46C52C0B9A345FF09BA515C1387FB /* GLRCoreAppearControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GLRCoreAppearControl.m; sourceTree = "<group>"; };
+		86ECBE0F29BF2296514FF6E75161D1CE /* GLRCoreInvokeControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GLRCoreInvokeControl.m; sourceTree = "<group>"; };
+		8DB1B83E3196F8C1B320E835BA4B5349 /* GLRouterFileManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GLRouterFileManager.m; sourceTree = "<group>"; };
+		8E660C70D43EA309AC2A98E881144393 /* GLRouter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GLRouter.debug.xcconfig; sourceTree = "<group>"; };
+		8EABD1B439C653DC863EB92ADC5D4008 /* Pods-ObjCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjCDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8EBAB734E08D8BED770FEECECAD7FDBE /* Pods-ObjCDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjCDemo-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A29C478C2439EC34D81930365E1DAA4B /* GLRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GLRouter.framework; path = GLRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5DA80931B514A672734592CEE83DED2 /* GLRCoreAppearControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GLRCoreAppearControl.h; sourceTree = "<group>"; };
+		AA490CDED89F1C51FD3BB65AA3F5BA8C /* UIViewController+RExt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RExt.m"; sourceTree = "<group>"; };
+		AB39BF9C68463BBDDB0362864EDC47B8 /* Pods-SwiftDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		AD2B3E3F886D3EE3BD39C7C5C5ED3157 /* Pods-SwiftDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftDemo-frameworks.sh"; sourceTree = "<group>"; };
+		B59ADC5E24EAC8B2A58B798C9C362820 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BFD73BB75AD389997D767C67A7BA1BB1 /* Pods-ObjCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjCDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		BFE79116437E062F78F21C8F9CCBAF2A /* GLRouterURLParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GLRouterURLParser.h; sourceTree = "<group>"; };
+		C5AC0BF5EA30185B7EBAE94CA5EADD79 /* GLRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GLRouter-prefix.pch"; sourceTree = "<group>"; };
+		C5B93E20438C4D6792CFAF1485B46FE5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		CDF6117890DE0944759978D6AF742451 /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CE18FBDE3DA6F58A546CCCF3057727D8 /* GLRouterManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GLRouterManager.m; path = GLRouter/Classes/GLRouterManager.m; sourceTree = "<group>"; };
+		CE9794AEAC88A41EFFD14A7362ECB212 /* GLRBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GLRBase.m; sourceTree = "<group>"; };
+		D28984FECE4A9F93647F449A73455C10 /* Pods-ObjCDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ObjCDemo.modulemap"; sourceTree = "<group>"; };
+		D6316BA4585E9862D582E9EAE1972D92 /* GLRouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GLRouter.release.xcconfig; sourceTree = "<group>"; };
+		D8797A0F17479CC8EDE5F499084A8D76 /* GLRCoreEntry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GLRCoreEntry.h; sourceTree = "<group>"; };
+		DF98CE7E4EAAB1780F42DD4E4EFD2FE3 /* GLRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GLRouter.h; path = GLRouter/Classes/GLRouter.h; sourceTree = "<group>"; };
+		E60A3104FC1E081D678E10A5CFEAB604 /* GLRCoreEntry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GLRCoreEntry.m; sourceTree = "<group>"; };
+		EE7FEEACD8D5096E63D34597E0C34D41 /* Pods-ObjCDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ObjCDemo-umbrella.h"; sourceTree = "<group>"; };
+		F5171D1633861511E74CC4EF2DD59537 /* Pods_ObjCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ObjCDemo.framework; path = "Pods-ObjCDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCB7191A755D1C3CDB852E70FBAC8B79 /* GLRouterErrorList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GLRouterErrorList.h; path = GLRouter/Classes/GLRouterErrorList.h; sourceTree = "<group>"; };
+		FF14284D8DEE7930E60084E3F9AC1BF0 /* UIViewController+RExt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RExt.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6618378A39CDD52C38454A999B231BDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E05869CC0A0F348F1FD435D1D7B7635 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		968E5EA678C9ECE3B19EAB6BAC6D7DB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5794B127B390B53E84348F707D9165 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2773AF5CB7A9681E08F7174E1CE4685 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B85FD886099315AB078B2215BA597F43 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24BE3CFAC8FC2727B2E986F8B6A785A1 /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				FF14284D8DEE7930E60084E3F9AC1BF0 /* UIViewController+RExt.h */,
+				AA490CDED89F1C51FD3BB65AA3F5BA8C /* UIViewController+RExt.m */,
+			);
+			name = Categorys;
+			path = GLRouter/Classes/Categorys;
+			sourceTree = "<group>";
+		};
+		4CB15A407E82A5CB14081C7FEED3D436 /* GLRouter */ = {
+			isa = PBXGroup;
+			children = (
+				DF98CE7E4EAAB1780F42DD4E4EFD2FE3 /* GLRouter.h */,
+				FCB7191A755D1C3CDB852E70FBAC8B79 /* GLRouterErrorList.h */,
+				022EDDF645217122DABAB51216345FFC /* GLRouterManager.h */,
+				CE18FBDE3DA6F58A546CCCF3057727D8 /* GLRouterManager.m */,
+				724404AB8AE05781E4F1BD2D376F85B6 /* GLRouterProtocol.h */,
+				24BE3CFAC8FC2727B2E986F8B6A785A1 /* Categorys */,
+				D6C499D6C43A6090C2130AB10D9B7C7D /* Core */,
+				8B5A886747F95A7BA599F812DDA61583 /* Local */,
+				E0D2DCA2907C43A15F14F693C5AB4638 /* Pod */,
+				9EDA8935A65BB4146B5F584B8564ECE9 /* Support Files */,
+				B7AD17F532ED8C6FFEADD9CE22F5E7A0 /* URL */,
+			);
+			name = GLRouter;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8B5A886747F95A7BA599F812DDA61583 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				3CBD5D4717019B9B4C5D09D95A4710E3 /* GLRouterFileManager.h */,
+				8DB1B83E3196F8C1B320E835BA4B5349 /* GLRouterFileManager.m */,
+			);
+			name = Local;
+			path = GLRouter/Classes/Local;
+			sourceTree = "<group>";
+		};
+		9EDA8935A65BB4146B5F584B8564ECE9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				34D5C9DA48D58C4246E8C2002A61959C /* GLRouter.modulemap */,
+				72D07DDC906E0910CBB03EE8209F5CC6 /* GLRouter-dummy.m */,
+				6F62044975205B59D49394F16D95D74D /* GLRouter-Info.plist */,
+				C5AC0BF5EA30185B7EBAE94CA5EADD79 /* GLRouter-prefix.pch */,
+				0B07A1B89AB9841DEC88555404C1A1E7 /* GLRouter-umbrella.h */,
+				8E660C70D43EA309AC2A98E881144393 /* GLRouter.debug.xcconfig */,
+				D6316BA4585E9862D582E9EAE1972D92 /* GLRouter.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Demo/Pods/Target Support Files/GLRouter";
+			sourceTree = "<group>";
+		};
+		B7AD17F532ED8C6FFEADD9CE22F5E7A0 /* URL */ = {
+			isa = PBXGroup;
+			children = (
+				BFE79116437E062F78F21C8F9CCBAF2A /* GLRouterURLParser.h */,
+				1A46060B038F612A0B0A1F6A9150F43C /* GLRouterURLParser.m */,
+			);
+			name = URL;
+			path = GLRouter/Classes/URL;
+			sourceTree = "<group>";
+		};
+		CB7204C6501C1FD740B6E48DA1CD9FDA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC4212A3150AF550BDBD45E440E4D8A3 /* Pods-ObjCDemo */,
+				EE0DA29C3B0D2436A0607A5518E74BE6 /* Pods-SwiftDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CC4212A3150AF550BDBD45E440E4D8A3 /* Pods-ObjCDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D28984FECE4A9F93647F449A73455C10 /* Pods-ObjCDemo.modulemap */,
+				187F82D3A4954E7C42F006BF3FD008D5 /* Pods-ObjCDemo-acknowledgements.markdown */,
+				65A6929FF0D192044038051B60E90F6D /* Pods-ObjCDemo-acknowledgements.plist */,
+				4BB4F4CDEE357B8C90E54BE5FE340A93 /* Pods-ObjCDemo-dummy.m */,
+				37F5D3A244BD5F3BB60D32432088B8E3 /* Pods-ObjCDemo-frameworks.sh */,
+				8EBAB734E08D8BED770FEECECAD7FDBE /* Pods-ObjCDemo-Info.plist */,
+				EE7FEEACD8D5096E63D34597E0C34D41 /* Pods-ObjCDemo-umbrella.h */,
+				BFD73BB75AD389997D767C67A7BA1BB1 /* Pods-ObjCDemo.debug.xcconfig */,
+				8EABD1B439C653DC863EB92ADC5D4008 /* Pods-ObjCDemo.release.xcconfig */,
+			);
+			name = "Pods-ObjCDemo";
+			path = "Target Support Files/Pods-ObjCDemo";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				DAEFC6E07B2FDE4A8807607E7D88325F /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				FCAC5D7428A3DE9F3328C823E010C5D7 /* Products */,
+				CB7204C6501C1FD740B6E48DA1CD9FDA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6C499D6C43A6090C2130AB10D9B7C7D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2C0A8341811EFE0D03B71E1E1903A4D4 /* GLRBase.h */,
+				CE9794AEAC88A41EFFD14A7362ECB212 /* GLRBase.m */,
+				A5DA80931B514A672734592CEE83DED2 /* GLRCoreAppearControl.h */,
+				82E46C52C0B9A345FF09BA515C1387FB /* GLRCoreAppearControl.m */,
+				D8797A0F17479CC8EDE5F499084A8D76 /* GLRCoreEntry.h */,
+				E60A3104FC1E081D678E10A5CFEAB604 /* GLRCoreEntry.m */,
+				334DB4208230C7932927E086D2E2112E /* GLRCoreInvokeControl.h */,
+				86ECBE0F29BF2296514FF6E75161D1CE /* GLRCoreInvokeControl.m */,
+			);
+			name = Core;
+			path = GLRouter/Classes/Core;
+			sourceTree = "<group>";
+		};
+		DAEFC6E07B2FDE4A8807607E7D88325F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CB15A407E82A5CB14081C7FEED3D436 /* GLRouter */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		E0D2DCA2907C43A15F14F693C5AB4638 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4399BA19F28F040EEC3D0F773ADF4CBE /* GLRouter.podspec */,
+				C5B93E20438C4D6792CFAF1485B46FE5 /* LICENSE */,
+				B59ADC5E24EAC8B2A58B798C9C362820 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		EE0DA29C3B0D2436A0607A5518E74BE6 /* Pods-SwiftDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1B19773F846BB6976DC9612367108D8C /* Pods-SwiftDemo.modulemap */,
+				3C648746CA3D104F7BEB05940876EF11 /* Pods-SwiftDemo-acknowledgements.markdown */,
+				AB39BF9C68463BBDDB0362864EDC47B8 /* Pods-SwiftDemo-acknowledgements.plist */,
+				2DAC5D3376094770E8E3FFA4FCBAE40B /* Pods-SwiftDemo-dummy.m */,
+				AD2B3E3F886D3EE3BD39C7C5C5ED3157 /* Pods-SwiftDemo-frameworks.sh */,
+				4182F930F4C8320DC5EDAA457B10A754 /* Pods-SwiftDemo-Info.plist */,
+				2826A198B02DD89A6B365E2EC72A0225 /* Pods-SwiftDemo-umbrella.h */,
+				CDF6117890DE0944759978D6AF742451 /* Pods-SwiftDemo.debug.xcconfig */,
+				27D285C72FD3BC7D4745945253C1B8E9 /* Pods-SwiftDemo.release.xcconfig */,
+			);
+			name = "Pods-SwiftDemo";
+			path = "Target Support Files/Pods-SwiftDemo";
+			sourceTree = "<group>";
+		};
+		FCAC5D7428A3DE9F3328C823E010C5D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A29C478C2439EC34D81930365E1DAA4B /* GLRouter.framework */,
+				F5171D1633861511E74CC4EF2DD59537 /* Pods_ObjCDemo.framework */,
+				073D125C6FCCC08C0E469997BD26ACF4 /* Pods_SwiftDemo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		38AB41B45C6CF983460F232C9086C749 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7881A6829E376DBEF18B1DACE645BE4A /* GLRBase.h in Headers */,
+				EA94B3C1623F196C99FC7539F25F67D1 /* GLRCoreAppearControl.h in Headers */,
+				1D467344614E8E4A58D2161DEF81215C /* GLRCoreEntry.h in Headers */,
+				F1F47797B589F9D25E9151D0F314216E /* GLRCoreInvokeControl.h in Headers */,
+				C8B3615276345446B66713497064669C /* GLRouter-umbrella.h in Headers */,
+				785598ADD0BE6E462F28A76FCC691F12 /* GLRouter.h in Headers */,
+				4D912C5B5E9F1205C22DA1176037C4A3 /* GLRouterErrorList.h in Headers */,
+				C9D04F1E5ADF36AE0EB1C59386B6DA9E /* GLRouterFileManager.h in Headers */,
+				FD05FD5B98F39E680E97F8F212EE37F8 /* GLRouterManager.h in Headers */,
+				831168EE118380AE75C515B86F1502F6 /* GLRouterProtocol.h in Headers */,
+				2405B710ABFC22CF4D2E2EEB8B78F555 /* GLRouterURLParser.h in Headers */,
+				5C1282F679110EFD4F9D88EC2C722774 /* UIViewController+RExt.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B85313C5D5254257192052A64CABF4A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C81F690C0A50D5A18C117A28D42F405F /* Pods-SwiftDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE1C887397F59F13522E01F4857232D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A5DB140CB7F0E290874698381CC7A0 /* Pods-ObjCDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AD93B072AEB211FA9C9281A5D9476AEC /* Pods-SwiftDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29181F208F727FBBAC6D9044B63A5DBF /* Build configuration list for PBXNativeTarget "Pods-SwiftDemo" */;
+			buildPhases = (
+				B85313C5D5254257192052A64CABF4A8 /* Headers */,
+				FF5B825BF78EF9D10BFD88E4BD63FBE9 /* Sources */,
+				6618378A39CDD52C38454A999B231BDD /* Frameworks */,
+				9D514EF98AD9C4D5589DA8632610C525 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F51C5ED4F7FFFDC658D886BAC0197AC6 /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftDemo";
+			productName = "Pods-SwiftDemo";
+			productReference = 073D125C6FCCC08C0E469997BD26ACF4 /* Pods_SwiftDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DCEDBB4CB7B735B2F5F912DCA19651AE /* Pods-ObjCDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 858343F729364506A576335228694607 /* Build configuration list for PBXNativeTarget "Pods-ObjCDemo" */;
+			buildPhases = (
+				EE1C887397F59F13522E01F4857232D0 /* Headers */,
+				891668AFBB6DF62FD75694C4FD193965 /* Sources */,
+				968E5EA678C9ECE3B19EAB6BAC6D7DB0 /* Frameworks */,
+				D7CED7932ED7901EEAD3ED2347892585 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				294C80CE1D2B13D53CB1CCC2F6497ABF /* PBXTargetDependency */,
+			);
+			name = "Pods-ObjCDemo";
+			productName = "Pods-ObjCDemo";
+			productReference = F5171D1633861511E74CC4EF2DD59537 /* Pods_ObjCDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F63805BF6EB396A2C9498C7B8181D348 /* GLRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E37CF934C6C6918AA02C961F900C182 /* Build configuration list for PBXNativeTarget "GLRouter" */;
+			buildPhases = (
+				38AB41B45C6CF983460F232C9086C749 /* Headers */,
+				92E9830D6964339181D3588E402F5CC1 /* Sources */,
+				F2773AF5CB7A9681E08F7174E1CE4685 /* Frameworks */,
+				8D2B604F8D31D7DD24D24D11712B1BDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLRouter;
+			productName = GLRouter;
+			productReference = A29C478C2439EC34D81930365E1DAA4B /* GLRouter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = FCAC5D7428A3DE9F3328C823E010C5D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F63805BF6EB396A2C9498C7B8181D348 /* GLRouter */,
+				DCEDBB4CB7B735B2F5F912DCA19651AE /* Pods-ObjCDemo */,
+				AD93B072AEB211FA9C9281A5D9476AEC /* Pods-SwiftDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D2B604F8D31D7DD24D24D11712B1BDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D514EF98AD9C4D5589DA8632610C525 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7CED7932ED7901EEAD3ED2347892585 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		891668AFBB6DF62FD75694C4FD193965 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FC77C8235DBD780200C4613711E6E29 /* Pods-ObjCDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92E9830D6964339181D3588E402F5CC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9806D2ABAC130AF6D9A9A834A8317F6E /* GLRBase.m in Sources */,
+				0A69BDE5C124E624C2D0352CA4B1DB05 /* GLRCoreAppearControl.m in Sources */,
+				695FFB10094FD924091053F77BA5BB75 /* GLRCoreEntry.m in Sources */,
+				B772BB3B7D79397970A9A26C6DCDD796 /* GLRCoreInvokeControl.m in Sources */,
+				134832C530C582A197F074DCD1C15C7C /* GLRouter-dummy.m in Sources */,
+				F76C695E1ABE1653451230AAB237FAE1 /* GLRouterFileManager.m in Sources */,
+				570281985F0BE86211A0202F10D00BAE /* GLRouterManager.m in Sources */,
+				AEE2033F1EBE5AD94B8AFCC225D2C485 /* GLRouterURLParser.m in Sources */,
+				0BCF18592535334B81E20A03A4FCE52E /* UIViewController+RExt.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF5B825BF78EF9D10BFD88E4BD63FBE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA52BED9CF18E12DCEA2BB40A7055F7E /* Pods-SwiftDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		294C80CE1D2B13D53CB1CCC2F6497ABF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GLRouter;
+			target = F63805BF6EB396A2C9498C7B8181D348 /* GLRouter */;
+			targetProxy = 7CB76A66D93891C191A9F748CDCA9A2C /* PBXContainerItemProxy */;
+		};
+		F51C5ED4F7FFFDC658D886BAC0197AC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GLRouter;
+			target = F63805BF6EB396A2C9498C7B8181D348 /* GLRouter */;
+			targetProxy = 21551EC084C944DB8B20F38E597DC1C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4AEBE03034B5896ACD8FC194CEEDB4E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EABD1B439C653DC863EB92ADC5D4008 /* Pods-ObjCDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ObjCDemo/Pods-ObjCDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ObjCDemo/Pods-ObjCDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5CEC00094CF967959822C2C695CD2EC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E660C70D43EA309AC2A98E881144393 /* GLRouter.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GLRouter/GLRouter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GLRouter/GLRouter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GLRouter/GLRouter.modulemap";
+				PRODUCT_MODULE_NAME = GLRouter;
+				PRODUCT_NAME = GLRouter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		89311F528FB52AF2AD3F16F59D5FE1B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27D285C72FD3BC7D4745945253C1B8E9 /* Pods-SwiftDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C94B6031B606FDA543403D2864EDE3A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6316BA4585E9862D582E9EAE1972D92 /* GLRouter.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GLRouter/GLRouter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GLRouter/GLRouter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GLRouter/GLRouter.modulemap";
+				PRODUCT_MODULE_NAME = GLRouter;
+				PRODUCT_NAME = GLRouter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D1132462A89F09C36AFA3D06F65FEB47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDF6117890DE0944759978D6AF742451 /* Pods-SwiftDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EE9569A566063313604CB4ED7F16D055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFD73BB75AD389997D767C67A7BA1BB1 /* Pods-ObjCDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ObjCDemo/Pods-ObjCDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ObjCDemo/Pods-ObjCDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29181F208F727FBBAC6D9044B63A5DBF /* Build configuration list for PBXNativeTarget "Pods-SwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1132462A89F09C36AFA3D06F65FEB47 /* Debug */,
+				89311F528FB52AF2AD3F16F59D5FE1B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		858343F729364506A576335228694607 /* Build configuration list for PBXNativeTarget "Pods-ObjCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE9569A566063313604CB4ED7F16D055 /* Debug */,
+				4AEBE03034B5896ACD8FC194CEEDB4E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E37CF934C6C6918AA02C961F900C182 /* Build configuration list for PBXNativeTarget "GLRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CEC00094CF967959822C2C695CD2EC7 /* Debug */,
+				C94B6031B606FDA543403D2864EDE3A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
