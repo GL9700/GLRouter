@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21794F9F25EF2690003196E6 /* RoutingTable.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21794F9E25EF2690003196E6 /* RoutingTable.plist */; };
+		21794FA625EF26CB003196E6 /* PageA.m in Sources */ = {isa = PBXBuildFile; fileRef = 21794FA525EF26CB003196E6 /* PageA.m */; };
+		21794FAB25EF26D5003196E6 /* PageB.m in Sources */ = {isa = PBXBuildFile; fileRef = 21794FAA25EF26D5003196E6 /* PageB.m */; };
+		21794FB025EF26E5003196E6 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 21794FAF25EF26E5003196E6 /* Tools.m */; };
 		21C5DD6925ECBF4700B6352E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C5DD6825ECBF4700B6352E /* AppDelegate.m */; };
 		21C5DD6F25ECBF4700B6352E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C5DD6E25ECBF4700B6352E /* ViewController.m */; };
 		21C5DD7425ECBF4A00B6352E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21C5DD7325ECBF4A00B6352E /* Assets.xcassets */; };
@@ -24,6 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21794F9E25EF2690003196E6 /* RoutingTable.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RoutingTable.plist; sourceTree = "<group>"; };
+		21794FA425EF26CB003196E6 /* PageA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageA.h; sourceTree = "<group>"; };
+		21794FA525EF26CB003196E6 /* PageA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageA.m; sourceTree = "<group>"; };
+		21794FA925EF26D5003196E6 /* PageB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageB.h; sourceTree = "<group>"; };
+		21794FAA25EF26D5003196E6 /* PageB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageB.m; sourceTree = "<group>"; };
+		21794FAE25EF26E5003196E6 /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		21794FAF25EF26E5003196E6 /* Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		21C5DD6525ECBF4700B6352E /* ObjCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21C5DD6725ECBF4700B6352E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		21C5DD6825ECBF4700B6352E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,8 +112,15 @@
 				21C5DDBC25ECC12E00B6352E /* BaseViewController.m */,
 				21C5DD6D25ECBF4700B6352E /* ViewController.h */,
 				21C5DD6E25ECBF4700B6352E /* ViewController.m */,
+				21794FA425EF26CB003196E6 /* PageA.h */,
+				21794FA525EF26CB003196E6 /* PageA.m */,
+				21794FA925EF26D5003196E6 /* PageB.h */,
+				21794FAA25EF26D5003196E6 /* PageB.m */,
+				21794FAE25EF26E5003196E6 /* Tools.h */,
+				21794FAF25EF26E5003196E6 /* Tools.m */,
 				21C5DD7825ECBF4A00B6352E /* Info.plist */,
 				21C5DD7925ECBF4A00B6352E /* main.m */,
+				21794F9E25EF2690003196E6 /* RoutingTable.plist */,
 			);
 			path = ObjCDemo;
 			sourceTree = "<group>";
@@ -222,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21794F9F25EF2690003196E6 /* RoutingTable.plist in Resources */,
 				21C5DD7725ECBF4A00B6352E /* LaunchScreen.storyboard in Resources */,
 				21C5DD7425ECBF4A00B6352E /* Assets.xcassets in Resources */,
 			);
@@ -323,10 +342,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21794FB025EF26E5003196E6 /* Tools.m in Sources */,
 				21C5DD6F25ECBF4700B6352E /* ViewController.m in Sources */,
 				21C5DDBD25ECC12E00B6352E /* BaseViewController.m in Sources */,
 				21C5DD6925ECBF4700B6352E /* AppDelegate.m in Sources */,
+				21794FAB25EF26D5003196E6 /* PageB.m in Sources */,
 				21C5DD7A25ECBF4A00B6352E /* main.m in Sources */,
+				21794FA625EF26CB003196E6 /* PageA.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
