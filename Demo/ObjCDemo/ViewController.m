@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.mainTableView.frame = self.view.bounds;
+    
+    /*
+     * if GLRouter happen Error , so by catch in [GLRouterManager failure]
+     */
+    [GLRouterManager failure:^(NSError *error, NSString *detail) {
+        NSLog(@"error:%@, detail:%@", error, detail);
+    }];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -60,7 +67,7 @@
     rto_dsp(@"GL://push/PageA", nil);
 }
 - (void)pushParam1 {
-    rto_dsp(@"GL://push/PageA?msg=I have a pen&author=liguoliang", nil);
+    rto_dsp(@"GL://push/PageA?msg=I have a pen&author=lgl", nil);
 }
 - (void)pushParam2 {
     rto_dsp(@"GL://push/PageA", ^BOOL(id tgt) {
@@ -76,6 +83,7 @@
     
 - (void)pushNeedTrue {
     rto_dsp(@"GL://push/PageA" ,^BOOL(id tgt) {
+        NSLog(@"return NO , Cancel current Router Task");
         return NO;    // `NO`: cancel current Router Task  | `YES` : normal to Launch
     });
 }
@@ -86,15 +94,35 @@
     rto_dsp(@"GL://present/PageA", nil);
 }
 - (void)presentFromOtherContainer {
-        
+    rto_dsp(@"GL://present/PageA?msg=I have a pen&author=lgl", nil);
 }
 - (void)presentNeedTrue {
-        
+    rto_dsp(@"GL://present/PageA" ,^BOOL(id tgt) {
+        NSLog(@"return NO , Cancel current Router Task");
+        return NO;    // `NO`: cancel current Router Task  | `YES` : normal to Launch
+    });
 }
 
 /// INVOKE
 
+- (void)invokeMethod_NoParams {
+    rto_ivk(@"GL://invoke/Tools/sendMessage", nil);
+}
 
+- (void)invokeMethod_hasParams {
+/* normal */
+//    rto_ivk(@"GL://invoke/Tools/sendMessage:from:to:?p1=Hello World!&p2=jerry&p3=tom", nil);
+    
+/* the second params is <nil> */
+    rto_ivk(@"GL://invoke/Tools/sendMessage:from:to:?p1=Hello World!&p3=tom", nil);
+}
+
+- (void)invokeMethod_hasReturn {
+    rto_ivk(@"GL://invoke/Tools/sumA:B:?p1=12&p2=6", ^(id ret) {
+        int sum = [ret intValue];
+        NSLog(@"结果是->%d", sum);
+    });
+}
 
 
 
@@ -125,9 +153,9 @@
                 @{@"title":@"条件跳转",@"method":@"presentNeedTrue"}
             ],
             @[
-                @{@"title":@"普通调用",@"method":@""},
-                @{@"title":@"含有多参调用及空参调用",@"method":@""},
-                @{@"title":@"获取返回值",@"method":@""}
+                @{@"title":@"普通调用",@"method":@"invokeMethod_NoParams"},
+                @{@"title":@"含有多参调用及空参调用",@"method":@"invokeMethod_hasParams"},
+                @{@"title":@"获取返回值",@"method":@"invokeMethod_hasReturn"}
             ],
             @[
             ]
