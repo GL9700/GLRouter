@@ -24,9 +24,9 @@ class ViewController: UIViewController{
             ["title":"条件跳转","method":"presentNeedTrue"]
         ],
         [
-            ["title":"普通调用","method":""],
-            ["title":"含有多参调用及空参调用","method":""],
-            ["title":"获取返回值","method":""]
+            ["title":"(Swift不支持)普通调用","method":""],
+            ["title":"(Swift不支持)含有多参调用及空参调用","method":""],
+            ["title":"(Swift不支持)获取返回值","method":""]
         ],
         [
             
@@ -89,17 +89,39 @@ extension ViewController {
         rto_dsp("GL://present/PageAViewController", nil)
     }
     @objc func presentFromOtherContainer() {
-        
+        rto_dsp("GL://present/PageAViewController?msg=hello world!!", nil)
     }
     @objc func presentNeedTrue() {
-        
+        rto_dsp("GL://present/PageAViewController") { (targetViewController) -> Bool in
+            false    // `false`: cancel current Router Task  | `true` : normal to Launch
+        }
     }
 }
 
 /// INVOKE
+/*
 extension ViewController {
-    
+    @objc func invokeMethod_NoParams() {
+        rto_ivk("GL://invoke/Tools/sendMessage", nil)
+    }
+
+    @objc func invokeMethod_hasParams() {
+    /* normal */
+    //    rto_ivk("GL://invoke/Tools/sendMessage:from:to:?p1=Hello World!&p2=jerry&p3=tom", nil)
+        
+    /* the second params is <nil> */
+        rto_ivk("GL://invoke/Tools/sendMessage?p1=Hello World!&p3=tom", nil)
+    }
+
+    @objc func invokeMethod_hasReturn() {
+        rto_ivk("GL://invoke/Tools/sum?p1=12&p2=6", { (ret) in
+            let sum:Int = (ret as! Int)
+            print("结果是->\(sum)")
+        })
+    }
+
 }
+*/
 
 /// UI & TableViewCell Selected Delegate
 extension ViewController : UITableViewDelegate, UITableViewDataSource {
