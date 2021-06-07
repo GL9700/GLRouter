@@ -1,7 +1,6 @@
 ![logo](https://gl9700.gitee.io/assets/images/logo800.png)
 # GLRouter
 
-[![CI Status](https://img.shields.io/travis/liandyii@msn.com/GLRouter.svg?style=flat)](https://travis-ci.org/liandyii@msn.com/GLRouter)
 [![Version](https://img.shields.io/cocoapods/v/GLRouter.svg?style=flat)](https://cocoapods.org/pods/GLRouter)
 [![License](https://img.shields.io/cocoapods/l/GLRouter.svg?style=flat)](https://cocoapods.org/pods/GLRouter)
 [![Platform](https://img.shields.io/cocoapods/p/GLRouter.svg?style=flat)](https://cocoapods.org/pods/GLRouter)
