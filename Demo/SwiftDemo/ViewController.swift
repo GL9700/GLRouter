@@ -135,23 +135,29 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        if cell==nil {
-            cell = UITableViewCell(style: .subtitle , reuseIdentifier: "cell")
-            cell?.textLabel?.text = self.datas[indexPath.section][indexPath.row]["title"]
-            if let selname = self.datas[indexPath.section][indexPath.row]["method"], selname.count>0 {
-                cell?.detailTextLabel?.text = "@selector(\(selname))"
-            }else{
-                cell?.detailTextLabel?.text = "--"
-            }
-            
-            cell?.detailTextLabel?.textColor = .lightGray
+        if cell==nil { cell = UITableViewCell(style: .subtitle , reuseIdentifier: "cell") }
+        cell?.textLabel?.text = self.datas[indexPath.section][indexPath.row]["title"]
+        if let selname = self.datas[indexPath.section][indexPath.row]["method"], selname.count>0 {
+            cell?.textLabel?.textColor = .black
+            cell?.detailTextLabel?.text = "@selector(\(selname))"
+        }else{
+            cell?.textLabel?.textColor = .gray
+            cell?.detailTextLabel?.text = "--"
         }
+        
+        cell?.detailTextLabel?.textColor = .lightGray
         return cell!
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let sel:Selector = NSSelectorFromString(self.datas[indexPath.section][indexPath.row]["method"]!)
-        self.perform(sel)
+        if let selname = self.datas[indexPath.section][indexPath.row]["method"], selname.count>0 {
+            self.perform(sel)
+        }else{
+            let ac = UIAlertController(title:nil , message: "Swift暂不支持此项", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "好的", style: .default, handler: nil))
+            self.present(ac, animated: true, completion: nil)
+        }
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -161,7 +167,7 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
         case 1:
             return "Present(弹出)"
         case 2:
-            return "Invoke(调用)"
+            return "Invoke(动态调用)"
         default:
             return "Other(其他)"
         }

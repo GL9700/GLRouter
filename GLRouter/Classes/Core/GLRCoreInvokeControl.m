@@ -4,7 +4,7 @@
 //
 //  Created by liguoliang on 2020/10/10.
 //
-
+#import <Foundation/Foundation.h>
 #import <GLRouter/GLRCoreInvokeControl.h>
 #import <objc/message.h>
 
@@ -114,11 +114,13 @@
     NSMutableArray *keys = [params.allKeys mutableCopy];
     int base = 1;
     [keys sortUsingComparator: ^NSComparisonResult (NSString *obj1, NSString *obj2) {
+        // 这里采用`方案1`进行参数位置匹配
         return [self intFromString:obj1] < [self intFromString:obj2] ? NSOrderedAscending : NSOrderedDescending;
     }];
     for (int i = 0; i < keys.count; i++) {
         NSString *key = keys[i];
         int index = 0;
+        // 这里采用`方案1`进行参数位置匹配
         int rlt = [self intFromString:key];
 //        if (i == 0) {
 //            base = rlt;
