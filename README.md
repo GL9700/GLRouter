@@ -92,6 +92,12 @@ pod 'GLRouter'
     必须：iOS开发时配置一个与app相关联的域名
     ```
 ## History
+* 2.1.1
+    * 优化了路由参数传递`url`时参数可能被截断。如传递`url`,请将其置为最后一个路由参数。
+        例如：
+        ```
+        rto_dsp(@"App://push/MyWebViewController?title=标题&url=http://www.home.com/page.html?a=1&b=2&c=3&d=4", nil);
+        ```
 * 2.1.0
     * 增加了便捷初始化方案: rto_init_tab( scheme, routingTableName, routingTableBundle )
 

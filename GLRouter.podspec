@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GLRouter'
-  s.version          = '2.1.0'
+  s.version          = '2.1.1'
   s.summary          = '一个极其简便灵活的iOS路由'
   s.description      = <<-DESC
   😜Without register anyclass !
