@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
   🎉Look! It working!
   DESC
 
-  s.homepage         = 'https://gitee.com/GL9700/GLRouter'
+  s.homepage         = 'https://github.com/GL9700/GLRouter'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'liguoliang' => '36617161@qq.com' }
-  s.source           = { :git => 'https://gitee.com/GL9700/GLRouter.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/GL9700/GLRouter.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
