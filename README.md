@@ -67,7 +67,7 @@
     ```
 
 ## RouterURL的构成
-<img src="https://raw.githubusercontent.com/GL9700/GLRouter/master/Assets/Images/router_url_info.jpg" width="600px">
+<img src="https://raw.githubusercontent.com/GL9700/GLRouter/master/Assets/Images/router_url_info.jpg" width="600px" alt="The Image in raw.githubusercontent.com">
 
 ## 安装
 
