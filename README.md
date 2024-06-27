@@ -1,4 +1,3 @@
-![logo](https://gl9700.gitee.io/assets/images/logo800.png)
 # GLRouter
 
 [![Version](https://img.shields.io/cocoapods/v/GLRouter.svg?style=flat)](https://cocoapods.org/pods/GLRouter)
@@ -68,7 +67,7 @@
     ```
 
 ## RouterURL的构成
-<img src="https://gl9700.gitee.io/assets/images/router_url_info.jpg" width="600px">
+<img src="https://raw.githubusercontent.com/GL9700/GLRouter/master/Assets/Images/router_url_info.jpg" width="600px">
 
 ## 安装
 
