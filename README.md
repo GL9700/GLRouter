@@ -105,7 +105,7 @@ pod 'GLRouter'
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=https:/&type=Date)](https://star-history.com/#https:/&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=GL9700/GLRouter&type=Date)](https://star-history.com/#GL9700/GLRouter&Date)
 
 ## Author
 
