@@ -103,7 +103,9 @@ pod 'GLRouter'
     * 增加了便捷初始化方案: rto_init_tab( scheme, routingTableName, routingTableBundle )
 
 
-<iframe style="width:100%;height:auto;min-width:600px;min-height:400px;" src="https://star-history.com/embed?secret=Z2hwX3RxbjU2a2c5MWhmbTg3VTVyb1JNYUpNVkdTcXB5djJVdTVSZA==#https:/&Date" frameBorder="0"></iframe>
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=https:/&type=Date)](https://star-history.com/#https:/&Date)
 
 ## Author
 
